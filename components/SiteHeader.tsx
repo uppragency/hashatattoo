@@ -53,11 +53,12 @@ export default function SiteHeader() {
         <nav className="desktop-nav" aria-label="Navigare principală">
           <Link href="/tatuaje" aria-current={pathname === "/tatuaje" ? "page" : undefined}>TATUAJE</Link>
           <Link href="/piercing" aria-current={pathname === "/piercing" ? "page" : undefined}>PIERCING</Link>
-          <Link href="/#portofoliu">PORTOFOLIU</Link>
+          <Link href="/portofoliu" aria-current={pathname === "/portofoliu" ? "page" : undefined}>PORTOFOLIU</Link>
+          <Link href="/preturi" aria-current={pathname === "/preturi" ? "page" : undefined}>PREȚURI</Link>
           <Link href="/despre-noi" aria-current={pathname === "/despre-noi" ? "page" : undefined}>
             DESPRE NOI
           </Link>
-          <Link href="/#contact">CONTACT</Link>
+          <Link href="/contact" aria-current={pathname === "/contact" ? "page" : undefined}>CONTACT</Link>
         </nav>
         <div className="header-actions">
           <a className="header-book" href={WA} target="_blank" rel="noopener noreferrer" data-cta="whatsapp">
@@ -88,14 +89,17 @@ export default function SiteHeader() {
           <Link href="/piercing" onClick={closeMenu}>
             PIERCING <small>03</small>
           </Link>
-          <Link href="/#portofoliu" onClick={closeMenu}>
+          <Link href="/portofoliu" onClick={closeMenu}>
             PORTOFOLIU <small>04</small>
           </Link>
-          <Link href="/despre-noi" onClick={closeMenu}>
-            DESPRE NOI <small>05</small>
+          <Link href="/preturi" onClick={closeMenu}>
+            PREȚURI <small>05</small>
           </Link>
-          <Link href="/#contact" onClick={closeMenu}>
-            CONTACT <small>06</small>
+          <Link href="/despre-noi" onClick={closeMenu}>
+            DESPRE NOI <small>06</small>
+          </Link>
+          <Link href="/contact" onClick={closeMenu}>
+            CONTACT <small>07</small>
           </Link>
           <span>HASHA TATTOO — BUCUREȘTI, SECTOR 4</span>
         </div>

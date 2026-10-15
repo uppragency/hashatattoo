@@ -442,6 +442,16 @@ export default function LandingPage({ page: p }: { page: Landing }) {
                 <em>{p.pricing.title[1]}</em>
               </h2>
               <p>{p.pricing.text}</p>
+              {p.pricing.list ? (
+                <div className="price-list lp-price-list">
+                  {p.pricing.list.map((r) => (
+                    <div key={r.k}>
+                      <span>{r.k}</span>
+                      <strong>{r.v}</strong>
+                    </div>
+                  ))}
+                </div>
+              ) : null}
               <ul className="lp-factors">
                 {p.pricing.factors.map((f, i) => (
                   <li key={f}>

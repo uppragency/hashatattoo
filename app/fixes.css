@@ -209,3 +209,63 @@ section>.lp-head .text-arrow{justify-self:start}
   .lp-intro p{font-size:16px}
 }
 @media(min-width:901px){#beneficii .values-head{position:sticky;top:110px;align-self:start}}
+
+/* ============ PRETURI / CONTACT / PORTOFOLIU / FAQ ============ */
+.price-list{border-top:1px solid var(--line)}
+.price-list>div{display:flex;justify-content:space-between;align-items:baseline;gap:20px;padding:20px 0;border-bottom:1px solid var(--line)}
+.price-list span{font-family:'Cormorant Garamond',Georgia,serif;font-size:clamp(24px,2.1vw,32px);letter-spacing:-.02em;line-height:1.15}
+.price-list small{display:block;font-family:'DM Sans',system-ui,sans-serif;font-size:12px;letter-spacing:.03em;color:var(--muted);margin-top:5px}
+.price-list strong{font-family:'Cormorant Garamond',Georgia,serif;font-weight:300;font-size:clamp(28px,2.6vw,40px);white-space:nowrap;letter-spacing:-.02em}
+.price-sub{font-size:10px;letter-spacing:.2em;font-weight:500;color:var(--muted);margin:46px 0 16px;text-transform:uppercase}
+.price-call{margin:44px 0 0!important}
+.lp-prices{padding-top:clamp(80px,9vw,130px);padding-bottom:clamp(90px,10vw,150px)}
+.lp-price-list{margin:34px 0 8px;max-width:520px}
+
+.lp-contact-cards{padding-top:clamp(70px,8vw,110px);padding-bottom:clamp(80px,9vw,130px)}
+.lp-card-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:clamp(14px,1.6vw,24px);padding-top:60px}
+.lp-contact-card{display:flex;flex-direction:column;border:1px solid var(--line);padding:clamp(22px,2.2vw,34px);min-height:300px;transition:background .3s,border-color .3s}
+.lp-contact-card:hover{background:#171716;border-color:rgba(233,229,220,.42)}
+.lp-contact-card small{font-size:10px;letter-spacing:.2em;color:var(--muted)}
+.lp-contact-card strong{font-family:'Cormorant Garamond',Georgia,serif;font-weight:400;font-size:clamp(26px,2.3vw,36px);line-height:1.1;letter-spacing:-.02em;margin:18px 0 14px;overflow-wrap:anywhere}
+.lp-contact-card p{font-size:14px;line-height:1.7;color:var(--soft);margin:0 0 24px}
+.lp-contact-card>span{margin-top:auto;display:flex;justify-content:space-between;font-size:10px;letter-spacing:.17em;border-top:1px solid var(--line);padding-top:16px}
+.lp-contact-card i{font-style:normal}
+
+.lp-sec.portfolio{padding-top:clamp(70px,8vw,110px)}
+.lp-gallery-head{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(24px,6vw,110px);align-items:end;padding:70px 0 54px}
+.lp-gallery-head h2{font-family:'Cormorant Garamond',Georgia,serif;font-weight:300;letter-spacing:-.05em;line-height:.98;margin:0;font-size:clamp(56px,6.4vw,112px)}
+.lp-gallery-head h2 em{color:#a69e93}
+.lp-gallery-head p{font-size:16px;line-height:1.85;color:var(--soft);max-width:520px;margin:0 0 8px}
+
+.lp-path-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(18px,2.4vw,40px);padding-top:60px}
+.lp-path{display:grid;grid-template-columns:.85fr 1.15fr;border:1px solid var(--line);overflow:hidden;transition:border-color .3s}
+.lp-path:hover{border-color:rgba(233,229,220,.42)}
+.lp-path-img{overflow:hidden;min-height:320px}
+.lp-path-img img{width:100%;height:100%;object-fit:cover;filter:brightness(.8) saturate(.8);transition:transform 1s var(--ease)}
+.lp-path:hover .lp-path-img img{transform:scale(1.04)}
+.lp-path-body{display:flex;flex-direction:column;padding:clamp(22px,2.4vw,38px)}
+.lp-path-body small{font-size:10px;letter-spacing:.2em;color:var(--muted)}
+.lp-path-body strong{font-family:'Cormorant Garamond',Georgia,serif;font-weight:400;font-size:clamp(30px,2.8vw,46px);line-height:1.05;letter-spacing:-.03em;margin:16px 0 14px}
+.lp-path-body p{font-size:15px;line-height:1.75;color:var(--soft);margin:0 0 28px}
+.lp-path-body>span{margin-top:auto;display:flex;justify-content:space-between;font-size:10px;letter-spacing:.17em;border-top:1px solid var(--line);padding-top:16px}
+.lp-path-body i{font-style:normal}
+
+.lp-faq-group{padding-top:clamp(70px,8vw,110px);padding-bottom:clamp(40px,5vw,80px)}
+.lp-faq-group .faq-intro .text-arrow{margin-top:8px}
+
+@media(max-width:1160px){.lp-card-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:900px){
+  .lp-gallery-head{grid-template-columns:1fr;gap:24px;padding:54px 0 40px}
+  .lp-path-grid{grid-template-columns:1fr}
+}
+@media(max-width:650px){
+  .lp-card-grid{grid-template-columns:1fr}
+  .lp-contact-card{min-height:0}
+  .lp-path{grid-template-columns:1fr}
+  .lp-path-img{min-height:0;aspect-ratio:16/11}
+  .lp-gallery-head h2{font-size:clamp(44px,13vw,64px)}
+  .price-list strong{font-size:28px}
+}
+.lp-contact-card:nth-child(3) strong{font-size:clamp(20px,1.65vw,26px);overflow-wrap:normal;word-break:normal;white-space:nowrap;line-height:1.5}
+@media(max-width:1160px){.lp-contact-card:nth-child(3) strong{font-size:clamp(22px,3.2vw,30px)}}
+.lp-portfolio-more{margin:clamp(28px,4vw,48px) 0 0;display:flex;justify-content:center}

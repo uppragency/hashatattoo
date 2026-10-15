@@ -26,7 +26,7 @@ const sections: LegalSection[] = [
     title: "Programări și estimări",
     paragraphs: [
       "Programările se stabilesc prin WhatsApp sau telefon. Un mesaj trimis de tine nu reprezintă o programare confirmată. Programarea devine valabilă doar după confirmarea din partea studioului.",
-      "Nu publicăm prețuri fixe. Costul final se stabilește după discuția despre idee, dimensiune, zonă și complexitate, iar estimarea primită este orientativă până la stabilirea detaliilor lucrării.",
+      "Prețurile pentru piercing sunt afișate pe pagina Prețuri. Tatuajele se calculează după timpul de lucru, iar costul final se stabilește după discuția despre idee, dimensiune, zonă și complexitate. Estimarea primită pentru un tatuaj este orientativă până la stabilirea detaliilor lucrării.",
     ],
   },
   {

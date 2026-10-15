@@ -194,6 +194,12 @@ export default function HomeMain() {
           <p>Fără imagini de catalog. Doar tatuaje și piercinguri realizate în studio, văzute de aproape.</p>
         </div>
         <Gallery />
+        <p className="lp-portfolio-more">
+          <Link className="text-arrow" href="/portofoliu">
+            {"VEZI TOT PORTOFOLIUL "}
+            <span>↗</span>
+          </Link>
+        </p>
       </section>
       <section className="studio-banner" id="studio">
         <img src="/assets/studio.webp" loading="lazy" alt="Interiorul salonului Hasha Tattoo din București" />

@@ -1,3 +1,5 @@
+import { PIERCING_PRICES, TATTOO_PRICE_FACTORS, lei } from "./prices";
+
 export type LandingFaq = { q: string; a: string };
 
 export type Landing = {
@@ -34,7 +36,7 @@ export type Landing = {
   healing: { kicker: string; title: [string, string]; text: string; rows: { k: string; v: string }[]; note: string };
   aftercare: { title: [string, string]; text: string; do: string[]; avoid: string[] };
   gallery: { image: string; alt: string; label: string }[];
-  pricing: { title: [string, string]; text: string; factors: string[] };
+  pricing: { title: [string, string]; text: string; factors: string[]; list?: { k: string; v: string }[] };
   faq: LandingFaq[];
   related: string[];
   quote: { service: string; title: [string, string]; text: string };
@@ -186,8 +188,8 @@ export const landings: Landing[] = [
       title: ["Ce se întâmplă", "după tatuaj."],
       text: "Vindecarea diferă de la o persoană la alta și în funcție de zonă, dar etapele sunt asemănătoare.",
       rows: [
-        { k: "PRIMELE ZILE", v: "Zona poate fi roșie, sensibilă și ușor umflată. Respectă strict indicațiile primite de la artist pentru bandaj și spălare." },
-        { k: "PRIMELE SĂPTĂMÂNI", v: "Pielea se descuamă și poate mânca. Nu scărpina și nu dezlipi crustele, pentru că pot lua pigmentul odată cu ele." },
+        { k: "PRIMELE 7 ZILE", v: "Prima fază de vindecare. Zona poate fi roșie, sensibilă și ușor umflată. Respectă strict indicațiile primite de la artist pentru bandaj și spălare." },
+        { k: "PÂNĂ LA 3 SAU 6 SĂPTĂMÂNI", v: "Pielea se descuamă și poate mânca. Nu scărpina și nu dezlipi crustele, pentru că pot lua pigmentul odată cu ele. Vindecarea completă durează de obicei între 3 și 6 săptămâni." },
         { k: "DUPĂ VINDECAREA DE SUPRAFAȚĂ", v: "Culoarea poate părea mai pală o perioadă. Pielea se așază treptat, iar aspectul final se vede după ce se termină vindecarea." },
         { k: "PE TERMEN LUNG", v: "Protecția împotriva soarelui ajută la păstrarea contrastului. Orice tatuaj se schimbă ușor în timp." },
       ],
@@ -197,8 +199,9 @@ export const landings: Landing[] = [
       title: ["Îngrijirea", "tatuajului nou."],
       text: "Tipul de bandaj și durata îngrijirii diferă în funcție de lucrare. Urmează indicațiile scrise primite de la artist. Regulile de mai jos sunt cele valabile în general.",
       do: [
-        "Păstrează pielea curată și spală-o delicat, doar când ți se recomandă.",
-        "Folosește numai produsele indicate de artist.",
+        "Păstrează bandajul câteva ore, conform indicațiilor artistului.",
+        "Spală delicat cu apă călduță și săpun antibacterian, doar când ți se recomandă.",
+        "Aplică un strat subțire de cremă pentru tatuaje, după indicațiile primite.",
         "Poartă haine largi și curate peste zonă.",
         "Hidratează pielea după ce s-a vindecat la suprafață, conform recomandărilor primite.",
         "Scrie-ne pe WhatsApp dacă ai dubii în timpul vindecării.",
@@ -221,8 +224,8 @@ export const landings: Landing[] = [
     ],
     pricing: {
       title: ["Cât costă", "un tatuaj."],
-      text: "Nu publicăm sume orientative, pentru că prețul real depinde de lucrarea ta. După ce discutăm ideea, îți oferim o estimare clară, înainte să te angajezi la ceva.",
-      factors: ["Dimensiunea lucrării", "Complexitatea designului", "Zona corpului", "Timpul de execuție", "Numărul de ședințe"],
+      text: "Prețurile pentru tatuaje se calculează după timpul de lucru. Nu avem tarife fixe, pentru că fiecare lucrare e diferită. După ce discutăm ideea, îți oferim o estimare clară, înainte să te angajezi la ceva. Pentru tatuaje mici și simple poți suna sau scrie direct pe WhatsApp.",
+      factors: TATTOO_PRICE_FACTORS,
     },
     faq: [
       { q: "Cum se face un tatuaj?", a: "Un aparat electric introduce cerneala în piele cu ajutorul unor ace sterile. Pielea se vindecă apoi în jurul pigmentului, iar desenul rămâne vizibil." },
@@ -232,7 +235,7 @@ export const landings: Landing[] = [
       { q: "Pot veni cu propriul design sau cu referințe?", a: "Da. Ne poți trimite imagini, schițe sau idei. Artistul le adaptează zonei și proporțiilor corpului tău, iar tu aprobi varianta finală înainte de ședință." },
       { q: "Pot modifica designul după ce l-am văzut?", a: "Da. Ajustăm împreună designul până când arată cum îți dorești. Nu începem lucrarea până nu ești mulțumit." },
       { q: "Cum mă programez?", a: "Cel mai simplu este pe WhatsApp, la +40 766 422 219. Ne spui ideea, zona și, dacă ai, imagini de referință. Poți suna și luni până vineri, între 12:00 și 20:00." },
-      { q: "Cât costă un tatuaj?", a: "Nu publicăm sume orientative, pentru că prețul depinde de dimensiune, complexitate, zonă și timpul de execuție. Îți oferim o estimare după ce discutăm ideea ta pe WhatsApp." },
+      { q: "Cât costă un tatuaj?", a: "Tatuajele se calculează după timpul de lucru. Prețul depinde de complexitate, dimensiune, zonă, culoare sau monocrom, detaliile designului și experiența artistului. Îți oferim o estimare după ce discutăm ideea ta. Pentru tatuaje mici și simple poți suna sau scrie pe WhatsApp." },
       { q: "Sunt tușurile sigure pentru piele?", a: "Folosim tușuri vegane, de la producători cunoscuți. Totuși, reacțiile individuale pot apărea. Dacă ai alergii sau afecțiuni ale pielii, spune-ne înainte de ședință." },
       { q: "Cum îngrijesc un tatuaj nou?", a: "Tipul de bandaj și perioada de îngrijire diferă în funcție de lucrare. Urmează indicațiile scrise primite de la artist: păstrează pielea curată, spală delicat când ți se recomandă și folosește doar produsele indicate. Dacă ai dubii în timpul vindecării, scrie-ne pe WhatsApp și te îndrumăm." },
       { q: "Ce trebuie să evit după ședință?", a: "Evită piscina, marea, băile prelungite, soarele direct, scărpinatul, hainele care freacă zona și efortul care irită pielea. Respectă perioada de vindecare recomandată de artist." },
@@ -337,7 +340,7 @@ export const landings: Landing[] = [
         image: "pierce-7.webp",
         alt: "Piercing industrial în ureche, realizat la Hasha Tattoo",
         label: "CONSULTAȚIE",
-        tags: ["Scrie-ne pe WhatsApp"],
+        tags: ["Nas", "Septum", "Sprânceană", "Buză"],
       },
     ],
     benefitsTitle: ["De ce să alegi", "Hasha", "Tattoo."],
@@ -395,7 +398,8 @@ export const landings: Landing[] = [
         { k: "HELIX ȘI ANTI-HELIX", v: "Cartilajul se vindecă lent și în straturi, de obicei 3 până la 6 luni sau mai mult." },
         { k: "INDUSTRIAL", v: "Pot fi necesare luni bune, adesea 6 până la 12 luni, până la o vindecare completă." },
         { k: "BURIC", v: "De regulă 6 până la 12 luni." },
-        { k: "LIMBĂ", v: "Umflarea scade în primele zile, iar vindecarea durează de obicei câteva săptămâni." },
+        { k: "LIMBĂ", v: "Vindecarea durează de obicei între 4 și 6 săptămâni. Clătește cu apă sărată caldă și evită fumatul cel puțin 3 până la 4 zile." },
+        { k: "NAS", v: "Curăță piercingul de două ori pe zi în primele 3 luni." },
         { k: "SUPRAFAȚĂ", v: "Poate dura câteva luni, în funcție de zonă și de cât este solicitată." },
       ],
       note: "Aceste intervale nu sunt garanții. Artistul îți spune la ce să te aștepți pentru piercingul tău și când poți schimba bijuteria.",
@@ -428,8 +432,9 @@ export const landings: Landing[] = [
     ],
     pricing: {
       title: ["Cât costă", "un piercing."],
-      text: "Nu publicăm sume orientative, pentru că prețul depinde de zonă, de bijuterie și de complexitatea montării. După ce discutăm ce îți dorești, îți spunem clar cât costă.",
-      factors: ["Zona piercingului", "Bijuteria aleasă", "Numărul de piercinguri", "Complexitatea montării"],
+      text: "La piercing avem prețuri afișate, în lei. Lista de mai jos cuprinde zonele cele mai frecvente, iar lista completă este pe pagina Prețuri. Dacă ai dubii sau vrei mai multe piercinguri într-o singură programare, scrie-ne pe WhatsApp.",
+      factors: ["Zona piercingului", "Bijuteria aleasă", "Numărul de piercinguri", "Manopera, la schimbare sau verificare"],
+      list: PIERCING_PRICES.slice(0, 8).map((r) => ({ k: r.name, v: lei(r.price) })),
     },
     faq: [
       { q: "Ce piercinguri se pot face în ureche?", a: "De la piercinguri simple până la industrial și compoziții cu mai multe bijuterii. Alegem împreună locul potrivit anatomiei tale." },
@@ -444,7 +449,7 @@ export const landings: Landing[] = [
       { q: "Cum îmi îngrijesc piercingul anti-helix?", a: "Cartilajul se vindecă lent și în straturi, așa că ai nevoie de răbdare. Urmează instrucțiunile artistului și nu forța bijuteria." },
       { q: "Pot să schimb singur bijuteria?", a: "Nu în perioada de vindecare. Scrie-ne și îți spunem când este momentul potrivit pentru schimbare." },
       { q: "Cum mă programez?", a: "Cel mai simplu este pe WhatsApp, la +40 766 422 219. Ne spui ce zonă te interesează și, dacă ai, trimiți o imagine cu stilul dorit. Poți suna și luni până vineri, între 12:00 și 20:00." },
-      { q: "Cât costă un piercing?", a: "Nu publicăm sume orientative, pentru că prețul depinde de zonă, bijuterie și complexitate. Îți oferim o estimare după ce discutăm ce îți dorești pe WhatsApp." },
+      { q: "Cât costă un piercing?", a: "Lobul urechii costă 80 lei. Cartilaj, industrial, buric, nas, septum, buză, sprânceană și smiley costă câte 150 lei. Piercingul intim costă 200 lei, iar dermalul 250 lei, cu bijuteria inclusă la ambele. Manopera (schimbare, remontare, verificare, curățare) costă 30 lei. Lista completă este pe pagina Prețuri." },
     ],
     related: ["piercing-ureche-bucuresti", "piercing-buric-bucuresti", "tatuaje", "preturi"],
     quote: {

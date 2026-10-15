@@ -11,11 +11,11 @@ const FILTERS: { key: Category; label: string; count: number }[] = [
   { key: "piercing", label: "PIERCING", count: 8 },
 ];
 
-export default function Gallery() {
+export default function Gallery({ showAll = false }: { showAll?: boolean }) {
   const state = useSyncExternalStore(subscribe, getState, getState);
   const gridRef = useRef<HTMLDivElement>(null);
   const inds = visibleIndices(state.category);
-  const showing = state.expanded ? inds : inds.slice(0, INITIAL_VISIBLE);
+  const showing = state.expanded || showAll ? inds : inds.slice(0, INITIAL_VISIBLE);
 
   return (
     <>
@@ -64,7 +64,7 @@ export default function Gallery() {
         className="load-more"
         type="button"
         id="loadMore"
-        hidden={inds.length <= INITIAL_VISIBLE}
+        hidden={showAll || inds.length <= INITIAL_VISIBLE}
         onClick={() => {
           const wasExpanded = getState().expanded;
           toggleExpanded();

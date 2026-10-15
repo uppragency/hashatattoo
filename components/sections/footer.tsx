@@ -41,13 +41,16 @@ export default function Footer() {
               <Link href="/piercing">Piercing</Link>
             </li>
             <li>
-              <Link href="/#portofoliu">Portofoliu</Link>
+              <Link href="/portofoliu">Portofoliu</Link>
+            </li>
+            <li>
+              <Link href="/preturi">Prețuri</Link>
             </li>
             <li>
               <Link href="/despre-noi">Despre noi</Link>
             </li>
             <li>
-              <Link href="/preturi">Prețuri</Link>
+              <Link href="/intrebari-frecvente">Întrebări frecvente</Link>
             </li>
           </ul>
         </nav>
@@ -68,7 +71,7 @@ export default function Footer() {
           </p>
         </div>
         <nav className="hasha-footer__group" aria-labelledby="hasha-contact">
-          <h3 id="hasha-contact" className="hasha-footer__label">Contact</h3>
+          <h3 id="hasha-contact" className="hasha-footer__label"><Link href="/contact">Contact</Link></h3>
           <ul className="hasha-footer__links">
             <li>
               <a href="tel:+40766422219" data-cta="call">+40 766 422 219</a>

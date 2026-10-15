@@ -19,9 +19,19 @@ export type Service = {
   short: string;
 };
 
-const PRICE_FAQ = {
+const TATTOO_PRICE_FAQ = {
   q: "Cât costă?",
-  a: "Nu publicăm sume orientative, pentru că prețul depinde de dimensiune, complexitate, zonă și timpul de execuție. Îți oferim o estimare după ce discutăm ideea ta pe WhatsApp.",
+  a: "Tatuajele se calculează după timpul de lucru. Prețul depinde de complexitate, dimensiune, zonă, culoare sau monocrom, detaliile designului și experiența artistului. Îți oferim o estimare după ce discutăm ideea ta. Pentru tatuaje mici și simple poți suna sau scrie pe WhatsApp.",
+};
+
+const EAR_PRICE_FAQ = {
+  q: "Cât costă?",
+  a: "Lobul urechii costă 80 lei, iar piercingurile în cartilaj și industrial costă 150 lei. Lista completă de prețuri este pe pagina Prețuri.",
+};
+
+const NAVEL_PRICE_FAQ = {
+  q: "Cât costă?",
+  a: "Piercingul în buric costă 150 lei. Lista completă de prețuri este pe pagina Prețuri.",
 };
 
 export const services: Service[] = [
@@ -53,7 +63,7 @@ export const services: Service[] = [
       { q: "Ce este un tatuaj realist?", a: "Este un stil care redă cât mai fidel un portret, un obiect sau o scenă, prin gradații fine de umbre și lumini. Poate fi realizat în alb și negru sau în culori." },
       { q: "Cât durează un tatuaj realist?", a: "Depinde de dimensiune, nivelul de detaliu și zonă. Unele lucrări se termină într-o ședință, altele necesită mai multe. Îți spunem estimarea după ce vedem designul." },
       { q: "Pot veni cu o fotografie de referință?", a: "Da. O imagine clară ajută mult. Artistul o adaptează zonei și proporțiilor corpului tău, iar tu aprobi varianta finală înainte de ședință." },
-      PRICE_FAQ,
+      TATTOO_PRICE_FAQ,
     ],
     cta: ["Hai să discutăm", "despre tatuajul tău realist."],
     short: "TATUAJE REALISM",
@@ -86,7 +96,7 @@ export const services: Service[] = [
       { q: "Ce înseamnă black and grey?", a: "Este un stil de tatuaj realizat în negru și nuanțe de gri, fără culori. Gradările de gri se obțin prin diluarea tușului negru." },
       { q: "Pot combina black and grey cu alte stiluri?", a: "Da. Discutăm ideea ta și vedem cum se poate îmbina, de exemplu cu elemente ornamentale sau cu un portret realist." },
       { q: "Cum păstrez tatuajul în timp?", a: "Orice tatuaj se schimbă în timp. Îngrijirea corectă în perioada de vindecare și protecția împotriva soarelui ajută la păstrarea contrastului. Artistul îți explică exact ce ai de făcut." },
-      PRICE_FAQ,
+      TATTOO_PRICE_FAQ,
     ],
     cta: ["Hai să discutăm", "despre tatuajul tău."],
     short: "TATUAJE BLACK AND GREY",
@@ -119,7 +129,7 @@ export const services: Service[] = [
       { q: "Ce piercinguri se pot face în ureche?", a: "De la piercinguri simple până la industrial și compoziții cu mai multe bijuterii. Alegem împreună locul potrivit anatomiei tale." },
       { q: "Doare piercingul în ureche?", a: "Senzația diferă de la o persoană la alta și în funcție de zona aleasă. Artistul îți explică la ce să te aștepți înainte de montare." },
       { q: "Cum îngrijesc un piercing nou?", a: "Primești instrucțiuni clare la finalul ședinței. Perioada de vindecare diferă în funcție de zonă și de persoană, iar dacă ai dubii ne poți scrie pe WhatsApp." },
-      PRICE_FAQ,
+      EAR_PRICE_FAQ,
     ],
     cta: ["Hai să discutăm", "despre piercingul tău."],
     short: "PIERCING URECHE",
@@ -152,7 +162,7 @@ export const services: Service[] = [
       { q: "Cum se alege bijuteria pentru buric?", a: "Ne uităm la anatomia ta, la poziția dorită și la stilul preferat. Îți prezentăm variantele disponibile, iar alegerea finală îți aparține." },
       { q: "Doare piercingul în buric?", a: "Senzația diferă de la o persoană la alta. Artistul îți explică procesul înainte de montare, ca să știi la ce să te aștepți." },
       { q: "Cum îngrijesc un piercing nou?", a: "Primești instrucțiuni clare la finalul ședinței. Vindecarea diferă de la o persoană la alta, iar dacă ai dubii ne poți scrie pe WhatsApp." },
-      PRICE_FAQ,
+      NAVEL_PRICE_FAQ,
     ],
     cta: ["Hai să discutăm", "despre piercingul tău."],
     short: "PIERCING BURIC",
