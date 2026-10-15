@@ -2,6 +2,7 @@
 import Link from "next/link";
 import Year from "@/components/Year";
 import BackToTop from "@/components/BackToTop";
+import ExploreLinks from "@/components/ExploreLinks";
 
 export default function Footer() {
   return (
@@ -33,29 +34,7 @@ export default function Footer() {
       <div className="hasha-footer__details">
         <nav className="hasha-footer__group" aria-labelledby="hasha-explore">
           <h3 id="hasha-explore" className="hasha-footer__label">Explorează</h3>
-          <ul className="hasha-footer__links">
-            <li>
-              <Link href="/tatuaje">Tatuaje</Link>
-            </li>
-            <li>
-              <Link href="/piercing">Piercing</Link>
-            </li>
-            <li>
-              <Link href="/portofoliu">Portofoliu</Link>
-            </li>
-            <li>
-              <Link href="/preturi">Prețuri</Link>
-            </li>
-            <li>
-              <Link href="/despre-noi">Despre noi</Link>
-            </li>
-            <li>
-              <Link href="/ghiduri">Ghiduri</Link>
-            </li>
-            <li>
-              <Link href="/intrebari-frecvente">Întrebări frecvente</Link>
-            </li>
-          </ul>
+          <ExploreLinks />
         </nav>
         <div className="hasha-footer__group">
           <h3 className="hasha-footer__label">Ne găsești</h3>

@@ -8,7 +8,7 @@ import { pageMetadata } from "@/lib/seo";
 export const dynamicParams = false;
 
 export function generateStaticParams() {
-  return publishedGuides().map((g) => ({ slug: g.slug }));
+  return publishedGuides().filter((g) => guideContent[g.slug]).map((g) => ({ slug: g.slug }));
 }
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {

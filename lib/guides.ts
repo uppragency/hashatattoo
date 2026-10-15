@@ -18,6 +18,10 @@ export type Guide = {
   metaDescription: string;
   /** descriere scurtă a imaginii din hero */
   imageAlt: string;
+  /** "tool" = pagină interactivă cu rută proprie, fără conținut de articol */
+  kind?: "tool";
+  /** text pe butonul cardului */
+  cardCta?: string;
 };
 
 export const guides: Guide[] = [
@@ -102,6 +106,36 @@ export const guides: Guide[] = [
     category: "Tatuaje",
     readMin: 20,
     image: "lucrare-7.webp",
+    published: true,
+    date: "2026-10-16",
+  },
+  {
+    slug: "harta-durerii",
+    kind: "tool",
+    cardCta: "DESCHIDE HARTA ",
+    title: "Harta durerii: cât doare un tatuaj, pe zone",
+    heroTitle: ["Harta durerii:", "cât doare pe zone."],
+    excerpt: "Alegi o zonă a corpului și vezi o scară orientativă a durerii, ce simți și ce te ajută.",
+    metaTitle: "Harta durerii la tatuaj: cât doare pe fiecare zonă | Hasha Tattoo",
+    metaDescription: "Hartă interactivă a durerii la tatuaj: alege zona corpului și vezi cât doare orientativ, ce simți și cum faci ședința mai suportabilă. Hasha Tattoo, București.",
+    imageAlt: "Tatuaj realizat la Hasha Tattoo București, pe antebraț",
+    category: "Tatuaje",
+    readMin: 4,
+    image: "lucrare-9.webp",
+    published: true,
+    date: "2026-10-16",
+  },
+  {
+    slug: "pentru-cei-care-se-tem-de-tatuaj",
+    title: "Pentru cei care se tem de tatuaj",
+    heroTitle: ["Pentru cei care", "se tem de tatuaj."],
+    excerpt: "Frica de durere, de regret sau de ac este normală. Ce o provoacă, ce o liniștește și cum faci primul pas în ritmul tău.",
+    metaTitle: "Ți-e frică de tatuaj? Ghid pentru cei care se tem | Hasha Tattoo",
+    metaDescription: "Ți-e frică de durere, de ace sau de regret? Ghid blând pentru primul tatuaj sau piercing: ce provoacă frica, cum o reduci și cum faci primul pas în ritmul tău.",
+    imageAlt: "Tatuaj realist pe braț, realizat la Hasha Tattoo București",
+    category: "Tatuaje",
+    readMin: 12,
+    image: "lucrare-12.webp",
     published: true,
     date: "2026-10-16",
   },

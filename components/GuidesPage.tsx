@@ -15,13 +15,13 @@ function Card({ g }: { g: Guide }) {
       </div>
       <div className="lp-guide-card-body">
         <small>
-          {g.category.toUpperCase()} / {g.readMin} MIN CITIT
+          {g.category.toUpperCase()} / {g.kind === "tool" ? "INTERACTIV" : `${g.readMin} MIN CITIT`}
         </small>
         <h3>{g.title}</h3>
         <p>{g.excerpt}</p>
         {g.published ? (
           <span className="text-arrow">
-            {"CITEȘTE GHIDUL "}
+            {g.cardCta ?? "CITEȘTE GHIDUL "}
             <span>↗</span>
           </span>
         ) : null}

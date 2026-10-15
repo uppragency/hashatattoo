@@ -196,7 +196,7 @@ const content: GuideContent = {
           ],
         },
         "Nu folosi creme sau spray-uri anestezice fără să discuți mai întâi cu artistul. Unele produse pot modifica textura pielii sau pot afecta modul în care cerneala se așază, iar efectul lor diferă de la produs la produs.",
-        "Mai multe detalii despre pregătirea corpului găsești în ghidul despre [cum te pregătești pentru ședința de tatuaj](/ghiduri/cum-te-pregatesti-pentru-sedinta-de-tatuaj).",
+        "Poți vedea cum diferă zonele în [harta durerii](/ghiduri/harta-durerii). Mai multe detalii despre pregătirea corpului găsești în ghidul despre [cum te pregătești pentru ședința de tatuaj](/ghiduri/cum-te-pregatesti-pentru-sedinta-de-tatuaj). Dacă te simți neliniștit, citește și [pentru cei care se tem de tatuaj](/ghiduri/pentru-cei-care-se-tem-de-tatuaj).",
       ],
     },
     {
