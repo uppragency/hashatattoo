@@ -1,0 +1,359 @@
+import type { GuideContent } from "@/lib/guide-types";
+
+const content: GuideContent = {
+  intro: [
+    "Ai ieșit din studio cu un tatuaj nou și, probabil, cu aceeași întrebare pe care o au aproape toți clienții: ce fac acum? Răspunsul este mai simplu decât pare, dar contează enorm. Un tatuaj se face în câteva ore, însă calitatea lui finală se decide în zilele și săptămânile care urmează. O lucrare excelentă, îngrijită prost, poate arăta ștearsă, cu zone lipsă sau cu cicatrici. O lucrare bună, îngrijită corect, arată exact așa cum a fost gândită, ani la rând.",
+    "Acest ghid te duce prin vindecare zi cu zi: ce se întâmplă în piele, cum speli tatuajul, ce cremă folosești și cât de mult, cum tratezi coaja și mâncărimea, ce eviți complet și cum deosebești o vindecare normală de o problemă care cere atenție medicală. Scriem pentru oameni care vor reguli clare, nu liste lungi de interdicții fără explicații.",
+    "Un avertisment important de la început: **instrucțiunile primite de la artistul tău au prioritate**. Fiecare artist și fiecare studio folosesc materiale, pansamente și produse ușor diferite, iar pielea fiecărei persoane reacționează diferit. Ce găsești mai jos este baza generală, folosită cu succes la majoritatea tatuajelor, pe care o adaptezi la recomandările primite la studio. Dacă ești la început de drum, citește și ghidul despre [primul tău tatuaj](/ghiduri/primul-tau-tatuaj).",
+  ],
+  sections: [
+    {
+      id: "de-ce-conteaza",
+      h2: "De ce contează atât de mult îngrijirea",
+      blocks: [
+        "Un tatuaj proaspăt este, practic, o rană controlată. Acul a pătruns prin epidermă în dermă, iar cerneala s-a depus în stratul mai profund al pielii. Corpul tratează zona ca pe o leziune: o curăță, o închide și o reconstruiește. Ce faci tu în această perioadă poate ajuta procesul sau îl poate încurca.",
+        { h3: "Ce urmărește îngrijirea corectă" },
+        {
+          ul: [
+            "Prevenirea infecției: pielea deschisă este vulnerabilă la bacterii din mediu, de pe mâini, haine sau suprafețe.",
+            "Menținerea unei vindecări uniforme: o piele hidratată, dar nu înecată, formează coajă subțire și se închide curat.",
+            "Protejarea cernelii: scărpinatul, soarele și apa în exces pot scoate cerneala din piele și lasă zone mai deschise sau pătate.",
+            "Reducerea disconfortului: roșeața, umflătura și mâncărimea sunt mai ușor de suportat când pielea este îngrijită corect.",
+            "Evitarea cicatricilor: o rană irosită cu zgârieturi sau infectată poate lăsa urme permanente.",
+          ],
+        },
+        "Vestea bună este că regulile sunt puține și simple. Dificultatea nu stă în complexitate, ci în disciplina de a le respecta zi de zi, mai ales în momentele în care pielea mănâncă și te îndeamnă să te scarpini.",
+      ],
+    },
+    {
+      id: "etapele-vindecarii",
+      h2: "Cum se vindecă un tatuaj: etapele pe scurt",
+      blocks: [
+        "Vindecarea nu este instantanee și nu este uniformă. Pielea de la suprafață pare vindecată mult mai repede decât straturile de dedesubt. Din acest motiv există două termene: o primă fază, de aproximativ 7 zile, și vindecarea completă, de 3 până la 6 săptămâni.",
+        { table: {
+          head: ["Perioadă", "Ce se întâmplă", "Ce faci tu"],
+          rows: [
+            ["Zilele 1 până la 3", "Roșeață, ușoară umflătură, senzație de arsură solară, posibilă secreție transparentă sau ușor colorată", "Speli blând, usuci prin tamponare, strat foarte subțire de cremă"],
+            ["Zilele 4 până la 7", "Începe descuamarea, apare coaja subțire și mâncărimea", "Continui cu cremă, nu scarpini, nu dezlipești nimic"],
+            ["Zilele 8 până la 14", "Coaja cade treptat, pielea poate părea mată sau tulbure", "Hidratezi ușor, eviți soarele și apa în exces"],
+            ["Săptămânile 3 până la 6", "Pielea de dedesubt se consolidează, culorile devin clare", "Protejezi de soare, observi eventualele zone pentru retuș"],
+          ],
+        } },
+        "Aceste intervale sunt orientative. Un tatuaj mic pe braț poate arăta bine după zece zile, în timp ce o lucrare mare pe coaste sau pe gambă poate necesita mai mult. Nu te grăbi să tragi concluzii în primele două săptămâni, pentru că tatuajele trec printr-o fază în care par plate sau tulburi, înainte de a-și recăpăta luminozitatea.",
+        { h3: "Faza „plictisitoare”: tulbureala pielii" },
+        "Între zilele 10 și 25, mulți clienți se sperie: tatuajul pare acoperit de un văl lăptos, cu contrast mai slab decât în ziua ședinței. Este un strat subțire de piele nouă, pe cale să se normalizeze. De obicei dispare complet de la sine, iar culorile și contrastul revin. Nu încerca să-l îndepărtezi cu exfolianți sau scrub-uri.",
+      ],
+    },
+    {
+      id: "primele-ore",
+      h2: "Primele ore: bandajul și prima curățare",
+      blocks: [
+        "Înainte să pleci din studio, artistul curăță zona și aplică un pansament sau o folie specială. Rolul lui este să protejeze tatuajul de bacterii, frecare și murdărie în primele ore, când pielea este cea mai vulnerabilă.",
+        { h3: "Cât păstrezi bandajul" },
+        "În mod obișnuit, bandajul se păstrează **câteva ore**, nu zile întregi. Durata exactă depinde de tipul de pansament și de recomandarea artistului. Unele folii moderne, respirabile, pot rămâne mai mult, dar numai dacă artistul îți spune explicit acest lucru. Dacă nu primești o instrucțiune diferită, regula generală este să-l scoți după câteva ore, în aceeași zi sau seara.",
+        { h3: "Cum îl scoți fără să rănești pielea" },
+        {
+          ol: [
+            "Spală-te bine pe mâini, cu apă și săpun, și șterge-le cu un prosop curat sau un șervețel de unică folosință.",
+            "Dacă pansamentul se lipește, umezește-l ușor cu apă călduță. Nu-l smulge uscat.",
+            "Dezlipește-l lent, pe direcția creșterii firelor de păr, ținând pielea întinsă cu cealaltă mână.",
+            "Aruncă pansamentul și nu-l reutiliza.",
+            "Nu te alarma dacă vezi pete de lichid transparent, roșiatic sau cerneală pe pansament. Este plasmă amestecată cu cerneală și face parte din procesul normal.",
+          ],
+        },
+        "După scoaterea bandajului, tatuajul va părea lucios, ușor umflat și roșu. Este normal. Urmează prima spălare, pe care o faci imediat.",
+      ],
+    },
+    {
+      id: "spalarea",
+      h2: "Spălarea: de ce, cum și cât de des",
+      blocks: [
+        "Spălarea este gestul care face diferența dintre o vindecare curată și una cu probleme. Scopul este să îndepărtezi plasma uscată, resturile de cerneală și bacteriile de la suprafață, fără să irosești pielea.",
+        { h3: "Ce ai nevoie" },
+        {
+          ul: [
+            "Săpun lichid antibacterian, fără parfum și fără coloranți, cât mai blând posibil.",
+            "Apă călduță, nici fierbinte, nici rece. Apa fierbinte irită, iar cea rece nu spală eficient.",
+            "Prosoape de hârtie curate sau o cârpă curată, de unică folosință.",
+          ],
+        },
+        { h3: "Pașii spălării" },
+        {
+          ol: [
+            "Spală-ți mâinile cu grijă înainte să atingi tatuajul.",
+            "Aplică puțin săpun pe vârfurile degetelor, nu direct pe piele, și masează ușor tatuajul, fără să freci puternic.",
+            "Clătește cu apă călduță până dispare complet săpunul. Reziduurile de săpun irită și usucă pielea.",
+            "Nu folosi burete, mănușă de baie, perie sau prosop textil, care pot păstra bacterii și agresează pielea.",
+            "Usucă prin tamponare, cu hârtie curată, fără frecare. Lasă pielea să se aerisească câteva minute înainte să aplici crema.",
+          ],
+        },
+        { h3: "Cât de des speli" },
+        "În primele zile, de două până la trei ori pe zi: dimineața, seara și, dacă tatuajul s-a murdărit sau ai transpirat, o dată în plus. Nu exagera. Spălarea prea frecventă usucă pielea și întârzie vindecarea. Spălarea prea rară lasă plasma să se usuce și să formeze cruste groase.",
+        {
+          title: "FĂRĂ SĂPUNURI AGRESIVE",
+          note: "Evită alcoolul, apa oxigenată, dezinfectanții puternici și soluțiile iodate pe tatuajul proaspăt, dacă artistul nu ți-a recomandat altceva. Acestea usucă și irită pielea, iar efectul este opus celui dorit.",
+        },
+      ],
+    },
+    {
+      id: "crema",
+      h2: "Crema: ce, cât și cât de des",
+      blocks: [
+        "Crema hidratează pielea și o ajută să nu formeze cruste groase. Dar crema este și cel mai des folosită greșit: oamenii aplică prea mult, prea des sau un produs nepotrivit.",
+        { h3: "Regula de aur: un strat subțire" },
+        "După ce tatuajul s-a uscat, aplică un **strat foarte subțire** de cremă destinată tatuajelor sau o cremă hidratantă neutră, fără parfum, recomandată de artist. Stratul trebuie să fie atât de subțire încât pielea să arate ușor lucioasă, nu unsă. Dacă tatuajul strălucește ca după un sos, ai pus prea mult.",
+        { h3: "De ce prea multă cremă este o problemă" },
+        "Pielea are nevoie să respire. Un strat gros de cremă blochează aerul, ține umezeala în exces, ramolește pielea și creează condiții bune pentru bacterii. În plus, poate scoate cerneala din piele și poate provoca mici bubițe, mai ales în zone cu păr sau cu transpirație abundentă.",
+        { h3: "De câte ori pe zi" },
+        "De obicei, de două până la patru ori pe zi, după fiecare spălare și ori de câte ori pielea se simte întinsă sau uscată. Pe măsură ce vindecarea avansează, frecvența scade. La final, o cremă hidratantă obișnuită, aplicată o dată pe zi, este suficientă.",
+        { h3: "Ce să eviți în compoziție" },
+        {
+          ul: [
+            "Parfumuri și esențe, care pot provoca alergii.",
+            "Alcool în poziții de top ale listei de ingrediente.",
+            "Lanolină și uleiuri grele, în exces, pentru persoanele cu piele sensibilă.",
+            "Creme medicamentoase sau unguente cu antibiotic, folosite fără recomandarea medicului sau a artistului.",
+            "Uleiuri esențiale și remedii naturale improvizate: nu sunt testate pe piele tatuată proaspăt.",
+          ],
+        },
+        "Dacă ai dubii în privința unui produs, întreabă artistul sau un farmacist. Un produs care s-a dovedit bun pentru altcineva poate irita pielea ta.",
+      ],
+    },
+    {
+      id: "coaja",
+      h2: "Coaja, descuamarea și mâncărimea",
+      blocks: [
+        "În jurul zilei a patra sau a cincea, tatuajul începe să se descuameze. Apar fulgi fini, uneori o coajă subțire, colorată de cerneală. Este un semn bun: pielea de la suprafață se reînnoiește. Nu este momentul să intervii.",
+        { h3: "Regula: nu dezlipi nimic" },
+        "Coaja trebuie să cadă singură. Dacă o dezlipești înainte de vreme, pot veni odată cu ea fragmente de cerneală și piele care nu este încă vindecată, lăsând zone mai deschise sau chiar mici cicatrici. Dacă simți că o coajă se desprinde parțial, lasă-o. Nu o smulge și nu o „ajuta”.",
+        { h3: "Coaja groasă este un semn rău?" },
+        "O coajă groasă, galbenă sau maronie, care se crapă sau se infectează, de obicei indică o spălare prea rară sau un strat prea gros de cremă. Nu o scoate cu forța. Spală blând, aplică un strat subțire de cremă și, dacă situația nu se îmbunătățește sau apare puroi, contactează artistul sau medicul.",
+        { h3: "Mâncărimea: cum o gestionezi" },
+        "Mâncărimea este una dintre cele mai deranjante părți ale vindecării. Este cauzată de regenerarea pielii și de uscăciunea ei. Scărpinatul, în schimb, este interzis. Unghiile pot zgâria, pot introduce bacterii și pot smulge coaja.",
+        {
+          ul: [
+            "Bate ușor cu palma peste zona din jur, nu pe tatuaj, pentru a distrage senzația.",
+            "Aplică un strat subțire de cremă hidratantă, care calmează pielea.",
+            "Răcorește zona, fără să o uzi, cu un prosop curat, rece, aplicat deasupra hainelor, dacă tatuajul este acoperit.",
+            "Evită hainele sintetice sau strâmte care frecă zona.",
+            "Ține-ți unghiile tăiate scurt și curate.",
+          ],
+        },
+        "Mâncărimea scade de regulă după prima săptămână. Dacă este foarte intensă și este însoțită de erupții, umflătură sau bășicuțe, poate fi o reacție alergică. Vezi secțiunea despre semnele care necesită atenție.",
+      ],
+    },
+    {
+      id: "ce-eviti",
+      h2: "Ce eviți în perioada de vindecare",
+      blocks: [
+        { h3: "Soarele direct" },
+        "Pielea proaspăt tatuată este mai sensibilă la raze UV, care pot arde zona, pot decolora cerneala și pot întârzia vindecarea. Evită expunerea directă pe toată perioada vindecării. Dacă nu poți evita soarele, acoperă tatuajul cu haine largi, de culoare deschisă. Nu folosi cremă cu protecție solară pe un tatuaj nevindecat. Începe să o folosești doar după ce pielea s-a închis complet, conform recomandării artistului.",
+        { h3: "Apa în exces" },
+        "Duș scurt, da. Baie în cadă, piscină, mare, lac, saună, jacuzzi și sală de baie cu aburi, nu. Imersia prelungită ramolește pielea, o expune la bacterii și poate dezlipi cerneala. Ține zona departe de apă în afara spălării: protejează-o la duș, dacă este nevoie, și usucă-o imediat.",
+        { h3: "Sportul și transpirația abundentă" },
+        "Antrenamentele intense, sala de forță și sporturile cu frecare sau cu mișcare accentuată a zonei tatuate pot irita pielea. Transpirația este un mediu bun pentru bacterii, iar frecarea poate rupe coaja. În primele zile, evită efortul intens, apoi reia treptat. Dacă tatuajul este pe o articulație, cum ar fi cotul sau genunchiul, mișcă-te normal, dar fără să forțezi.",
+        { h3: "Hainele strâmte sau abrazive" },
+        "Poartă haine largi, din bumbac, curate. Blugii strâmți, centurile, curelele rucsacului și hainele sintetice pot freca zona și pot irita coaja. Dacă tatuajul este pe picior, alege pantaloni lejeri. Dacă este pe umăr, evită bretelele rucsacurilor.",
+        { h3: "Alcoolul, fumatul și somnul prost" },
+        "Alcoolul în exces și fumatul încetinesc vindecarea, iar lipsa somnului scade capacitatea corpului de a se regenera. Nu sunt interdicții absolute, dar cu cât menții un stil de viață mai echilibrat în primele două săptămâni, cu atât vindecarea decurge mai bine.",
+        { h3: "Animalele de companie și mediul murdar" },
+        "Nu lăsa animalele să lingă sau să atingă tatuajul. Evită, în primele zile, grădinăritul, curățenia profundă, lucrul cu praf sau cu substanțe chimice și contactul zonei cu suprafețe murdare.",
+        { h3: "Atingerea tatuajului cu mâinile nespălate" },
+        "Pare banal, dar este una dintre cele mai frecvente surse de infecție. Dacă simți nevoia să atingi tatuajul, spală-te mai întâi pe mâini.",
+      ],
+    },
+    {
+      id: "zi-cu-zi",
+      h2: "Planul pe zile: ce faci și când",
+      blocks: [
+        { h3: "Ziua 1: ziua ședinței" },
+        "Păstrezi bandajul câteva ore, conform recomandării artistului. Apoi îl scoți, speli blând zona cu apă călduță și săpun antibacterian, usuci prin tamponare și aplici un strat subțire de cremă. Seara, repeți spălarea și crema. Nu dormi cu tatuajul strivit sub corp, dacă poți evita.",
+        { h3: "Zilele 2 și 3" },
+        "Tatuajul poate fi roșu, umflat ușor și sensibil la atingere. Poate secreta lichid transparent. Speli de două până la trei ori pe zi, aplici crema subțire și porți haine largi. Evită soarele și apa în exces. Dacă tatuajul este pe picior, ține-l ridicat când stai așezat, pentru a reduce umflătura.",
+        { h3: "Zilele 4 până la 7" },
+        "Începe descuamarea, iar mâncărimea apare cu putere. Continuă cu rutina de spălare și cremă, dar scade cantitatea de cremă dacă pielea nu mai este uscată. Nu scărpina și nu dezlipi coaja. În jurul zilei 7 se încheie, de obicei, prima fază de vindecare.",
+        { h3: "Zilele 8 până la 14" },
+        "Coaja cade treptat. Pielea poate părea mată, pătată sau cu zone deschise. Este normal. Hidratează ușor, o dată sau de două ori pe zi. Reia treptat activitatea fizică, evitând frecarea intensă a zonei.",
+        { h3: "Săptămânile 3 până la 6" },
+        "Pielea de dedesubt se consolidează, iar culorile devin clare. Poți continua cu o cremă hidratantă obișnuită, o dată pe zi. Evită în continuare soarele direct. Dacă observi zone care par subțiri, deschise sau lipsă, notează-le: la finalul vindecării completă, artistul le poate corecta prin retuș.",
+      ],
+    },
+    {
+      id: "normal-sau-problema",
+      h2: "Semne normale și semne de alarmă",
+      blocks: [
+        "Cea mai frecventă întrebare după ședință este: „Este normal ce văd?”. Iată o listă care te ajută să deosebești o vindecare firească de o problemă.",
+        { h3: "Normale în primele zile" },
+        {
+          ul: [
+            "Roșeață și ușoară umflătură în jurul tatuajului.",
+            "Senzație de arsură solară sau de căldură ușoară.",
+            "Secreție de lichid transparent sau ușor colorat de cerneală.",
+            "Mâncărime și descuamare începând cu ziua a patra sau a cincea.",
+            "Zone care par mai deschise sau tulburi în a doua și a treia săptămână.",
+          ],
+        },
+        { h3: "Semne care cer atenție" },
+        {
+          ul: [
+            "Roșeață care se extinde pe zi ce trece, în loc să scadă.",
+            "Căldură intensă și durere pulsatilă care se accentuează după prima zi sau a doua.",
+            "Puroi, secreție galbenă sau verzuie, cu miros neplăcut.",
+            "Dungi roșii care pornesc din zona tatuajului spre restul membrului.",
+            "Febră, frisoane sau stare generală alterată.",
+            "Bășicuțe, erupții sau umflături care apar după câteva zile și provoacă mâncărime severă.",
+            "Zone dureroase, ferme la atingere sau cu aspect de rană deschisă.",
+          ],
+        },
+        {
+          title: "CÂND CONTACTEZI UN MEDIC",
+          note: "Dacă apar febră, dungi roșii, puroi sau durere care se agravează, mergi la medic fără să aștepți. Informează și studioul, pentru că pot oferi detalii despre produsele și tehnica folosite. Un tatuaj infectat se tratează medical, nu cu remedii de casă.",
+        },
+        { h3: "Reacții alergice" },
+        "Mai rar, pielea poate reacționa la cerneală, la cremă sau la pansament. Semnele sunt erupții, mâncărime intensă, umflături sau bășicuțe, uneori limitate la anumite culori. Dacă bănuiești o reacție alergică, oprește produsul nou introdus, spală blând și cere părerea unui medic dermatolog sau alergolog.",
+      ],
+    },
+    {
+      id: "zone-speciale",
+      h2: "Zone cu cerințe speciale",
+      blocks: [
+        "Nu toate zonele se vindecă la fel. Anumite locuri sunt mai expuse frecării, murdăriei sau mișcării.",
+        { h3: "Mâini, degete și încheieturi" },
+        "Spălăm mâinile des, le atingem tot timpul și le expunem soarelui. Tatuajele de pe mâini se vindecă mai greu și cerneala se poate estompa mai repede. Spală mâna cu săpun blând doar atunci când este necesar, usucă imediat și aplică un strat subțire de cremă după fiecare spălare. Poartă mănuși de protecție la curățenie.",
+        { h3: "Picioare și glezne" },
+        "Frecarea cu șosetele și încălțămintea este principala problemă. Alege încălțăminte largă și șosete curate, din bumbac. Evită sandalele murdare și mersul desculț pe suprafețe necurate. Ține piciorul ridicat când stai, pentru a reduce umflătura.",
+        { h3: "Coaste, abdomen și zona taliei" },
+        "Respirația și mișcarea trunchiului întind pielea constant. Centurile, elasticele și hainele strâmte pot freca zona. Poartă haine lejere, dormi pe partea opusă și evită mișcările bruște care întind pielea.",
+        { h3: "Gât și față" },
+        "Zonele expuse la guler, păr, machiaj și produse de îngrijire necesită grijă. Ține părul departe de tatuaj, evită gulerele strâmte și machiajul în zonă, și protejează mereu de soare.",
+        { h3: "Zonele cu păr" },
+        "Pielea poate fi mai iritabilă, iar firele de păr pot irita coaja. Nu te rade în zona respectivă pe perioada vindecării. Dacă apar mici bubițe în jurul foliculilor, reduce cantitatea de cremă și păstrează zona curată.",
+      ],
+    },
+    {
+      id: "soare-si-protectie",
+      h2: "Soarele și protecția pe termen lung",
+      blocks: [
+        "Soarele este cel mai mare inamic al unui tatuaj în timp. Radiațiile UV descompun pigmenții din piele, iar culorile se estompează, iar contururile se estompează, devenind mai puțin clare. Tatuajele neprotejate arată după câțiva ani mult mai ștearse decât cele protejate constant.",
+        { h3: "În perioada de vindecare" },
+        "Evită soarele direct complet. Acoperă tatuajul cu haine largi când ieși afară. Nu aplica cremă solară pe piele nevindecată.",
+        { h3: "După vindecare" },
+        "Odată ce pielea s-a vindecat complet, folosește zilnic, pe tatuajele expuse, o cremă cu factor de protecție ridicat, de cel puțin SPF 30, mai ales în sezonul cald și la mare. Reaplică la două ore la expunere prelungită. Este cel mai simplu obicei care păstrează un tatuaj proaspăt ani de zile, mai ales pentru culori și pentru liniile fine.",
+        { h3: "Bronzul și solarul" },
+        "Evită solarul și bronzatul intens pe zona tatuată. Pielea bronzată se descuamează și se schimbă, iar contrastul tatuajului scade. Dacă ai un tatuaj color, protejează-l mai ales, pentru că pigmenții deschiși se estompează cel mai repede.",
+      ],
+    },
+    {
+      id: "retus",
+      h2: "Retușul: când și de ce",
+      blocks: [
+        "Chiar și cu cea mai bună îngrijire, un tatuaj se poate vindeca neuniform. Pielea absoarbe cerneala diferit, iar în unele locuri pot apărea zone mai deschise, mici goluri sau linii mai subțiri decât în ziua ședinței. Retușul este corecția acestor mici imperfecțiuni.",
+        { h3: "Când faci retușul" },
+        "După vindecarea completă, de obicei după cel puțin 4 până la 6 săptămâni. Retușul făcut prea devreme se aplică pe o piele încă sensibilă și poate da rezultate mai slabe. Artistul te va îndruma exact când să revii.",
+        { h3: "Ce îl face necesar" },
+        {
+          ul: [
+            "Scărpinatul sau dezlipirea coajei în timpul vindecării.",
+            "Expunerea la soare sau la apă în perioada sensibilă.",
+            "Aplicarea unui strat prea gros de cremă.",
+            "Zone cu piele mai dificilă: încheieturi, mâini, picioare, cicatrici vechi.",
+            "Particularitățile pielii fiecărei persoane.",
+          ],
+        },
+        "Întreabă la studio care este politica de retuș: în ce interval se poate face și în ce condiții. Un retuș bine făcut este normal și face parte din procesul de vindecare, nu este un semn de lucrare slabă.",
+      ],
+    },
+    {
+      id: "mituri",
+      h2: "Mituri frecvente despre îngrijirea tatuajelor",
+      blocks: [
+        { h3: "„Cu cât pun mai multă cremă, cu atât se vindecă mai bine”" },
+        "Fals. Excesul de cremă blochează pielea, favorizează bacteriile și poate scoate cerneala. Un strat subțire este suficient.",
+        { h3: "„Trebuie să-l țin acoperit cu folie câteva zile”" },
+        "Depinde de tipul de pansament și de recomandarea artistului. În mod obișnuit, bandajul se păstrează câteva ore. Păstrat prea mult, poate provoca iritații și umezeală.",
+        { h3: "„Un tatuaj uscat se vindecă mai repede”" },
+        "Pielea trebuie curată și protejată, dar nu uscată excesiv. Uscăciunea extremă face coaja să crape și să se desprindă înainte de vreme.",
+        { h3: "„Apa de mare dezinfectează tatuajul”" },
+        "Fals și riscant. Apa de mare, ca și cea din piscine, lacuri sau râuri, poate conține bacterii și iritanți care întârzie vindecarea sau provoacă infecții.",
+        { h3: "„Alcoolul sanitar este cel mai bun dezinfectant”" },
+        "Alcoolul irită și usucă pielea tatuată. Săpunul blând și apa călduță sunt mai potrivite, dacă artistul nu recomandă altceva.",
+        { h3: "„Dacă nu mă mai mănâncă, s-a vindecat”" },
+        "Mâncărimea dispare de obicei înainte de vindecarea completă a straturilor de dedesubt. Continuă să protejezi tatuajul de soare și apă în exces până la 3 sau 6 săptămâni.",
+        { h3: "„Unele creme îl fac să arate mai bine imediat”" },
+        "Orice produs care promite efecte instantanee merită tratat cu suspiciune. Un tatuaj arată bine datorită artistului, ingredientelor corecte și timpului, nu unei cutii cu promisiuni.",
+      ],
+    },
+    {
+      id: "checklist",
+      h2: "Lista scurtă pentru fiecare zi",
+      blocks: [
+        "Pentru ca informațiile să nu rămână doar teorie, iată un rezumat pe care îl poți salva pe telefon.",
+        {
+          ul: [
+            "Spală-te pe mâini înainte să atingi tatuajul.",
+            "Spală tatuajul de două până la trei ori pe zi cu apă călduță și săpun antibacterian, fără parfum.",
+            "Usucă prin tamponare cu hârtie curată.",
+            "Aplică un strat foarte subțire de cremă destinată tatuajelor.",
+            "Nu scărpina, nu dezlipi coaja, nu ciupi.",
+            "Poartă haine largi și curate.",
+            "Fără soare direct, piscină, mare, saună și sală intensă în primele săptămâni.",
+            "Dormi bine, bea apă și mănâncă echilibrat.",
+            "Urmărește evoluția: dacă apar semne de alarmă, nu aștepta.",
+            "La final, protejează tatuajul zilnic cu SPF 30 sau mai mult.",
+          ],
+        },
+        "Dacă ai urmat acești pași, ai făcut tot ce depinde de tine. Restul este treaba pielii tale și a timpului. Tatuajul tău va arăta exact cum a fost gândit, iar tu vei avea un motiv în plus să fii mulțumit de decizia de a investi într-o lucrare bună.",
+      ],
+    },
+  ],
+  faq: [
+    {
+      q: "Cât timp păstrez bandajul după tatuaj?",
+      a: "În mod obișnuit, câteva ore, conform recomandării artistului. După aceea îl scoți, speli blând zona cu apă călduță și săpun antibacterian, usuci prin tamponare și aplici un strat subțire de cremă. Unele folii moderne pot rămâne mai mult, dar numai dacă artistul îți spune explicit acest lucru.",
+    },
+    {
+      q: "Ce cremă folosesc pentru un tatuaj nou?",
+      a: "Una destinată tatuajelor sau o cremă hidratantă neutră, fără parfum și fără alcool, recomandată de artist. Aplic un strat foarte subțire, de două până la patru ori pe zi, după spălare. Evit unguentele medicamentoase fără sfatul medicului.",
+    },
+    {
+      q: "Pot face duș cu tatuajul nou?",
+      a: "Da, un duș scurt, cu apă călduță, este în regulă. Evită jetul puternic direct pe tatuaj, nu-l ține mult sub apă și usucă-l imediat prin tamponare. Baia în cadă, piscina, marea și sauna sunt interzise în perioada de vindecare.",
+    },
+    {
+      q: "Pot scărpina tatuajul dacă mă mănâncă?",
+      a: "Nu. Scărpinatul poate rupe coaja, introduce bacterii și lăsa zone deschise sau cicatrici. Bate ușor cu palma peste zona din jur, aplică un strat subțire de cremă hidratantă și poartă haine largi care nu freacă.",
+    },
+    {
+      q: "Cât durează până se vindecă un tatuaj?",
+      a: "Prima fază durează aproximativ 7 zile, iar vindecarea completă între 3 și 6 săptămâni, în funcție de zonă, de mărimea lucrării și de pielea ta. Mâncărimea poate dispărea mai devreme, dar straturile profunde ale pielii au nevoie de mai mult timp.",
+    },
+    {
+      q: "De ce se descuamă tatuajul și este normal?",
+      a: "Da, este normal. În jurul zilei a patra sau a cincea, pielea de la suprafață începe să se reînnoiască, iar tatuajul se poate descuama sau poate forma o coajă subțire. Las-o să cadă singură, fără să o dezlipești.",
+    },
+    {
+      q: "Pot merge la sală după tatuaj?",
+      a: "Evită efortul intens și frecarea zonei tatuate în primele zile. Transpirația abundentă și mișcările care întind sau freacă pielea pot irita tatuajul. Reia antrenamentele treptat, după ce pielea nu mai este sensibilă, iar dacă ai dubii, întreabă artistul.",
+    },
+    {
+      q: "Pot merge la mare sau în piscină?",
+      a: "Nu în perioada de vindecare. Apa de mare, cea din piscine sau lacuri poate conține bacterii și substanțe care irită pielea și întârzie vindecarea. Așteaptă cel puțin 3 până la 6 săptămâni, până când tatuajul este complet vindecat.",
+    },
+    {
+      q: "Cum știu dacă tatuajul meu este infectat?",
+      a: "Semnele de alarmă includ roșeață care se extinde, durere în creștere, căldură intensă, puroi cu miros neplăcut, dungi roșii spre restul membrului și febră. Dacă observi astfel de semne, mergi la medic și informează studioul. Nu trata singur o infecție cu remedii de casă.",
+    },
+    {
+      q: "Când pot folosi cremă cu protecție solară pe tatuaj?",
+      a: "După ce tatuajul s-a vindecat complet, de obicei după 3 până la 6 săptămâni sau când artistul îți dă aprobarea. De atunci, folosește zilnic SPF 30 sau mai mult pe zonele expuse. Pe piele nevindecată, protecția se face prin acoperire cu haine, nu cu cremă.",
+    },
+  ],
+  cta: {
+    title: ["Ai întrebări despre", "tatuajul tău nou?"],
+    text: "Scrie-ne pe WhatsApp. Dacă ai o nelămurire despre vindecare sau vrei să programezi un retuș, un artist îți răspunde.",
+    wa: "Bună! Am o întrebare despre îngrijirea unui tatuaj făcut la Hasha Tattoo.",
+  },
+  related: ["primul-tau-tatuaj", "cum-te-pregatesti-pentru-sedinta-de-tatuaj", "cum-alegi-stilul-de-tatuaj"],
+};
+
+export default content;
