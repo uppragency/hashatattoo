@@ -35,10 +35,10 @@ export default function Footer() {
           <h3 id="hasha-explore" className="hasha-footer__label">Explorează</h3>
           <ul className="hasha-footer__links">
             <li>
-              <Link href="/#tatuaje">Tatuaje</Link>
+              <Link href="/tatuaje">Tatuaje</Link>
             </li>
             <li>
-              <Link href="/#piercing">Piercing</Link>
+              <Link href="/piercing">Piercing</Link>
             </li>
             <li>
               <Link href="/#portofoliu">Portofoliu</Link>

@@ -51,8 +51,8 @@ export default function SiteHeader() {
           <span>BUCUREȘTI · SECTOR 4</span>
         </Link>
         <nav className="desktop-nav" aria-label="Navigare principală">
-          <Link href="/#tatuaje">TATUAJE</Link>
-          <Link href="/#piercing">PIERCING</Link>
+          <Link href="/tatuaje" aria-current={pathname === "/tatuaje" ? "page" : undefined}>TATUAJE</Link>
+          <Link href="/piercing" aria-current={pathname === "/piercing" ? "page" : undefined}>PIERCING</Link>
           <Link href="/#portofoliu">PORTOFOLIU</Link>
           <Link href="/despre-noi" aria-current={pathname === "/despre-noi" ? "page" : undefined}>
             DESPRE NOI
@@ -82,10 +82,10 @@ export default function SiteHeader() {
           <Link href="/" onClick={closeMenu}>
             ACASĂ <small>01</small>
           </Link>
-          <Link href="/#tatuaje" onClick={closeMenu}>
+          <Link href="/tatuaje" onClick={closeMenu}>
             TATUAJE <small>02</small>
           </Link>
-          <Link href="/#piercing" onClick={closeMenu}>
+          <Link href="/piercing" onClick={closeMenu}>
             PIERCING <small>03</small>
           </Link>
           <Link href="/#portofoliu" onClick={closeMenu}>

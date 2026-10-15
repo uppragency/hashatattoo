@@ -1,7 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import Link from "next/link";
 import Gallery from "@/components/Gallery";
-import FilterLink from "@/components/FilterLink";
 import ConsentMap from "@/components/ConsentMap";
 
 export default function HomeMain() {
@@ -142,12 +141,11 @@ export default function HomeMain() {
               <p>
                 Vii cu o idee, o schiță sau doar o direcție. Împreună alegem designul, dimensiunea și zona potrivită, apoi îl realizăm într-un spațiu curat și liniștit. Fie că ești la primul tatuaj sau la al zecelea, știi exact ce urmează.
               </p>
-              <FilterLink className="text-arrow" href="#portofoliu" filter="tattoo">
+              <Link className="text-arrow" href="/tatuaje">
                 {"VEZI TOATE TATUAJELE "}
                 <span>↗</span>
-              </FilterLink>
+              </Link>
             <div className="discipline-more">
-              <Link href="/tatuaje">TOT DESPRE TATUAJE</Link>
               <Link href="/tatuaje-realism-bucuresti">TATUAJE REALISM</Link>
               <Link href="/tatuaje-black-and-grey-bucuresti">BLACK AND GREY</Link>
             </div>
@@ -170,12 +168,11 @@ export default function HomeMain() {
               <p>
                 Alegem împreună locul, bijuteria și poziția potrivite anatomiei tale. Montarea se face cu instrumente sterile, iar la final primești instrucțiuni clare de îngrijire.
               </p>
-              <FilterLink className="text-arrow" href="#portofoliu" filter="piercing">
+              <Link className="text-arrow" href="/piercing">
                 {"VEZI TOATE PIERCINGURILE "}
                 <span>↗</span>
-              </FilterLink>
+              </Link>
             <div className="discipline-more">
-              <Link href="/piercing">TOT DESPRE PIERCING</Link>
               <Link href="/piercing-ureche-bucuresti">PIERCING URECHE</Link>
               <Link href="/piercing-buric-bucuresti">PIERCING BURIC</Link>
             </div>
