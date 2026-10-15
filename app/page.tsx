@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/seo";
 import { preload } from "react-dom";
 import HomeMain from "@/components/sections/home-main";
 import Footer from "@/components/sections/footer";
@@ -10,13 +11,7 @@ const title = "Salon tatuaje și piercing București | Hasha Tattoo";
 const description =
   "Tatuaje și piercing în București, Sector 4. Ace sterile, tușuri vegane, spațiu privat. Programează-te direct pe WhatsApp, de luni până vineri.";
 
-export const metadata: Metadata = {
-  title,
-  description,
-  alternates: { canonical: "/" },
-  openGraph: { title, description, url: "/" },
-  twitter: { title, description },
-};
+export const metadata: Metadata = pageMetadata(title, description, "/");
 
 const faq: [string, string][] = [
   ["Cum se face un tatuaj?", "Un aparat electric introduce cerneala în piele cu ajutorul unor ace sterile. Pielea se vindecă în jurul pigmentului, iar desenul rămâne vizibil."],
