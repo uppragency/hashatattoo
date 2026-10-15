@@ -231,6 +231,23 @@ const content: GuideContent = {
       ],
     },
     {
+      id: "situatii-speciale",
+      h2: "Situații speciale: vacanță, muncă, somn, animale",
+      blocks: [
+        "Viața nu se oprește în timpul vindecării. Iată cum gestionezi cele mai frecvente situații, fără să compromiți tatuajul.",
+        { h3: "Vacanța și călătoriile" },
+        "Dacă ai o vacanță la mare programată, fă tatuajul cu cel puțin 4 până la 6 săptămâni înainte sau amână-l după întoarcere. Soarele, apa sărată și nisipul sunt cele mai nepotrivite elemente pentru un tatuaj proaspăt. În avion, ia cu tine săpunul și crema în ambalaje mici, pe care să le poți folosi, și evită să atingi tatuajul cu mâinile nespălate pe drum.",
+        { h3: "Munca de birou și munca fizică" },
+        "La birou, riscul principal este frecarea cu haina sau cu marginea mesei. Ai grijă la poziția în care stai. În munca fizică, expunerea la praf, murdărie, transpirație sau substanțe chimice este mai mare. Acoperă zona cu haine curate, schimbă-le zilnic și spală tatuajul imediat ce te întorci acasă. Dacă lucrezi cu produse chimice, discută cu artistul înainte de a programa.",
+        { h3: "Somnul" },
+        "Încearcă să dormi pe partea opusă tatuajului și pe cearșafuri curate, schimbate la două sau trei zile în prima săptămână. Dacă tatuajul secretă lichid, pătează lenjeria, iar petele nu sunt periculoase, dar e bine să o speli. Evită să dormi cu animale de companie în pat în primele zile.",
+        { h3: "Animalele de companie" },
+        "Blana, saliva și ghearele sunt surse de bacterii. Nu lăsa câinele sau pisica să atingă tatuajul și nu te juca cu ei în timp ce zona este descoperită. Spală-te pe mâini după ce îi mângâi, înainte de a atinge tatuajul.",
+        { h3: "Fumatul și alcoolul" },
+        "Nu sunt interzise formal, dar nicotina îngustează vasele de sânge și poate încetini vindecarea, iar alcoolul în exces afectează somnul și regenerarea. Cu cât reduci aceste obiceiuri în prima săptămână, cu atât vindecarea decurge mai bine.",
+      ],
+    },
+    {
       id: "soare-si-protectie",
       h2: "Soarele și protecția pe termen lung",
       blocks: [

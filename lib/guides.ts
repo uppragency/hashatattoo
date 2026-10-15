@@ -60,7 +60,7 @@ export const guides: Guide[] = [
     category: "Tatuaje",
     readMin: 20,
     image: "lucrare-2.webp",
-    published: false,
+    published: true,
     date: "2026-10-16",
   },
   {
@@ -74,7 +74,7 @@ export const guides: Guide[] = [
     category: "Piercing",
     readMin: 20,
     image: "pierce-3.webp",
-    published: false,
+    published: true,
     date: "2026-10-16",
   },
   {
@@ -88,7 +88,7 @@ export const guides: Guide[] = [
     category: "Îngrijire",
     readMin: 20,
     image: "pierce-6.webp",
-    published: false,
+    published: true,
     date: "2026-10-16",
   },
   {
@@ -102,7 +102,7 @@ export const guides: Guide[] = [
     category: "Tatuaje",
     readMin: 20,
     image: "lucrare-7.webp",
-    published: false,
+    published: true,
     date: "2026-10-16",
   },
 ];
