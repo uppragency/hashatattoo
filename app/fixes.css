@@ -485,3 +485,25 @@ a.lp-guide-card:hover .lp-guide-card-img img{transform:scale(1.04)}
 .nf-cta{display:flex;gap:14px;flex-wrap:wrap;margin-top:44px}
 @media(max-width:900px){.nf-grid{grid-template-columns:1fr 1fr}.nf-grid a{padding-right:16px}}
 @media(max-width:560px){.nf-grid{grid-template-columns:1fr}.ss-results a{grid-template-columns:1fr auto}.ss-results small{grid-column:1/-1}.nf-cta .btn{width:100%}}
+
+/* ===== PANOU INTERN ===== */
+.adm{max-width:900px;margin:0 auto;padding:130px 20px 80px;color:var(--ink)}
+.adm h1{font-family:'Cormorant Garamond',Georgia,serif;font-weight:300;font-size:clamp(36px,5vw,56px);letter-spacing:-.03em;margin:0 0 24px}
+.adm header{display:flex;justify-content:space-between;align-items:baseline;gap:16px}
+.adm nav{display:flex;flex-wrap:wrap;gap:8px 18px;margin-bottom:28px;font-size:13px;text-transform:capitalize}
+.adm nav a{color:var(--muted);border-bottom:1px solid transparent;padding-bottom:3px}
+.adm nav a[aria-current="true"]{color:var(--ink);border-color:var(--ink)}
+.adm ul{list-style:none;margin:0;padding:0}
+.adm li{border-top:1px solid var(--line);padding:22px 0}
+.adm-meta{display:flex;flex-wrap:wrap;gap:6px 18px;font-size:13px;color:var(--muted)}
+.adm-meta b{color:var(--ink);font-weight:500;text-transform:uppercase;letter-spacing:.12em;font-size:11px}
+.adm li p{margin:12px 0 16px;line-height:1.7;white-space:pre-wrap;overflow-wrap:anywhere}
+.adm li form{display:flex;flex-wrap:wrap;gap:10px}
+.adm select,.adm li input[name=note]{background:transparent;color:var(--ink);border:1px solid var(--line);padding:10px 12px;font-size:14px;border-radius:0}
+.adm li input[name=note]{flex:1;min-width:200px}
+.adm select option{color:#000}
+.adm-link{background:none;border:1px solid var(--line);color:var(--ink);padding:10px 16px;font-size:12px;letter-spacing:.14em;cursor:pointer}
+.adm-login{display:flex;flex-direction:column;gap:14px;max-width:360px}
+.adm-login label{font-size:10px;letter-spacing:.22em;color:var(--muted)}
+.adm-login input{background:transparent;border:0;border-bottom:1px solid var(--ink);color:var(--ink);padding:12px 0;font-size:20px;outline:none;border-radius:0}
+.adm-login p{color:#e08a7a;margin:0;font-size:14px}

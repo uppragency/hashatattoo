@@ -8,7 +8,7 @@ export const BUSINESS = {
    * Cât timp este null, paginile legale afișează doar numele comercial.
    */
   legalEntity: null as string | null,
-  updated: "15 octombrie 2026",
+  updated: "16 octombrie 2026",
 };
 
 import type { ReactNode } from "react";

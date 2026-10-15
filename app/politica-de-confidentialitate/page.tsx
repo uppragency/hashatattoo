@@ -24,13 +24,14 @@ const sections: LegalSection[] = [
       "Datele colectate prin cookie-uri și servicii terțe, doar dacă ți-ai dat acordul, de exemplu harta Google. Scop: cel descris în Politica cookies. Temei: consimțământul tău (art. 6 alin. 1 lit. a GDPR).",
     ],
     paragraphs: [
-      "Formularul de estimare de pe pagina Prețuri nu trimite date către serverele noastre. Butonul deschide WhatsApp cu un mesaj pregătit, pe care îl trimiți tu.",
+      "Formularul de estimare salvează serviciul ales, zona corpului și descrierea ideii tale într-o bază de date a studioului (Supabase), pentru a te putea contacta și a gestiona solicitările. Nu cerem nume sau telefon în formular. Apoi se deschide WhatsApp cu un mesaj pregătit, pe care îl trimiți tu. Dacă scrii date personale în câmpul de descriere, acestea se salvează la fel.",
     ],
   },
   {
     title: "Cât timp păstrăm datele",
     items: [
       "Conversațiile de programare: cât timp este necesar pentru a răspunde și a derula programarea, apoi cât impun obligațiile legale sau cât este necesar pentru apărarea unui drept al nostru.",
+      "Cererile din formularul de estimare: până la 12 luni de la ultima interacțiune, apoi se șterg.",
       "Datele tehnice ale site-ului: pe perioada scurtă de păstrare a jurnalelor de către furnizorul de găzduire.",
       "Alegerea ta privind cookie-urile: 12 luni, apoi îți cerem din nou acordul.",
     ],
@@ -42,6 +43,7 @@ const sections: LegalSection[] = [
     ],
     items: [
       "Vercel Inc., furnizorul de găzduire al site-ului.",
+      "Supabase Inc., furnizorul bazei de date în care se salvează cererile din formular (regiune UE, Paris).",
       "Meta Platforms (WhatsApp), când ne scrii pe WhatsApp, conform propriilor termeni și politici.",
       "Google (Google Maps), dacă ești de acord cu afișarea hărții.",
       "Autorități publice, doar dacă legea ne obligă.",
