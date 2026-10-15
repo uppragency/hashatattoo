@@ -147,6 +147,7 @@ export default function HomeMain() {
                 <span>↗</span>
               </FilterLink>
             <div className="discipline-more">
+              <Link href="/tatuaje">TOT DESPRE TATUAJE</Link>
               <Link href="/tatuaje-realism-bucuresti">TATUAJE REALISM</Link>
               <Link href="/tatuaje-black-and-grey-bucuresti">BLACK AND GREY</Link>
             </div>
@@ -174,6 +175,7 @@ export default function HomeMain() {
                 <span>↗</span>
               </FilterLink>
             <div className="discipline-more">
+              <Link href="/piercing">TOT DESPRE PIERCING</Link>
               <Link href="/piercing-ureche-bucuresti">PIERCING URECHE</Link>
               <Link href="/piercing-buric-bucuresti">PIERCING BURIC</Link>
             </div>

@@ -158,6 +158,9 @@ export default function ServicePage({ service: s }: { service: Service }) {
             <span>DESCOPERĂ MAI MULT</span>
           </div>
           <div className="service-more-links reveal">
+            <Link className="text-arrow" href={s.slug.startsWith("tatuaje") ? "/tatuaje" : "/piercing"}>
+              {s.slug.startsWith("tatuaje") ? "TOATE TATUAJELE" : "TOATE PIERCINGURILE"} <span>↗</span>
+            </Link>
             {others.map((o) => (
               <Link className="text-arrow" href={`/${o.slug}`} key={o.slug}>
                 {o.short} <span>↗</span>

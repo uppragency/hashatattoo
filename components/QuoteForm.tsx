@@ -3,7 +3,7 @@
 import type { FormEvent } from "react";
 import { WHATSAPP_NUMBER } from "@/lib/site";
 
-export default function QuoteForm() {
+export default function QuoteForm({ defaultService = "" }: { defaultService?: string }) {
   const onSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     const form = e.currentTarget;
@@ -20,7 +20,7 @@ export default function QuoteForm() {
     <form className="quote-form reveal" id="quoteForm" onSubmit={onSubmit}>
       <span className="micro">CERE O ESTIMARE PERSONALIZATĂ</span>
       <label htmlFor="quoteService">SERVICIU</label>
-      <select id="quoteService" required>
+      <select id="quoteService" required defaultValue={defaultService}>
         <option value="">Alege un serviciu</option>
         <option value="tatuaj">Tatuaj</option>
         <option value="piercing">Piercing</option>
