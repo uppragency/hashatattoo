@@ -2,6 +2,7 @@
 import Link from "next/link";
 import Gallery from "@/components/Gallery";
 import FilterLink from "@/components/FilterLink";
+import ConsentMap from "@/components/ConsentMap";
 
 export default function HomeMain() {
   return (
@@ -145,6 +146,10 @@ export default function HomeMain() {
                 {"VEZI TOATE TATUAJELE "}
                 <span>↗</span>
               </FilterLink>
+            <div className="discipline-more">
+              <Link href="/tatuaje-realism-bucuresti">TATUAJE REALISM</Link>
+              <Link href="/tatuaje-black-and-grey-bucuresti">BLACK AND GREY</Link>
+            </div>
             </div>
           </article>
           <article className="discipline discipline-reverse reveal" id="piercing">
@@ -168,6 +173,10 @@ export default function HomeMain() {
                 {"VEZI TOATE PIERCINGURILE "}
                 <span>↗</span>
               </FilterLink>
+            <div className="discipline-more">
+              <Link href="/piercing-ureche-bucuresti">PIERCING URECHE</Link>
+              <Link href="/piercing-buric-bucuresti">PIERCING BURIC</Link>
+            </div>
             </div>
           </article>
         </div>
@@ -495,9 +504,7 @@ export default function HomeMain() {
               </a>
             </div>
           </div>
-          <div className="contact-map reveal">
-            <iframe title="Harta Hasha Tattoo, Bulevardul Mărășești 80, București" loading="lazy" referrerPolicy="no-referrer-when-downgrade" src={"https://www.google.com/maps?q=Bulevardul+M%C4%83r%C4%83%C8%99e%C8%99ti+80+Bucure%C8%99ti&output=embed"} />
-          </div>
+          <ConsentMap />
         </div>
       </section>
     </main>

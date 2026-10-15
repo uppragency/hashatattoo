@@ -1,11 +1,22 @@
 import type { Metadata, Viewport } from "next";
+import "@fontsource/cormorant-garamond/300.css";
+import "@fontsource/cormorant-garamond/400.css";
+import "@fontsource/cormorant-garamond/500.css";
+import "@fontsource/cormorant-garamond/300-italic.css";
+import "@fontsource/cormorant-garamond/400-italic.css";
+import "@fontsource/dm-sans/300.css";
+import "@fontsource/dm-sans/400.css";
+import "@fontsource/dm-sans/500.css";
+import "@fontsource/dm-sans/600.css";
 import "./globals.css";
 import "./transition.css";
+import "./fixes.css";
 import ScrollProgress from "@/components/ScrollProgress";
 import SiteHeader from "@/components/SiteHeader";
 import StickyCta from "@/components/StickyCta";
 import Behavior from "@/components/Behavior";
 import PageTransition from "@/components/PageTransition";
+import CookieBanner from "@/components/CookieBanner";
 import { SITE_URL } from "@/lib/site";
 
 export const metadata: Metadata = {
@@ -33,12 +44,6 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         <noscript>
           <style>{".reveal{opacity:1!important;transform:none!important}"}</style>
         </noscript>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=DM+Sans:wght@300;400;500;600&display=swap"
-          rel="stylesheet"
-        />
       </head>
       <body>
         <ScrollProgress />
@@ -49,6 +54,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         {children}
         <StickyCta />
         <Behavior />
+        <CookieBanner />
         <PageTransition />
       </body>
     </html>

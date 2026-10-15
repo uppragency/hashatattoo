@@ -1,0 +1,85 @@
+/* Corectii peste designul original: hero-ul paginilor interioare creste daca textul nu incape,
+   ca breadcrumb-ul sa nu intre peste logo (10px distanta sub header). */
+.subhero{display:flex;flex-direction:column;justify-content:flex-end;height:auto;max-height:none;min-height:clamp(620px,79svh,920px);padding-top:120px;padding-bottom:clamp(70px,12vh,160px)}
+.subhero>img{position:absolute;inset:0}
+.subhero-content{position:relative;left:auto;right:auto;bottom:auto;margin-left:var(--side);margin-right:var(--side)}
+@media(max-width:650px){
+  .subhero{min-height:max(580px,min(740px,95svh));padding-bottom:80px;padding-top:104px}
+}
+
+/* Lightbox: titlul lucrarii centrat, numaratorul in dreapta; nu mai intra sub butoanele prev/next */
+.lightbox-meta{position:relative;justify-content:center;text-align:center}
+.lightbox-meta #lightboxCount{position:absolute;right:0;top:18px}
+
+/* Footer: linkurile legale in linie, in locul sloganului */
+.hasha-footer__policies{display:flex;flex-wrap:wrap;justify-content:center;gap:8px 28px}
+.hasha-footer__policies a{transition:color .2s}
+.hasha-footer__policies a:hover{color:var(--ink)}
+@media(max-width:650px){.hasha-footer__policies{gap:6px 18px;order:3;width:100%;justify-content:flex-start}}
+
+/* Harta cu consimtamant */
+.map-consent{min-height:420px;height:100%;display:flex;flex-direction:column;align-items:flex-start;justify-content:center;gap:22px;padding:clamp(24px,4vw,56px)}
+.map-consent p{margin:0;max-width:380px;color:var(--soft);line-height:1.8;font-size:15px}
+@media(max-width:650px){.map-consent{min-height:320px}}
+
+/* Cookie banner */
+.cookie-banner{position:fixed;left:20px;bottom:20px;z-index:350;width:min(440px,calc(100vw - 40px));max-height:calc(100svh - 40px);overflow:auto;background:var(--bg2);border:1px solid var(--line);padding:24px;display:flex;flex-direction:column;gap:14px;box-shadow:0 24px 60px rgba(0,0,0,.55)}
+.cookie-text{margin:0;color:var(--soft);font-size:14px;line-height:1.7}
+.cookie-text a{border-bottom:1px solid var(--ink);color:var(--ink)}
+.cookie-options{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
+.cookie-options li{border-bottom:1px solid var(--line)}
+.cookie-options label{display:flex;align-items:center;gap:14px;padding:14px 0;cursor:pointer}
+.cookie-options label>span:last-child{display:flex;flex-direction:column;gap:3px;flex:1}
+.cookie-options b{font-weight:500;font-size:13px}
+.cookie-options small{color:var(--muted);font-size:12px;line-height:1.5}
+.cookie-options input{position:absolute;opacity:0;pointer-events:none}
+.cookie-switch{order:2;flex:none;width:38px;height:22px;border:1px solid var(--line);border-radius:22px;position:relative;transition:background .25s,border-color .25s}
+.cookie-switch::after{content:"";position:absolute;top:3px;left:3px;width:14px;height:14px;border-radius:50%;background:var(--muted);transition:transform .25s,background .25s}
+.cookie-options input:checked+.cookie-switch{background:var(--accent);border-color:var(--accent)}
+.cookie-options input:checked+.cookie-switch::after{transform:translateX(16px);background:#141312}
+.cookie-options input:disabled+.cookie-switch{opacity:.55}
+.cookie-options input:focus-visible+.cookie-switch{outline:1px solid var(--accent);outline-offset:3px}
+.cookie-actions{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.cookie-actions button{min-height:48px;padding:10px 6px;font-size:10px;font-weight:600;letter-spacing:.1em;border:1px solid var(--ink);background:transparent;color:var(--ink);transition:background .25s,color .25s}
+.cookie-actions button:hover{background:var(--ink);color:#141312}
+.cookie-actions button:last-child{background:var(--ink);color:#141312}
+.cookie-actions button:last-child:hover{background:transparent;color:var(--ink)}
+.cookie-close{position:absolute;top:12px;right:12px;width:32px;height:32px;border:1px solid var(--line);background:transparent;color:var(--ink);font-size:14px}
+@media(max-width:650px){
+  .cookie-banner{left:10px;right:10px;bottom:10px;width:auto;padding:18px}
+  .cookie-actions{grid-template-columns:1fr 1fr}
+  .cookie-actions button:last-child{grid-column:1/-1}
+}
+
+/* Pagini legale */
+.legal-page{padding-top:clamp(150px,18vh,200px);padding-bottom:clamp(70px,9vw,130px)}
+.legal-page h1{font-family:'Cormorant Garamond',Georgia,serif;font-weight:300;font-size:clamp(46px,7vw,104px);letter-spacing:-.04em;line-height:.95;margin:clamp(34px,4vw,56px) 0 24px;max-width:1100px}
+.legal-intro{max-width:720px;color:var(--soft);font-size:clamp(16px,1.4vw,19px);line-height:1.8;margin:0 0 clamp(40px,5vw,72px)}
+.legal-body{max-width:820px;border-top:1px solid var(--line)}
+.legal-body section{padding:clamp(28px,3vw,44px) 0;border-bottom:1px solid var(--line)}
+.legal-body h2{display:flex;gap:18px;align-items:baseline;margin:0 0 16px;font-family:'Cormorant Garamond',Georgia,serif;font-weight:400;font-size:clamp(24px,2.4vw,34px);line-height:1.2}
+.legal-body h2 span{font-family:'DM Sans',Arial,sans-serif;font-size:10px;letter-spacing:.2em;color:var(--muted);font-weight:500}
+.legal-body p,.legal-body li{color:var(--soft);line-height:1.85;font-size:15px}
+.legal-body p{margin:0 0 14px}
+.legal-body p:last-child{margin-bottom:0}
+.legal-body ul{margin:0;padding-left:20px}
+.legal-body li{margin-bottom:6px}
+.legal-body a{border-bottom:1px solid var(--line);color:var(--ink)}
+.legal-body a:hover{border-color:var(--ink)}
+.legal-table{width:100%;border-collapse:collapse;margin:8px 0 0;font-size:13px}
+.legal-table th,.legal-table td{text-align:left;vertical-align:top;padding:12px 14px 12px 0;border-bottom:1px solid var(--line);color:var(--soft);line-height:1.6}
+.legal-table th{color:var(--ink);font-weight:500;font-size:10px;letter-spacing:.16em;text-transform:uppercase}
+.legal-table-wrap{overflow-x:auto}
+.legal-actions{margin-top:22px}
+
+/* Pagini servicii */
+.service-hero .subhero-content h1{font-size:clamp(54px,8.2vw,138px);line-height:.9}
+@media(max-width:650px){.service-hero .subhero-content h1{font-size:clamp(40px,12vw,64px)}}
+.service-more{padding-top:clamp(60px,7vw,100px);padding-bottom:clamp(60px,7vw,100px)}
+.service-more-links{display:flex;flex-wrap:wrap;gap:28px 48px;padding-top:44px}
+.discipline-more{display:flex;flex-wrap:wrap;gap:10px 26px;margin-top:26px;font-size:10px;letter-spacing:.16em;font-weight:500;color:var(--muted)}
+.discipline-more a{border-bottom:1px solid var(--line);padding-bottom:6px;transition:color .25s,border-color .25s}
+.discipline-more a:hover{color:var(--ink);border-color:var(--ink)}
+
+/* footer legal row must sit above the overflowing HASHA wordmark so links stay clickable */
+.hasha-footer__legal{position:relative;z-index:3}

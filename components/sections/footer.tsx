@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import Link from "next/link";
 import Year from "@/components/Year";
+import BackToTop from "@/components/BackToTop";
 
 export default function Footer() {
   return (
@@ -99,12 +100,13 @@ export default function Footer() {
           {" HASHA TATTOO"}
         </span>
         {" "}
-        <span>ARTĂ CARE RĂMÂNE.</span>
+        <nav className="hasha-footer__policies" aria-label="Documente legale">
+          <Link href="/termeni-si-conditii">TERMENI ȘI CONDIȚII</Link>
+          <Link href="/politica-de-confidentialitate">POLITICA DE CONFIDENȚIALITATE</Link>
+          <Link href="/politica-cookies">POLITICA COOKIES</Link>
+        </nav>
         {" "}
-        <a href="#main">
-          {"ÎNAPOI SUS "}
-          <span aria-hidden="true">↑</span>
-        </a>
+        <BackToTop />
       </div>
     </footer>
     </>
