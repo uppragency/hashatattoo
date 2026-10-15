@@ -26,7 +26,7 @@ const content: GuideContent = {
         "Dacă răspunsurile sunt în mare parte afirmative, ești pregătit. Dacă unele sunt incerte, nu e o problemă: pur și simplu mai ai de lucrat la plan. Un artist bun te va ajuta și la asta, iar consultația inițială servește exact acestui scop.",
         {
           title: "VÂRSTA ȘI ACTELE",
-          note: "Majoritatea studiourilor lucrează doar cu persoane majore sau cer acordul scris al părinților pentru minori, conform legislației în vigoare. Condițiile concrete se stabilesc la studio, înainte de ședință. Dacă ai dubii, scrie-ne și îți spunem exact ce documente sunt necesare.",
+          note: "Conform Ordinului ministrului sănătății nr. 1648/2024, tatuajul artistic și cosmetic este interzis persoanelor sub 18 ani, chiar și cu acordul părinților. Ședința se face doar la persoane majore, iar la studio ți se poate cere un act de identitate. Detalii despre piercing și vârstă găsești în ghidul despre piercing la minori.",
         },
       ],
     },

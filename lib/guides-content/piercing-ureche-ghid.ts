@@ -253,7 +253,7 @@ const content: GuideContent = {
             "Febră, răceală, stare generală proastă sau lipsă de somn.",
           ],
         },
-        "Vârsta minimă și acordul părinților, pentru minori, depind de legislație și de politica studioului. Condițiile se stabilesc în studio, înainte de procedură.",
+        "Pentru minori, piercingul este reglementat prin Ordinul ministrului sănătății nr. 1648/2024: sub 16 ani este permis doar piercingul în zona urechii, cu acordul părintelui sau al tutorelui. Pentru 16 și 17 ani și pentru detalii, vezi ghidul despre [piercing la minori](/ghiduri/piercing-la-minori-reguli-si-acordul-parintilor).",
       ],
     },
     {
