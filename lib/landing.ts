@@ -242,7 +242,7 @@ export const landings: Landing[] = [
       { q: "Pot face un tatuaj dacă am alergii sau afecțiuni ale pielii?", a: "Spune-ne înainte de programare. Discutăm situația ta și îți spunem ce trebuie să iei în considerare. Pentru probleme medicale, consultă și medicul tău." },
       { q: "Pot să îmi completez sau să îmi schimb un tatuaj mai vechi?", a: "Trimite-ne o fotografie clară a tatuajului și ideea ta. Artistul îți spune ce variante există și ce rezultat este realist." },
     ],
-    related: ["tatuaje-realism-bucuresti", "tatuaje-black-and-grey-bucuresti", "acoperire-tatuaje-bucuresti", "corectare-tatuaje-bucuresti", "piercing", "preturi"],
+    related: ["tatuaje-realism-bucuresti", "tatuaje-black-and-grey-bucuresti", "cover-up-tatuaje-bucuresti", "corectare-tatuaje-bucuresti", "piercing", "preturi"],
     quote: {
       service: "tatuaj",
       title: ["Ai o idee?", "Hai să o discutăm."],

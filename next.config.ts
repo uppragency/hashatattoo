@@ -6,6 +6,7 @@ const nextConfig: NextConfig = {
     return [
       { source: "/index.html", destination: "/", permanent: true },
       { source: "/despre-noi.html", destination: "/despre-noi", permanent: true },
+      { source: "/acoperire-tatuaje-bucuresti", destination: "/cover-up-tatuaje-bucuresti", permanent: true },
       { source: "/preturi.html", destination: "/preturi", permanent: true },
     ];
   },

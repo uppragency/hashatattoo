@@ -102,12 +102,12 @@ export const services: Service[] = [
     short: "TATUAJE BLACK AND GREY",
   },
   {
-    slug: "acoperire-tatuaje-bucuresti",
-    kicker: "ACOPERIRE TATUAJE",
-    h1: ["Acoperire tatuaje", "în București."],
-    title: "Acoperire tatuaje (cover-up) București | Hasha Tattoo",
+    slug: "cover-up-tatuaje-bucuresti",
+    kicker: "COVER-UP TATUAJE",
+    h1: ["Cover-up tatuaje", "în București."],
+    title: "Cover-up tatuaje București | Hasha Tattoo",
     description:
-      "Cover-up în București, Sector 4: acoperirea unui tatuaj vechi cu un design nou, evaluat sincer înainte de ședință. Trimite o poză pe WhatsApp.",
+      "Cover-up tatuaje în București, Sector 4: acoperirea unui tatuaj vechi cu un design nou, evaluat sincer înainte de ședință. Trimite o poză pe WhatsApp.",
     lead: "Un tatuaj vechi, nepotrivit sau făcut în grabă nu trebuie să rămână pe piele pentru totdeauna. Evaluăm sincer ce se poate acoperi și cum, într-un studio privat din Sector 4.",
     heroImage: "lucrare-5.webp",
     heroAlt: "Tatuaj black and grey amplu pe spate, realizat la Hasha Tattoo",
@@ -133,7 +133,7 @@ export const services: Service[] = [
       { q: "Cât costă un cover-up?", a: "Tatuajele se calculează după timpul de lucru, iar un cover-up poate cere mai mult timp decât un tatuaj nou de aceeași mărime. Prețul depinde de dimensiune, detalii și număr de ședințe. Îți dăm o estimare după ce vedem tatuajul vechi." },
     ],
     cta: ["Hai să vedem", "ce se poate acoperi."],
-    short: "ACOPERIRE TATUAJE",
+    short: "COVER-UP TATUAJE",
   },
   {
     slug: "corectare-tatuaje-bucuresti",

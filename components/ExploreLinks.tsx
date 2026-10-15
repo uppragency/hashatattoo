@@ -10,7 +10,7 @@ const LINKS: { href: string; label: string }[] = [
   { href: "/preturi", label: "Prețuri" },
   { href: "/despre-noi", label: "Despre noi" },
   { href: "/ghiduri", label: "Ghiduri" },
-  { href: "/acoperire-tatuaje-bucuresti", label: "Acoperire tatuaje" },
+  { href: "/cover-up-tatuaje-bucuresti", label: "Cover-up tatuaje" },
   { href: "/corectare-tatuaje-bucuresti", label: "Corectare tatuaje" },
   { href: "/zone", label: "Zone și cartiere" },
   { href: "/intrebari-frecvente", label: "Întrebări frecvente" },

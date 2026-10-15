@@ -92,7 +92,7 @@ const content: GuideContent = {
           ],
         },
         { h3: "Ce faci dacă totuși nu-ți mai place" },
-        "Există opțiuni: retușuri, cover-up sau, în unele cazuri, îndepărtarea cu laser, la un specialist. Dacă te interesează, citește despre [acoperirea tatuajelor](/acoperire-tatuaje-bucuresti) și [corectarea tatuajelor](/corectare-tatuaje-bucuresti). Nu este nevoie să trăiești cu frica de „ireversibil”, dar nici nu e bine să te bazezi pe soluții de rezervă ca motiv să te grăbești.",
+        "Există opțiuni: retușuri, cover-up sau, în unele cazuri, îndepărtarea cu laser, la un specialist. Dacă te interesează, citește despre [cover-up tatuaje](/cover-up-tatuaje-bucuresti) și [corectarea tatuajelor](/corectare-tatuaje-bucuresti). Nu este nevoie să trăiești cu frica de „ireversibil”, dar nici nu e bine să te bazezi pe soluții de rezervă ca motiv să te grăbești.",
       ],
     },
     {

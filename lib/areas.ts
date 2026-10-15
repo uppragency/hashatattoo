@@ -207,4 +207,158 @@ export const areas: Area[] = [
   },
 ];
 
+type Spec = {
+  slug: string;
+  name: string;
+  origin: string;
+  /** "pentru Sector 1", "din Militari" etc. */
+  h1b: string;
+  img: string;
+  where: string;
+  ctx: [string, string];
+  card: string;
+  extraQ: { q: string; a: string };
+};
+
+const mk = (x: Spec): Area => ({
+  slug: x.slug,
+  name: x.name,
+  origin: x.origin,
+  h1: ["Tatuaje și piercing", x.h1b],
+  title: `Tatuaje și piercing pentru ${x.name}, București | Hasha Tattoo`,
+  description: `Tatuaje și piercing pentru clienții din ${x.name}, București. Studio privat în Sectorul 4, pe Bulevardul Mărășești nr. 80. Ruta din Google Maps și programare pe WhatsApp.`,
+  lead: `${x.where} Vezi ruta din zona ta în Google Maps și programează-te pe WhatsApp.`,
+  image: x.img,
+  alt: "Lucrare de tatuaj realizată la Hasha Tattoo, București",
+  contextTitle: [`Din ${x.name}`, "până la noi."],
+  context: [x.ctx[0], x.ctx[1]],
+  reasons: [
+    { title: "Programare pe WhatsApp", text: "Ne scrii ideea, zona corpului și referințele, iar fixăm ziua și ora. Poți lămuri totul înainte să te deplasezi." },
+    { title: "Studio privat", text: "Un spațiu liniștit, cu programare, unde lucrăm fără grabă și fără aglomerație." },
+    { title: "Tatuaje și piercing", text: "Același studio pentru tatuaje, cover-up-uri, corectări și piercinguri. Prețurile le găsești pe pagina Prețuri." },
+  ],
+  faq: [...commonFaq(x.name), x.extraQ],
+  card: x.card,
+});
+
+const routeQ = (name: string) => ({
+  q: "Cum aflu cât durează drumul până la studio?",
+  a: `Butoanele din pagină deschid în Google Maps ruta din ${name} până la Bulevardul Mărășești nr. 80, cu traficul actual. Nu dăm un timp fix, pentru că depinde de ora la care pleci și de punctul exact de plecare.`,
+});
+
+areas.push(
+  mk({
+    slug: "sector-1",
+    name: "Sector 1",
+    origin: "Sector 1, București",
+    h1b: "pentru Sector 1.",
+    img: "lucrare-3.webp",
+    where: "Locuiești sau lucrezi în Sectorul 1? Studioul nostru este în Sectorul 4, pe Bulevardul Mărășești nr. 80.",
+    ctx: [
+      "Sectorul 1 este una dintre zonele din care vin clienți care vor un studio privat și o lucrare făcută fără grabă. Studioul este în Sectorul 4, pe Bulevardul Mărășești nr. 80, iar drumul diferă mult în funcție de cartierul din Sectorul 1 din care pleci.",
+      "De aceea nu dăm un timp general. Butoanele de mai jos deschid ruta live în Google Maps, pentru ora la care vrei să ajungi, cu mașina, transportul public sau mersul pe jos.",
+    ],
+    card: "Ruta ta live, din orice cartier al sectorului.",
+    extraQ: routeQ("Sectorul 1"),
+  }),
+  mk({
+    slug: "sector-2",
+    name: "Sector 2",
+    origin: "Sector 2, București",
+    h1b: "pentru Sector 2.",
+    img: "lucrare-4.webp",
+    where: "Vii din Sectorul 2? Studioul nostru este în Sectorul 4, pe Bulevardul Mărășești nr. 80.",
+    ctx: [
+      "Dacă locuiești sau lucrezi în Sectorul 2, ruta până la studio depinde de cartierul din care pornești și de ora la care mergi. Studioul este în Sectorul 4, pe Bulevardul Mărășești nr. 80, într-un spațiu privat, cu programare.",
+      "Fixăm ședința din timp, pe WhatsApp, ca să știi exact la ce oră ajungi. Pentru drum, butoanele de mai jos deschid Google Maps de la zona ta până la studio.",
+    ],
+    card: "Programare din timp, ruta live în Maps.",
+    extraQ: routeQ("Sectorul 2"),
+  }),
+  mk({
+    slug: "sector-6",
+    name: "Sector 6",
+    origin: "Sector 6, București",
+    h1b: "pentru Sector 6.",
+    img: "lucrare-5.webp",
+    where: "Locuiești sau lucrezi în Sectorul 6? Studioul nostru este în Sectorul 4, pe Bulevardul Mărășești nr. 80.",
+    ctx: [
+      "Din Sectorul 6 vin clienți care caută un artist anume sau un studio privat, iar drumul până în Sectorul 4 depinde de cartier și de ora la care pleci. De aceea îți arătăm ruta live, nu o estimare generală.",
+      "Studioul este pe Bulevardul Mărășești nr. 80. Scrie-ne pe WhatsApp, stabilim ziua și ora, iar la ședință ajungi o singură dată, cu ideea, zona și estimarea deja lămurite.",
+    ],
+    card: "Din Militari, Drumul Taberei sau alt cartier.",
+    extraQ: routeQ("Sectorul 6"),
+  }),
+  mk({
+    slug: "militari",
+    name: "Militari",
+    origin: "Militari, București",
+    h1b: "pentru Militari.",
+    img: "lucrare-7.webp",
+    where: "Militari face parte din Sectorul 6. Dacă vii de acolo, studioul nostru este în Sectorul 4, pe Bulevardul Mărășești nr. 80.",
+    ctx: [
+      "Militari este un cartier mare din Sectorul 6, iar drumul până la studio diferă în funcție de punctul din care pleci și de ora la care circuli. Nu dăm un timp fix, pentru că traficul îl schimbă mult.",
+      "Butoanele de mai jos deschid în Google Maps ruta de la Militari până la Bulevardul Mărășești nr. 80, ca să alegi varianta potrivită la ora programării. Fixăm ședința pe WhatsApp, ca să nu faci drumul degeaba.",
+    ],
+    card: "Ruta ta de la Militari, verificată pe ora programării.",
+    extraQ: routeQ("Militari"),
+  }),
+  mk({
+    slug: "drumul-taberei",
+    name: "Drumul Taberei",
+    origin: "Drumul Taberei, București",
+    h1b: "pentru Drumul Taberei.",
+    img: "lucrare-9.webp",
+    where: "Drumul Taberei face parte din Sectorul 6. Dacă vii de acolo, studioul nostru este în Sectorul 4, pe Bulevardul Mărășești nr. 80.",
+    ctx: [
+      "Drumul Taberei este un cartier din Sectorul 6. Drumul până la studio depinde de punctul din care pleci, de mijlocul de transport și de oră, așa că nu dăm o durată generală.",
+      "Poți vedea ruta live în Google Maps cu butoanele de mai jos. Înainte să te deplasezi, lămurim pe WhatsApp ideea, zona corpului și intervalul de programare.",
+    ],
+    card: "Ruta ta din Drumul Taberei, live în Maps.",
+    extraQ: routeQ("Drumul Taberei"),
+  }),
+  mk({
+    slug: "titan",
+    name: "Titan",
+    origin: "Titan, București",
+    h1b: "pentru Titan.",
+    img: "lucrare-11.webp",
+    where: "Titan face parte din Sectorul 3, care se învecinează cu Sectorul 4, unde se află studioul nostru, pe Bulevardul Mărășești nr. 80.",
+    ctx: [
+      "Titan este un cartier din Sectorul 3, sector care se învecinează cu Sectorul 4. Drumul până la studio depinde de punctul exact din care pleci și de ora la care circuli, deci nu dăm un timp fix.",
+      "Cu butoanele de mai jos vezi în Google Maps ruta de la Titan până la studio, cu mașina, transportul public sau pe jos. Programarea o fixăm pe WhatsApp.",
+    ],
+    card: "Din Sectorul 3, spre Sectorul 4.",
+    extraQ: routeQ("Titan"),
+  }),
+  mk({
+    slug: "vitan",
+    name: "Vitan",
+    origin: "Vitan, București",
+    h1b: "pentru Vitan.",
+    img: "lucrare-12.webp",
+    where: "Vitan face parte din Sectorul 3, care se învecinează cu Sectorul 4, unde se află studioul nostru, pe Bulevardul Mărășești nr. 80.",
+    ctx: [
+      "Vitan este o zonă din Sectorul 3, sector care se învecinează cu Sectorul 4. Cât durează drumul depinde de punctul din care pleci, de mijlocul de transport și de ora zilei.",
+      "Ruta live o vezi în Google Maps, cu butoanele de mai jos. Dacă ai o idee de tatuaj sau de piercing, scrie-ne mai întâi pe WhatsApp: lămurim detaliile și fixăm ziua și ora.",
+    ],
+    card: "Din Sectorul 3, ruta verificată live.",
+    extraQ: routeQ("Vitan"),
+  }),
+  mk({
+    slug: "colentina",
+    name: "Colentina",
+    origin: "Colentina, București",
+    h1b: "pentru Colentina.",
+    img: "lucrare-1.webp",
+    where: "Colentina face parte din Sectorul 2. Dacă vii de acolo, studioul nostru este în Sectorul 4, pe Bulevardul Mărășești nr. 80.",
+    ctx: [
+      "Colentina este o zonă din Sectorul 2. Drumul până la studio depinde de punctul din care pleci și de ora la care circuli, de aceea îți arătăm ruta live, nu o estimare generală.",
+      "Butoanele de mai jos deschid Google Maps de la Colentina până la Bulevardul Mărășești nr. 80. Programarea o fixăm pe WhatsApp, ca să ajungi la ora potrivită și cu totul lămurit.",
+    ],
+    card: "Ruta ta de la Colentina, în Google Maps.",
+    extraQ: routeQ("Colentina"),
+  }),
+);
+
 export const areaBySlug = (slug: string) => areas.find((a) => a.slug === slug);
