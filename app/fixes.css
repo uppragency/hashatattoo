@@ -288,13 +288,17 @@ a.lp-guide-card:hover .lp-guide-card-img img{transform:scale(1.04)}
 @media(max-width:700px){.lp-guides-grid{grid-template-columns:1fr;padding-top:36px}}
 /* ARTICOL GHID */
 .ga-layout{display:grid;grid-template-columns:260px minmax(0,780px);gap:clamp(40px,7vw,120px);justify-content:center;padding-top:clamp(60px,7vw,100px);padding-bottom:clamp(70px,8vw,120px)}
-.ga-toc{position:sticky;top:96px;align-self:start;max-height:calc(100svh - 120px);overflow:auto}
+.ga-toc{position:sticky;top:96px;align-self:start;max-height:calc(100svh - 120px);overflow-y:auto;overflow-x:hidden;scrollbar-width:thin;scrollbar-color:rgba(255,255,255,.18) transparent;padding-right:10px}
+.ga-toc::-webkit-scrollbar{width:3px}
+.ga-toc::-webkit-scrollbar-track{background:transparent}
+.ga-toc::-webkit-scrollbar-thumb{background:rgba(255,255,255,.18);border-radius:3px}
+.ga-toc::-webkit-scrollbar-thumb:hover{background:rgba(255,255,255,.35)}
 .ga-toc summary{list-style:none;font-size:10px;letter-spacing:.22em;font-weight:500;color:var(--muted);padding-bottom:16px;border-bottom:1px solid var(--line);cursor:default}
 .ga-toc summary::-webkit-details-marker{display:none}
 .ga-toc ol{list-style:none;margin:0;padding:8px 0 0;counter-reset:t}
 .ga-toc li{counter-increment:t;border-bottom:1px solid var(--line)}
 .ga-toc a{display:flex;gap:14px;padding:13px 0;font-size:13px;line-height:1.45;color:var(--soft);transition:color .25s}
-.ga-toc a::before{content:counter(t,decimal-leading-zero);font-size:10px;letter-spacing:.1em;color:var(--muted);padding-top:2px}
+.ga-toc a::before{content:counter(t,decimal-leading-zero);flex:0 0 22px;font-size:10px;letter-spacing:.1em;color:var(--muted);padding-top:2px}
 .ga-toc a:hover{color:var(--ink)}
 .ga-article{font-size:17px;line-height:1.85;color:var(--soft)}
 .ga-article p{margin:0 0 1.35em}
@@ -322,7 +326,7 @@ a.lp-guide-card:hover .lp-guide-card-img img{transform:scale(1.04)}
 .ga-related{padding-bottom:clamp(60px,7vw,100px)}
 @media(max-width:1000px){
   .ga-layout{grid-template-columns:minmax(0,1fr);gap:34px}
-  .ga-toc{position:static;max-height:none;border:1px solid var(--line);padding:0 20px}
+  .ga-toc{position:static;max-height:none;overflow:visible;border:1px solid var(--line);padding:0 20px}
   .ga-toc summary{cursor:pointer;padding:18px 0;border-bottom:0}
   .ga-toc details[open] summary{border-bottom:1px solid var(--line)}
   .ga-toc ol{padding-bottom:10px}
