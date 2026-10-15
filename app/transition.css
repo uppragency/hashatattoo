@@ -1,0 +1,12 @@
+/* Tranzitie intre pagini. Fisier separat, ca style.css original sa ramana neschimbat. */
+.page-transition{position:fixed;inset:0;z-index:400;background:var(--bg,#0c0c0b);display:grid;place-items:center;transform:translateY(100%);pointer-events:none;visibility:hidden}
+.page-transition img{width:122px;height:auto;opacity:0;transform:translateY(10px)}
+.page-transition i{position:absolute;left:50%;bottom:calc(50% - 74px);width:72px;height:1px;margin-left:-36px;background:rgba(233,229,220,.19);overflow:hidden}
+.page-transition i::after{content:"";position:absolute;inset:0;background:var(--accent,#d2c6b3);transform:translateX(-100%)}
+.page-transition.is-cover,.page-transition.is-reveal{visibility:visible;pointer-events:all}
+.page-transition.is-cover{transform:translateY(0);transition:transform .55s cubic-bezier(.76,0,.24,1)}
+.page-transition.is-cover img{opacity:1;transform:none;transition:opacity .4s ease .25s,transform .5s cubic-bezier(.2,.75,.2,1) .25s}
+.page-transition.is-cover i::after{transform:translateX(0);transition:transform 1.1s cubic-bezier(.76,0,.24,1) .3s}
+.page-transition.is-reveal{transform:translateY(-100%);transition:transform .65s cubic-bezier(.76,0,.24,1)}
+.page-transition.is-reveal img{opacity:0;transition:opacity .25s ease}
+@media (prefers-reduced-motion:reduce){.page-transition{display:none}}

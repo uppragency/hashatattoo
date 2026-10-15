@@ -1,9 +1,11 @@
 import type { Metadata, Viewport } from "next";
 import "./globals.css";
+import "./transition.css";
 import ScrollProgress from "@/components/ScrollProgress";
 import SiteHeader from "@/components/SiteHeader";
 import StickyCta from "@/components/StickyCta";
 import Behavior from "@/components/Behavior";
+import PageTransition from "@/components/PageTransition";
 import { SITE_URL } from "@/lib/site";
 
 export const metadata: Metadata = {
@@ -47,6 +49,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         {children}
         <StickyCta />
         <Behavior />
+        <PageTransition />
       </body>
     </html>
   );
