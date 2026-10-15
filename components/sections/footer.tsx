@@ -50,6 +50,9 @@ export default function Footer() {
               <Link href="/despre-noi">Despre noi</Link>
             </li>
             <li>
+              <Link href="/ghiduri">Ghiduri</Link>
+            </li>
+            <li>
               <Link href="/intrebari-frecvente">Întrebări frecvente</Link>
             </li>
           </ul>

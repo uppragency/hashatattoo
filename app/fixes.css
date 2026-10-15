@@ -269,3 +269,20 @@ section>.lp-head .text-arrow{justify-self:start}
 .lp-contact-card:nth-child(3) strong{font-size:clamp(20px,1.65vw,26px);overflow-wrap:normal;word-break:normal;white-space:nowrap;line-height:1.5}
 @media(max-width:1160px){.lp-contact-card:nth-child(3) strong{font-size:clamp(22px,3.2vw,30px)}}
 .lp-portfolio-more{margin:clamp(28px,4vw,48px) 0 0;display:flex;justify-content:center}
+.lp-guides{padding-top:clamp(70px,8vw,110px)}
+.lp-guides-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(18px,2.2vw,34px);padding-top:56px}
+.lp-guide-card{display:flex;flex-direction:column;border:1px solid var(--line);overflow:hidden;transition:border-color .3s,background .3s}
+a.lp-guide-card:hover{border-color:rgba(233,229,220,.42);background:#131312}
+.lp-guide-card-img{position:relative;aspect-ratio:16/10;overflow:hidden}
+.lp-guide-card-img img{width:100%;height:100%;object-fit:cover;filter:brightness(.78) saturate(.8);transition:transform 1s var(--ease)}
+a.lp-guide-card:hover .lp-guide-card-img img{transform:scale(1.04)}
+.lp-guide-card.is-soon .lp-guide-card-img img{filter:brightness(.55) saturate(.6)}
+.lp-guide-card-img em{position:absolute;left:16px;top:16px;font-style:normal;font-size:10px;letter-spacing:.18em;padding:7px 10px;border:1px solid rgba(233,229,220,.5);background:rgba(10,10,10,.55)}
+.lp-guide-card-body{display:flex;flex-direction:column;flex:1;padding:clamp(20px,2vw,30px)}
+.lp-guide-card-body small{font-size:10px;letter-spacing:.2em;color:var(--muted)}
+.lp-guide-card-body h3{font-family:'Cormorant Garamond',Georgia,serif;font-weight:400;font-size:clamp(25px,2.2vw,34px);line-height:1.1;letter-spacing:-.025em;margin:16px 0 12px}
+.lp-guide-card-body p{font-size:14px;line-height:1.7;color:var(--soft);margin:0 0 22px}
+.lp-guide-card-body .text-arrow{margin-top:auto;align-self:flex-start}
+.lp-guides-note{margin:48px 0 0;font-size:14px;color:var(--soft);display:flex;gap:18px;flex-wrap:wrap;align-items:center}
+@media(max-width:1000px){.lp-guides-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:700px){.lp-guides-grid{grid-template-columns:1fr;padding-top:36px}
