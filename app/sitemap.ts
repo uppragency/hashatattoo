@@ -3,6 +3,7 @@ import { SITE_URL } from "@/lib/site";
 import { services } from "@/lib/services";
 import { publishedGuides } from "@/lib/guides";
 import { areas } from "@/lib/areas";
+import { stylePages } from "@/lib/styles";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
@@ -17,6 +18,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...(publishedGuides().length
       ? [{ url: `${SITE_URL}/ghiduri`, priority: 0.7 }, ...publishedGuides().map((g) => ({ url: `${SITE_URL}/ghiduri/${g.slug}`, priority: 0.7 }))]
       : []),
+    { url: `${SITE_URL}/stiluri`, priority: 0.8 },
+    ...stylePages.map((p) => ({ url: `${SITE_URL}/stiluri/${p.slug}`, priority: 0.7 })),
+    { url: `${SITE_URL}/verificator-piercing`, priority: 0.7 },
     { url: `${SITE_URL}/zone`, priority: 0.7 },
     ...areas.map((a) => ({ url: `${SITE_URL}/zone/${a.slug}`, priority: 0.6 })),
     ...services.map((s) => ({ url: `${SITE_URL}/${s.slug}`, priority: 0.8 })),

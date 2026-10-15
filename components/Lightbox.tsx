@@ -2,8 +2,8 @@
 "use client";
 
 import { useEffect, useRef, useSyncExternalStore } from "react";
-import { items, visibleIndices } from "@/lib/portfolio";
-import { closeLightbox, getState, shift, subscribe } from "@/lib/gallery-store";
+import { items } from "@/lib/portfolio";
+import { closeLightbox, currentList, getState, shift, subscribe } from "@/lib/gallery-store";
 
 export default function Lightbox() {
   const state = useSyncExternalStore(subscribe, getState, getState);
@@ -13,7 +13,7 @@ export default function Lightbox() {
   const touchX = useRef<number | null>(null);
   const wasOpen = useRef(false);
 
-  const inds = visibleIndices(state.category);
+  const inds = currentList(state);
   const item = state.open ? items[inds[state.selected]] : null;
 
   // focus + scroll lock
@@ -31,12 +31,12 @@ export default function Lightbox() {
   // preload neighbours
   useEffect(() => {
     if (!state.open) return;
-    const list = visibleIndices(state.category);
+    const list = currentList(getState());
     [1, -1].forEach((d) => {
       const n = items[list[(state.selected + d + list.length) % list.length]];
       if (n) new Image().src = "/assets/" + n[0];
     });
-  }, [state.open, state.selected, state.category]);
+  }, [state.open, state.selected, state.category, state.list]);
 
   // keyboard
   useEffect(() => {
