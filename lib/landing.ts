@@ -221,6 +221,12 @@ export const landings: Landing[] = [
       { image: "lucrare-12.webp", alt: "Tatuaj portret realist pe braț, realizat la Hasha Tattoo", label: "PORTRET / BLACK AND GREY" },
       { image: "lucrare-6.webp", alt: "Tatuaj artistic realist pe spate, realizat la Hasha Tattoo", label: "BACKPIECE / REALISM" },
       { image: "lucrare-9.webp", alt: "Tatuaj artistic pe picior, realizat la Hasha Tattoo", label: "LEG SLEEVE" },
+      { image: "lucrare-21.webp", alt: "Sleeve black and grey cu ochi, caracatiță și portret, realizat la Hasha Tattoo", label: "SLEEVE / BLACK AND GREY" },
+      { image: "lucrare-30.webp", alt: "Tatuaj realist cu elefant pe coapsă, realizat la Hasha Tattoo", label: "REALISM / COAPSĂ" },
+      { image: "lucrare-39.webp", alt: "Tatuaj fine line cu floare roșie și text pe coloană, realizat la Hasha Tattoo", label: "FINE LINE / SPATE" },
+      { image: "lucrare-25.webp", alt: "Tatuaj color cu motociclete pe antebraț, realizat la Hasha Tattoo", label: "COLOR / ANTEBRAȚ" },
+      { image: "lucrare-37.webp", alt: "Tatuaj cu motive animale în compoziție grafică, cu accente roșii, realizat la Hasha Tattoo", label: "GRAFIC / GAMBĂ" },
+      { image: "lucrare-34.webp", alt: "Tatuaj color pe antebraț cu un personaj în costum, realizat la Hasha Tattoo", label: "COLOR / ANTEBRAȚ" },
     ],
     pricing: {
       title: ["Cât costă", "un tatuaj."],

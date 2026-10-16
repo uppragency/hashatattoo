@@ -6,9 +6,9 @@ import { INITIAL_VISIBLE, items, visibleIndices, type Category } from "@/lib/por
 import { getState, openLightbox, setCategory, subscribe, toggleExpanded } from "@/lib/gallery-store";
 
 const FILTERS: { key: Category; label: string; count: number }[] = [
-  { key: "all", label: "TOATE", count: 20 },
-  { key: "tattoo", label: "TATUAJE", count: 12 },
-  { key: "piercing", label: "PIERCING", count: 8 },
+  { key: "all", label: "TOATE", count: items.length },
+  { key: "tattoo", label: "TATUAJE", count: items.filter((i) => i[2] === "tattoo").length },
+  { key: "piercing", label: "PIERCING", count: items.filter((i) => i[2] === "piercing").length },
 ];
 
 export default function Gallery({ showAll = false }: { showAll?: boolean }) {
