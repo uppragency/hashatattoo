@@ -20,6 +20,7 @@ import g18 from "./piercing-la-minori-reguli-si-acordul-parintilor";
 import g19 from "./tatuaj-microblading-machiaj-permanent";
 import g20 from "./glosar-tatuaj-si-piercing";
 import g21 from "./mituri-despre-tatuaje-si-piercing";
+import g22 from "./cat-costa-un-tatuaj-in-bucuresti";
 
 export const guideContent: Record<string, GuideContent> = {
   "primul-tau-tatuaj": primulTauTatuaj,
@@ -43,4 +44,5 @@ export const guideContent: Record<string, GuideContent> = {
   "tatuaj-microblading-machiaj-permanent": g19,
   "glosar-tatuaj-si-piercing": g20,
   "mituri-despre-tatuaje-si-piercing": g21,
+  "cat-costa-un-tatuaj-in-bucuresti": g22,
 };

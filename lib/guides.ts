@@ -335,6 +335,20 @@ export const guides: Guide[] = [
     published: true,
     date: "2026-10-16",
   },
+  {
+    slug: "cat-costa-un-tatuaj-in-bucuresti",
+    title: "Cât costă un tatuaj în București",
+    heroTitle: ["Cât costă un tatuaj", "în București."],
+    excerpt: "Cum se calculează prețul unui tatuaj, ce factori îl mișcă, cum compari două oferte și ce întrebi înainte să plătești un avans.",
+    metaTitle: "Cât costă un tatuaj în București: cum se calculează prețul | Hasha Tattoo",
+    metaDescription: "Cât costă un tatuaj în București: factorii care mișcă prețul, cum se calculează după timpul de lucru, cum compari oferte, retuș, avans și prețurile de piercing. Hasha Tattoo.",
+    imageAlt: "Tatuaj realizat la Hasha Tattoo București",
+    category: "Tatuaje",
+    readMin: 20,
+    image: "lucrare-5.webp",
+    published: true,
+    date: "2026-10-16",
+  },
 ];
 
 export const publishedGuides = () => guides.filter((g) => g.published);
