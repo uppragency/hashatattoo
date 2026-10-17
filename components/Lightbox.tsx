@@ -85,7 +85,7 @@ export default function Lightbox() {
       }}
     >
       <button className="lightbox-close" id="lightboxClose" aria-label="Închide fotografia" ref={closeRef} onClick={closeLightbox}>
-        ✕
+        ✕︎
       </button>
       <div className="lightbox-wrap">
         <img id="lightboxImage" src={item ? "/assets/" + item[0] : undefined} alt={item ? item[3] : ""} />
@@ -96,10 +96,10 @@ export default function Lightbox() {
       </div>
       <div className="lightbox-navigation">
         <button id="lightboxPrev" aria-label="Fotografia precedentă" ref={prevRef} onClick={() => shift(-1)}>
-          ←
+          ←︎
         </button>
         <button id="lightboxNext" aria-label="Fotografia următoare" ref={nextRef} onClick={() => shift(1)}>
-          →
+          →︎
         </button>
       </div>
     </div>

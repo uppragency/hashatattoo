@@ -93,7 +93,7 @@
 .lp-btn-ghost:hover{background:var(--ink);color:#141312}
 .lp-chips-bar{border-bottom:1px solid var(--line);background:#101010}
 .lp-chips{display:flex;flex-wrap:wrap;gap:12px 38px;list-style:none;margin:0;padding-top:22px;padding-bottom:22px;font-size:10px;letter-spacing:.17em;text-transform:uppercase;color:var(--soft)}
-.lp-chips li::before{content:"✳";margin-right:12px;color:var(--accent);font-size:11px}
+.lp-chips li::before{content:"✳︎";margin-right:12px;color:var(--accent);font-size:11px}
 .lp-anchors{display:flex;gap:10px 34px;overflow-x:auto;padding-top:20px;padding-bottom:20px;border-bottom:1px solid var(--line);scrollbar-width:none;white-space:nowrap}
 .lp-anchors::-webkit-scrollbar{display:none}
 .lp-anchors a{font-size:10px;letter-spacing:.17em;color:var(--muted);transition:color .25s}

@@ -43,7 +43,7 @@ export default function Footer() {
               Bulevardul Mărășești nr. 80,
               <br />
               {"Sector 4, București "}
-              <span aria-hidden="true">↗</span>
+              <span aria-hidden="true">↗︎</span>
             </a>
           </p>
           <p className="hasha-footer__program">
@@ -64,7 +64,7 @@ export default function Footer() {
             <li>
               <a href="https://wa.me/40766422219?text=Bun%C4%83%21%20A%C8%99%20dori%20o%20programare%20la%20Hasha%20Tattoo." target="_blank" rel="noopener noreferrer" data-cta="footer_whatsapp_link">
                 {"WhatsApp "}
-                <span aria-hidden="true">↗</span>
+                <span aria-hidden="true">↗︎</span>
               </a>
             </li>
           </ul>

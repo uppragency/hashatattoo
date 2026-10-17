@@ -76,7 +76,7 @@ export default function CookieBanner() {
       </div>
       {state.open && state.decided && (
         <button type="button" className="cookie-close" onClick={closeConsentSettings} aria-label="Închide setările">
-          ✕
+          ✕︎
         </button>
       )}
     </div>

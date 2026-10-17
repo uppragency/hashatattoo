@@ -72,7 +72,7 @@ export function FinalCta({
         <p>{text}</p>
         <a className="btn btn-light" href={wa} target="_blank" rel="noopener noreferrer" data-cta="whatsapp">
           {label}
-          <span>↗</span>
+          <span>↗︎</span>
         </a>
       </div>
     </section>

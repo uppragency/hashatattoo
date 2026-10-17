@@ -11,7 +11,7 @@ export default function BackToTop() {
         document.getElementById("main")?.focus({ preventScroll: true });
       }}
     >
-      ÎNAPOI SUS <span aria-hidden="true">↑</span>
+      ÎNAPOI SUS <span aria-hidden="true">↑︎</span>
     </a>
   );
 }

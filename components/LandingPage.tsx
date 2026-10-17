@@ -105,11 +105,11 @@ export default function LandingPage({ page: p }: { page: Landing }) {
             <div className="lp-hero-ctas">
               <a className="btn btn-light" href={wa} target="_blank" rel="noopener noreferrer" data-cta="whatsapp">
                 {"PROGRAMEAZĂ-TE PE WHATSAPP "}
-                <span>↗</span>
+                <span>↗︎</span>
               </a>
               <a className="btn btn-outline lp-btn-ghost" href={`#${p.anchors[0].id}`}>
                 {p.slug === "tatuaje" ? "VEZI STILURILE " : "VEZI TIPURILE "}
-                <span>↓</span>
+                <span>↓︎</span>
               </a>
             </div>
           </div>
@@ -193,12 +193,12 @@ export default function LandingPage({ page: p }: { page: Landing }) {
                   {s.href ? (
                     <Link className="text-arrow" href={s.href}>
                       {"VEZI DETALII "}
-                      <span>↗</span>
+                      <span>↗︎</span>
                     </Link>
                   ) : (
                     <a className="text-arrow" href={wa} target="_blank" rel="noopener noreferrer" data-cta="whatsapp">
                       {"ÎNTREABĂ PE WHATSAPP "}
-                      <span>↗</span>
+                      <span>↗︎</span>
                     </a>
                   )}
                 </div>
@@ -225,7 +225,7 @@ export default function LandingPage({ page: p }: { page: Landing }) {
               <p>{p.benefitsText}</p>
               <a className="btn btn-light lp-side-btn" href={wa} target="_blank" rel="noopener noreferrer" data-cta="whatsapp">
                 {"SCRIE-NE PE WHATSAPP "}
-                <span>↗</span>
+                <span>↗︎</span>
               </a>
             </div>
             <div className="values-list">
@@ -236,7 +236,7 @@ export default function LandingPage({ page: p }: { page: Landing }) {
                     <h3>{b.title}</h3>
                     <p>{b.text}</p>
                   </div>
-                  <b>↗</b>
+                  <b>↗︎</b>
                 </div>
               ))}
             </div>
@@ -290,7 +290,7 @@ export default function LandingPage({ page: p }: { page: Landing }) {
           </div>
           <a className="btn btn-outline" href={wa} target="_blank" rel="noopener noreferrer" data-cta="whatsapp">
             {"ÎNCEPE PE WHATSAPP "}
-            <span>↗</span>
+            <span>↗︎</span>
           </a>
         </section>
 
@@ -395,7 +395,7 @@ export default function LandingPage({ page: p }: { page: Landing }) {
             </h2>
             <Link className="text-arrow" href="/#portofoliu">
               {"VEZI TOT PORTOFOLIUL "}
-              <span>↗</span>
+              <span>↗︎</span>
             </Link>
           </div>
           <div className="lp-gallery-grid">
@@ -422,7 +422,7 @@ export default function LandingPage({ page: p }: { page: Landing }) {
             <p>Ne găsești pe Bulevardul Mărășești nr. 80, Sector 4. Un loc liniștit, organizat pentru confort, igienă și concentrare.</p>
             <Link className="text-arrow" href="/despre-noi">
               {"DESCOPERĂ STUDIOUL "}
-              <span>↗</span>
+              <span>↗︎</span>
             </Link>
           </div>
           <span className="studio-banner-side">HASHA TATTOO / BUCUREȘTI</span>
@@ -462,7 +462,7 @@ export default function LandingPage({ page: p }: { page: Landing }) {
               </ul>
               <Link className="text-arrow" href="/preturi">
                 {"AFLĂ MAI MULTE DESPRE PREȚURI "}
-                <span>↗</span>
+                <span>↗︎</span>
               </Link>
             </div>
             <div className="lp-quote-side">
@@ -495,7 +495,7 @@ export default function LandingPage({ page: p }: { page: Landing }) {
               <p>Vrei să afli cum este la Hasha Tattoo? Citește părerile clienților noștri direct pe Google Maps, apoi scrie-ne pe WhatsApp pentru o programare.</p>
               <a href="https://www.google.com/maps/search/?api=1&query=Hasha+Tattoo+Bucuresti" target="_blank" rel="noopener noreferrer" className="text-arrow">
                 {"CITEȘTE RECENZIILE PE GOOGLE "}
-                <span>↗</span>
+                <span>↗︎</span>
               </a>
             </div>
           </div>
@@ -517,7 +517,7 @@ export default function LandingPage({ page: p }: { page: Landing }) {
               <p>Am strâns cele mai frecvente întrebări. Pentru recomandări adaptate lucrării tale, vorbește direct cu artistul.</p>
               <a className="btn btn-outline" href={wa} target="_blank" rel="noopener noreferrer" data-cta="whatsapp">
                 {"ÎNTREABĂ PE WHATSAPP "}
-                <span>↗</span>
+                <span>↗︎</span>
               </a>
             </div>
             <div className="faq-list reveal">
@@ -543,7 +543,7 @@ export default function LandingPage({ page: p }: { page: Landing }) {
           <div className="service-more-links reveal">
             {related.map((r) => (
               <Link className="text-arrow" href={r.href} key={r.href}>
-                {r.label} <span>↗</span>
+                {r.label} <span>↗︎</span>
               </Link>
             ))}
           </div>
@@ -565,7 +565,7 @@ export default function LandingPage({ page: p }: { page: Landing }) {
             <p>Scrie-ne pe WhatsApp, iar un artist îți răspunde cu recomandări și un interval de programare. Program: luni până vineri, 12:00 până la 20:00.</p>
             <a className="btn btn-light" href={wa} target="_blank" rel="noopener noreferrer" data-cta="whatsapp">
               {"PROGRAMEAZĂ-TE PE WHATSAPP "}
-              <span>↗</span>
+              <span>↗︎</span>
             </a>
           </div>
         </section>

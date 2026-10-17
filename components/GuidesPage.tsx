@@ -22,7 +22,7 @@ function Card({ g }: { g: Guide }) {
         {g.published ? (
           <span className="text-arrow">
             {g.cardCta ?? "CITEȘTE GHIDUL "}
-            <span>↗</span>
+            <span>↗︎</span>
           </span>
         ) : null}
       </div>
@@ -110,7 +110,7 @@ export default function GuidesPage() {
             Ai o întrebare care nu e acoperită?{" "}
             <Link className="text-arrow" href="/intrebari-frecvente">
               {"ÎNTREBĂRI FRECVENTE "}
-              <span>↗</span>
+              <span>↗︎</span>
             </Link>
           </p>
         </section>

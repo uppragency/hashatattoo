@@ -11,7 +11,7 @@ export default function LoginForm() {
       <input id="pw" name="password" type="password" required autoFocus autoComplete="current-password" />
       {state?.error ? <p role="alert">{state.error}</p> : null}
       <button className="btn btn-light" disabled={pending}>
-        {pending ? "SE VERIFICĂ..." : "INTRĂ"} <span>↗</span>
+        {pending ? "SE VERIFICĂ..." : "INTRĂ"} <span>↗︎</span>
       </button>
     </form>
   );

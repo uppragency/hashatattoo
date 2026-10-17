@@ -69,7 +69,7 @@ export default function AboutMain() {
                 <h3>Siguranță înainte de tot</h3>
                 <p>Ace de unică folosință, instrumente sterilizate și respectarea normelor sanitare.</p>
               </div>
-              <b>↗</b>
+              <b>↗︎</b>
             </div>
             <div className="value-row reveal">
               <span>02</span>
@@ -77,7 +77,7 @@ export default function AboutMain() {
                 <h3>Design discutat, nu impus</h3>
                 <p>Artistul ascultă ideea ta și îți spune sincer ce funcționează pe pielea ta.</p>
               </div>
-              <b>↗</b>
+              <b>↗︎</b>
             </div>
             <div className="value-row reveal">
               <span>03</span>
@@ -85,7 +85,7 @@ export default function AboutMain() {
                 <h3>Calitate verificabilă</h3>
                 <p>Folosim tușuri vegane și echipamente de la producători cunoscuți în industrie.</p>
               </div>
-              <b>↗</b>
+              <b>↗︎</b>
             </div>
             <div className="value-row reveal">
               <span>04</span>
@@ -93,7 +93,7 @@ export default function AboutMain() {
                 <h3>Fără presiune</h3>
                 <p>Spațiul este privat și confortabil. Ai timp să întrebi, să te răzgândești și să decizi.</p>
               </div>
-              <b>↗</b>
+              <b>↗︎</b>
             </div>
           </div>
         </div>
@@ -117,7 +117,7 @@ export default function AboutMain() {
             </p>
             <a className="text-arrow" href={"https://www.google.com/maps/search/?api=1&query=Bulevardul+M%C4%83r%C4%83%C8%99e%C8%99ti+80+Bucure%C8%99ti"} target="_blank" rel="noopener noreferrer">
               {"VEZI ADRESA PE HARTĂ "}
-              <span>↗</span>
+              <span>↗︎</span>
             </a>
           </div>
           <div className="about-space-img reveal">
@@ -142,11 +142,11 @@ export default function AboutMain() {
           <div className="cta-row">
             <a className="btn btn-light" href="https://wa.me/40766422219?text=Bun%C4%83%21%20A%C8%99%20dori%20o%20programare%20la%20Hasha%20Tattoo." target="_blank" rel="noopener noreferrer" data-cta="whatsapp">
               {"PROGRAMEAZĂ-TE PE WHATSAPP "}
-              <span>↗</span>
+              <span>↗︎</span>
             </a>
             <Link href="/preturi" className="text-arrow">
               {"VEZI PREȚURILE "}
-              <span>↗</span>
+              <span>↗︎</span>
             </Link>
           </div>
         </div>

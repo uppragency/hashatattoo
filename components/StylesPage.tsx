@@ -66,18 +66,18 @@ export default function StylesPage() {
           </div>
           <div className="service-more-links reveal">
             <Link className="text-arrow" href="/tatuaje-realism-bucuresti">
-              REALISM <span>↗</span>
+              REALISM <span>↗︎</span>
             </Link>
             <Link className="text-arrow" href="/tatuaje-black-and-grey-bucuresti">
-              BLACK AND GREY <span>↗</span>
+              BLACK AND GREY <span>↗︎</span>
             </Link>
             {stylePages.map((s) => (
               <Link className="text-arrow" href={`/stiluri/${s.slug}`} key={s.slug}>
-                {s.short.replace("TATUAJE ", "")} <span>↗</span>
+                {s.short.replace("TATUAJE ", "")} <span>↗︎</span>
               </Link>
             ))}
             <Link className="text-arrow" href="/ghiduri/cum-alegi-stilul-de-tatuaj">
-              GHID: CUM ALEGI STILUL <span>↗</span>
+              GHID: CUM ALEGI STILUL <span>↗︎</span>
             </Link>
           </div>
         </section>

@@ -117,7 +117,7 @@ export default function ServicePage({ service: s }: { service: Service }) {
                     <h3>{p.title}</h3>
                     <p>{p.text}</p>
                   </div>
-                  <b>↗</b>
+                  <b>↗︎</b>
                 </div>
               ))}
             </div>
@@ -159,15 +159,15 @@ export default function ServicePage({ service: s }: { service: Service }) {
           </div>
           <div className="service-more-links reveal">
             <Link className="text-arrow" href={s.slug.startsWith("piercing") ? "/piercing" : "/tatuaje"}>
-              {s.slug.startsWith("piercing") ? "TOATE PIERCINGURILE" : "TOATE TATUAJELE"} <span>↗</span>
+              {s.slug.startsWith("piercing") ? "TOATE PIERCINGURILE" : "TOATE TATUAJELE"} <span>↗︎</span>
             </Link>
             {others.map((o) => (
               <Link className="text-arrow" href={`/${o.slug}`} key={o.slug}>
-                {o.short} <span>↗</span>
+                {o.short} <span>↗︎</span>
               </Link>
             ))}
             <Link className="text-arrow" href="/preturi">
-              DESPRE PREȚURI <span>↗</span>
+              DESPRE PREȚURI <span>↗︎</span>
             </Link>
           </div>
         </section>
@@ -187,7 +187,7 @@ export default function ServicePage({ service: s }: { service: Service }) {
             <p>Scrie-ne pe WhatsApp, iar un artist îți răspunde cu recomandări și un interval de programare.</p>
             <a className="btn btn-light" href={WA} target="_blank" rel="noopener noreferrer" data-cta="whatsapp">
               {"PROGRAMEAZĂ-TE PE WHATSAPP "}
-              <span>↗</span>
+              <span>↗︎</span>
             </a>
           </div>
         </section>

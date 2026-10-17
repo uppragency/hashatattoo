@@ -58,9 +58,9 @@ export default function HomeMain() {
           <div className="hero-ctas">
             <a className="btn btn-light" href="https://wa.me/40766422219?text=Bun%C4%83%21%20A%C8%99%20dori%20o%20programare%20la%20Hasha%20Tattoo." target="_blank" rel="noopener noreferrer" data-cta="hero_whatsapp">
               {"PROGRAMEAZĂ-TE PE WHATSAPP "}
-              <span>↗</span>
+              <span>↗︎</span>
             </a>
-            <a className="hero-link" href="#portofoliu">VEZI LUCRĂRILE ↓</a>
+            <a className="hero-link" href="#portofoliu">VEZI LUCRĂRILE ↓︎</a>
           </div>
         </div>
         <div className="hero-bottom">
@@ -78,11 +78,11 @@ export default function HomeMain() {
         </a>
         <a href={"https://www.google.com/maps/search/?api=1&query=Bulevardul+M%C4%83r%C4%83%C8%99e%C8%99ti+80+Bucure%C8%99ti"} target="_blank" rel="noopener noreferrer">
           <span>GĂSEȘTE-NE</span>
-          <strong>BD. MĂRĂȘEȘTI 80 · SECTOR 4 ↗</strong>
+          <strong>BD. MĂRĂȘEȘTI 80 · SECTOR 4 ↗︎</strong>
         </a>
         <a href="tel:+40766422219" data-cta="call">
           <span>SUNĂ-NE</span>
-          <strong>+40 766 422 219 ↗</strong>
+          <strong>+40 766 422 219 ↗︎</strong>
         </a>
       </div>
       <section className="intro section-pad" id="intro">
@@ -108,11 +108,11 @@ export default function HomeMain() {
             <div className="cta-stack">
               <a className="btn btn-light" href="https://wa.me/40766422219?text=Bun%C4%83%21%20A%C8%99%20dori%20o%20programare%20la%20Hasha%20Tattoo." target="_blank" rel="noopener noreferrer" data-cta="whatsapp">
                 {"PROGRAMEAZĂ-TE PE WHATSAPP "}
-                <span>↗</span>
+                <span>↗︎</span>
               </a>
               <div className="micro-links">
-                <a href="#portofoliu">VEZI LUCRĂRILE NOASTRE ↘</a>
-                <Link href="/preturi">DESPRE PREȚURI ↗</Link>
+                <a href="#portofoliu">VEZI LUCRĂRILE NOASTRE ↘︎</a>
+                <Link href="/preturi">DESPRE PREȚURI ↗︎</Link>
               </div>
             </div>
           </div>
@@ -143,7 +143,7 @@ export default function HomeMain() {
               </p>
               <Link className="text-arrow" href="/tatuaje">
                 {"VEZI TOATE TATUAJELE "}
-                <span>↗</span>
+                <span>↗︎</span>
               </Link>
             <div className="discipline-more">
               <Link href="/tatuaje-realism-bucuresti">TATUAJE REALISM</Link>
@@ -170,7 +170,7 @@ export default function HomeMain() {
               </p>
               <Link className="text-arrow" href="/piercing">
                 {"VEZI TOATE PIERCINGURILE "}
-                <span>↗</span>
+                <span>↗︎</span>
               </Link>
             <div className="discipline-more">
               <Link href="/piercing-ureche-bucuresti">PIERCING URECHE</Link>
@@ -197,7 +197,7 @@ export default function HomeMain() {
         <p className="lp-portfolio-more">
           <Link className="text-arrow" href="/portofoliu">
             {"VEZI TOT PORTOFOLIUL "}
-            <span>↗</span>
+            <span>↗︎</span>
           </Link>
         </p>
       </section>
@@ -214,7 +214,7 @@ export default function HomeMain() {
           <p>Ne găsești pe Bulevardul Mărășești nr. 80, într-un studio privat, organizat pentru confort și concentrare.</p>
           <Link className="text-arrow" href="/despre-noi">
             {"DESCOPERĂ STUDIOUL "}
-            <span>↗</span>
+            <span>↗︎</span>
           </Link>
         </div>
         <span className="studio-banner-side">HASHA TATTOO / BUCUREȘTI</span>
@@ -242,7 +242,7 @@ export default function HomeMain() {
                 <h3>Siguranță</h3>
                 <p>Ace de unică folosință, instrumente sterilizate și respectarea normelor sanitare.</p>
               </div>
-              <b>↗</b>
+              <b>↗︎</b>
             </div>
             <div className="value-row reveal">
               <span>02</span>
@@ -250,7 +250,7 @@ export default function HomeMain() {
                 <h3>Tușuri vegane</h3>
                 <p>Produse de calitate, de la producători cunoscuți în industrie.</p>
               </div>
-              <b>↗</b>
+              <b>↗︎</b>
             </div>
             <div className="value-row reveal">
               <span>03</span>
@@ -258,7 +258,7 @@ export default function HomeMain() {
                 <h3>Intimitate</h3>
                 <p>Un spațiu privat, confortabil, în care lucrăm fără grabă.</p>
               </div>
-              <b>↗</b>
+              <b>↗︎</b>
             </div>
             <div className="value-row reveal">
               <span>04</span>
@@ -266,7 +266,7 @@ export default function HomeMain() {
                 <h3>Consiliere</h3>
                 <p>Artistul îți explică procesul și îți recomandă zona și designul potrivite.</p>
               </div>
-              <b>↗</b>
+              <b>↗︎</b>
             </div>
             <div className="value-row reveal">
               <span>05</span>
@@ -274,7 +274,7 @@ export default function HomeMain() {
                 <h3>Ușor de ajuns</h3>
                 <p>Într-o zonă centrală din București, pe Bulevardul Mărășești, Sector 4.</p>
               </div>
-              <b>↗</b>
+              <b>↗︎</b>
             </div>
           </div>
         </div>
@@ -309,7 +309,7 @@ export default function HomeMain() {
         </div>
         <a className="btn btn-outline" href="https://wa.me/40766422219?text=Bun%C4%83%21%20A%C8%99%20vrea%20s%C4%83%20discut%C4%83m%20despre%20un%20tatuaj." target="_blank" rel="noopener noreferrer" data-cta="whatsapp">
           {"ÎNCEPE PE WHATSAPP "}
-          <span>↗</span>
+          <span>↗︎</span>
         </a>
       </section>
       <section className="social-section section-pad">
@@ -329,7 +329,7 @@ export default function HomeMain() {
             </p>
             <a href={"https://www.google.com/maps/search/?api=1&query=Hasha+Tattoo+Bucuresti"} target="_blank" rel="noopener noreferrer" className="text-arrow">
               {"CITEȘTE RECENZIILE PE GOOGLE "}
-              <span>↗</span>
+              <span>↗︎</span>
             </a>
           </div>
         </div>
@@ -341,7 +341,7 @@ export default function HomeMain() {
         </div>
         <div className="local-layout reveal">
           <div>
-            <span className="giant-star" aria-hidden="true">✳</span>
+            <span className="giant-star" aria-hidden="true">✳︎</span>
             <h2>
               Salon de tatuaje
               <br />
@@ -357,7 +357,7 @@ export default function HomeMain() {
             </p>
             <a className="text-arrow" href="https://wa.me/40766422219?text=Bun%C4%83%21%20A%C8%99%20dori%20mai%20multe%20detalii%20despre%20serviciile%20Hasha%20Tattoo." target="_blank" rel="noopener noreferrer" data-cta="whatsapp">
               {"SCRIE-NE ACUM "}
-              <span>↗</span>
+              <span>↗︎</span>
             </a>
           </div>
         </div>
@@ -456,7 +456,7 @@ export default function HomeMain() {
           <p>Scrie-ne ideea ta. Revenim cu un răspuns și un interval de programare.</p>
           <a className="btn btn-light" href="https://wa.me/40766422219?text=Bun%C4%83%21%20A%C8%99%20vrea%20s%C4%83%20m%C4%83%20programez%20la%20Hasha%20Tattoo." target="_blank" rel="noopener noreferrer" data-cta="whatsapp">
             {"PROGRAMEAZĂ-TE PE WHATSAPP "}
-            <span>↗</span>
+            <span>↗︎</span>
           </a>
         </div>
       </section>
@@ -501,11 +501,11 @@ export default function HomeMain() {
             <div className="contact-actions">
               <a className="btn btn-light" href="https://wa.me/40766422219?text=Bun%C4%83%21%20A%C8%99%20dori%20o%20programare%20la%20Hasha%20Tattoo." target="_blank" rel="noopener noreferrer" data-cta="contact_whatsapp">
                 {"PROGRAMARE "}
-                <span>↗</span>
+                <span>↗︎</span>
               </a>
               <a className="btn btn-outline" href={"https://www.google.com/maps/dir/?api=1&destination=Bulevardul+M%C4%83r%C4%83%C8%99e%C8%99ti+80+Bucure%C8%99ti"} target="_blank" rel="noopener noreferrer" data-cta="directions">
                 {"DIRECȚII "}
-                <span>↗</span>
+                <span>↗︎</span>
               </a>
             </div>
           </div>

@@ -25,10 +25,10 @@ export default function ConsentMap() {
           <span className="micro">HARTĂ GOOGLE</span>
           <p>Harta este furnizată de Google și folosește cookie-uri. O afișăm doar cu acordul tău.</p>
           <button type="button" className="btn btn-outline" onClick={allowFunctional}>
-            AFIȘEAZĂ HARTA <span>↗</span>
+            AFIȘEAZĂ HARTA <span>↗︎</span>
           </button>
           <a className="text-arrow" href={MAPS_LINK} target="_blank" rel="noopener noreferrer">
-            DESCHIDE ÎN GOOGLE MAPS <span>↗</span>
+            DESCHIDE ÎN GOOGLE MAPS <span>↗︎</span>
           </a>
         </div>
       )}

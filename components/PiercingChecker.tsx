@@ -113,7 +113,7 @@ export default function PiercingChecker() {
           </fieldset>
           <button className="btn btn-light" type="submit" disabled={!allAnswered}>
             {"VEZI REZULTATUL "}
-            <span>↗</span>
+            <span>↗︎</span>
           </button>
         </form>
       ) : null}
@@ -164,11 +164,11 @@ export default function PiercingChecker() {
               data-cta="whatsapp"
             >
               {"PROGRAMEAZĂ O CONSULTAȚIE "}
-              <span>↗</span>
+              <span>↗︎</span>
             </a>
             <button type="button" className="btn btn-outline" onClick={reset}>
               {"ALEGE ALTĂ ZONĂ "}
-              <span>↺</span>
+              <span>↺︎</span>
             </button>
           </div>
           <p className="pc-note">

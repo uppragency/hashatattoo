@@ -68,7 +68,7 @@ export default function AreasPage() {
                   <p>{a.card}</p>
                   <span className="text-arrow">
                     {"VEZI ZONA "}
-                    <span>↗</span>
+                    <span>↗︎</span>
                   </span>
                 </div>
               </Link>
@@ -93,11 +93,11 @@ export default function AreasPage() {
             <div className="lp-route-actions">
               <a className="btn btn-light" href={mapsFromMe} target="_blank" rel="noopener noreferrer">
                 {"RUTA DE LA TINE "}
-                <span>↗</span>
+                <span>↗︎</span>
               </a>
               <Link className="btn btn-outline" href="/contact">
                 {"PAGINA DE CONTACT "}
-                <span>↗</span>
+                <span>↗︎</span>
               </Link>
             </div>
           </div>

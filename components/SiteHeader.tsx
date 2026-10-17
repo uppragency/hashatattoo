@@ -62,7 +62,7 @@ export default function SiteHeader() {
         </nav>
         <div className="header-actions">
           <a className="header-book" href={WA} target="_blank" rel="noopener noreferrer" data-cta="whatsapp">
-            PROGRAMEAZĂ-TE <span>↗</span>
+            PROGRAMEAZĂ-TE <span>↗︎</span>
           </a>
           <button
             className="menu-toggle"

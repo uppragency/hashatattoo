@@ -61,7 +61,7 @@ export default function StylePage({ page: p }: { page: StylePageDef }) {
           <StyleGallery fixed={p.tag} />
           <p className="style-link">
             <Link className="text-arrow" href="/stiluri">
-              TOATE STILURILE <span>↗</span>
+              TOATE STILURILE <span>↗︎</span>
             </Link>
           </p>
         </section>
@@ -88,7 +88,7 @@ export default function StylePage({ page: p }: { page: StylePageDef }) {
                     <h3>{r.title}</h3>
                     <p>{r.text}</p>
                   </div>
-                  <b>↗</b>
+                  <b>↗︎</b>
                 </div>
               ))}
             </div>
@@ -121,14 +121,14 @@ export default function StylePage({ page: p }: { page: StylePageDef }) {
           <div className="service-more-links reveal">
             {others.map((o) => (
               <Link className="text-arrow" href={`/stiluri/${o.slug}`} key={o.slug}>
-                {o.short} <span>↗</span>
+                {o.short} <span>↗︎</span>
               </Link>
             ))}
             <Link className="text-arrow" href="/ghiduri/harta-durerii">
-              HARTA DURERII <span>↗</span>
+              HARTA DURERII <span>↗︎</span>
             </Link>
             <Link className="text-arrow" href="/preturi">
-              PREȚURI <span>↗</span>
+              PREȚURI <span>↗︎</span>
             </Link>
           </div>
         </section>

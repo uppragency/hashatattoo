@@ -88,11 +88,11 @@ export default function ContactPage() {
           <div className="lp-hero-ctas">
             <a className="btn btn-light" href={WA} target="_blank" rel="noopener noreferrer" data-cta="whatsapp">
               {"PROGRAMEAZĂ-TE PE WHATSAPP "}
-              <span>↗</span>
+              <span>↗︎</span>
             </a>
             <a className="btn btn-outline lp-btn-ghost" href="tel:+40766422219" data-cta="call">
               {"SUNĂ ACUM "}
-              <span>↗</span>
+              <span>↗︎</span>
             </a>
           </div>
         </PageHero>
@@ -115,7 +115,7 @@ export default function ContactPage() {
                 <strong>{c.v}</strong>
                 <p>{c.t}</p>
                 <span>
-                  {c.cta} <i>↗</i>
+                  {c.cta} <i>↗︎</i>
                 </span>
               </a>
             ))}
@@ -188,11 +188,11 @@ export default function ContactPage() {
               <div className="contact-actions">
                 <a className="btn btn-light" href={WA} target="_blank" rel="noopener noreferrer" data-cta="contact_whatsapp">
                   {"PROGRAMARE "}
-                  <span>↗</span>
+                  <span>↗︎</span>
                 </a>
                 <a className="btn btn-outline" href={CARDS[3].href} target="_blank" rel="noopener noreferrer" data-cta="directions">
                   {"DIRECȚII "}
-                  <span>↗</span>
+                  <span>↗︎</span>
                 </a>
               </div>
             </div>
@@ -215,7 +215,7 @@ export default function ContactPage() {
               <p>Completează câteva rânduri și îți deschidem WhatsApp cu mesajul pregătit. Nu trimitem datele către un server.</p>
               <Link className="text-arrow" href="/preturi">
                 {"VEZI PREȚURILE "}
-                <span>↗</span>
+                <span>↗︎</span>
               </Link>
             </div>
             <QuoteForm />
@@ -237,7 +237,7 @@ export default function ContactPage() {
               <p>Mai multe răspunsuri despre tatuaje, piercing și îngrijire găsești pe pagina dedicată.</p>
               <Link className="btn btn-outline" href="/intrebari-frecvente">
                 {"TOATE ÎNTREBĂRILE "}
-                <span>↗</span>
+                <span>↗︎</span>
               </Link>
             </div>
             <FaqList items={FAQ} />

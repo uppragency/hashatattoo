@@ -40,7 +40,7 @@ export default function QuoteForm({ defaultService = "" }: { defaultService?: st
       <textarea id="quoteIdea" rows={5} placeholder="Ce îți dorești? Dimensiune, stil, referințe..." required maxLength={600} />
       <input id="quoteWebsite" name="website" tabIndex={-1} autoComplete="off" aria-hidden="true" style={{ position: "absolute", left: "-9999px", width: 1, height: 1, opacity: 0 }} />
       <button type="submit" className="btn btn-light">
-        TRIMITE PE WHATSAPP <span>↗</span>
+        TRIMITE PE WHATSAPP <span>↗︎</span>
       </button>
       <p className="quote-note">Butonul deschide WhatsApp cu mesajul pregătit. Cererea (serviciu, zonă, descriere) este salvată și pentru echipa studioului, ca să te putem contacta. Detalii în politica de confidențialitate.</p>
       <p className="quote-note">

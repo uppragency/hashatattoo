@@ -34,7 +34,7 @@ export default function Gallery({ showAll = false }: { showAll?: boolean }) {
             </button>
           ))}
         </div>
-        <span className="micro">APASĂ PENTRU A VEDEA ↗</span>
+        <span className="micro">APASĂ PENTRU A VEDEA ↗︎</span>
       </div>
       <div className="gallery-grid" id="galleryGrid" aria-live="polite" ref={gridRef}>
         {showing.map((index) => {
@@ -54,7 +54,7 @@ export default function Gallery({ showAll = false }: { showAll?: boolean }) {
                   <b>{item[1].split(" / ")[0].toUpperCase()}</b>
                   <small>{item[2] === "tattoo" ? "HASHA / TATTOO" : "HASHA / PIERCING"}</small>
                 </div>
-                <span>↗</span>
+                <span>↗︎</span>
               </div>
             </button>
           );
@@ -72,7 +72,7 @@ export default function Gallery({ showAll = false }: { showAll?: boolean }) {
         }}
       >
         <span>{state.expanded ? "ARATĂ MAI PUȚINE LUCRĂRI" : "DESCOPERĂ MAI MULTE LUCRĂRI"}</span>
-        <span>{state.expanded ? "↑" : "↓"}</span>
+        <span>{state.expanded ? "↑︎" : "↓︎"}</span>
       </button>
     </>
   );

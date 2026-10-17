@@ -38,7 +38,7 @@ export default function SiteSearch({ initial = "" }: { initial?: string }) {
                 <Link href={r.href}>
                   <small>{r.type.toUpperCase()}</small>
                   <b>{r.title}</b>
-                  <span>↗</span>
+                  <span>↗︎</span>
                 </Link>
               </li>
             ))}

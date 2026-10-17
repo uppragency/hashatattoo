@@ -88,7 +88,7 @@ export default function PortfolioPage() {
                   <strong>Tot despre {p.k.toLowerCase()}</strong>
                   <p>{p.t}</p>
                   <span>
-                    VEZI PAGINA <i>↗</i>
+                    VEZI PAGINA <i>↗︎</i>
                   </span>
                 </div>
               </Link>

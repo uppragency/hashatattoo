@@ -78,12 +78,12 @@ export default function FaqPage() {
                 {g.more ? (
                   <Link className="text-arrow" href={g.more.href}>
                     {g.more.label}
-                    <span>↗</span>
+                    <span>↗︎</span>
                   </Link>
                 ) : (
                   <Link className="text-arrow" href="/preturi">
                     {"VEZI PREȚURILE "}
-                    <span>↗</span>
+                    <span>↗︎</span>
                   </Link>
                 )}
               </div>

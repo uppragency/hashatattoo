@@ -90,15 +90,15 @@ export default function AreaPage({ area: a }: { area: Area }) {
             <div className="lp-route-actions">
               <a className="btn btn-light" href={mapsRoute(a.origin, "transit")} target="_blank" rel="noopener noreferrer">
                 {"METROU ȘI TRANSPORT PUBLIC "}
-                <span>↗</span>
+                <span>↗︎</span>
               </a>
               <a className="btn btn-outline" href={mapsRoute(a.origin, "driving")} target="_blank" rel="noopener noreferrer">
                 {"CU MAȘINA "}
-                <span>↗</span>
+                <span>↗︎</span>
               </a>
               <a className="btn btn-outline" href={mapsRoute(a.origin, "walking")} target="_blank" rel="noopener noreferrer">
                 {"PE JOS "}
-                <span>↗</span>
+                <span>↗︎</span>
               </a>
             </div>
           </div>
@@ -126,7 +126,7 @@ export default function AreaPage({ area: a }: { area: Area }) {
                     <h3>{r.title}</h3>
                     <p>{r.text}</p>
                   </div>
-                  <b>↗</b>
+                  <b>↗︎</b>
                 </div>
               ))}
             </div>
@@ -158,21 +158,21 @@ export default function AreaPage({ area: a }: { area: Area }) {
           </div>
           <div className="service-more-links reveal">
             <Link className="text-arrow" href="/zone">
-              TOATE ZONELE <span>↗</span>
+              TOATE ZONELE <span>↗︎</span>
             </Link>
             {others.slice(0, 3).map((o) => (
               <Link className="text-arrow" href={`/zone/${o.slug}`} key={o.slug}>
-                {o.name.toUpperCase()} <span>↗</span>
+                {o.name.toUpperCase()} <span>↗︎</span>
               </Link>
             ))}
             <Link className="text-arrow" href="/tatuaje">
-              TATUAJE <span>↗</span>
+              TATUAJE <span>↗︎</span>
             </Link>
             <Link className="text-arrow" href="/piercing">
-              PIERCING <span>↗</span>
+              PIERCING <span>↗︎</span>
             </Link>
             <Link className="text-arrow" href="/preturi">
-              PREȚURI <span>↗</span>
+              PREȚURI <span>↗︎</span>
             </Link>
           </div>
         </section>

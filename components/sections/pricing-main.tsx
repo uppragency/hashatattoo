@@ -101,7 +101,7 @@ export default function PricingMain() {
               <p className="price-call">
                 <a className="text-arrow" href="tel:+40766422219" data-cta="call">
                   {"SUNĂ LA +40 766 422 219 "}
-                  <span>↗</span>
+                  <span>↗︎</span>
                 </a>
               </p>
             </div>
@@ -124,7 +124,7 @@ export default function PricingMain() {
               <p>Prețurile de mai jos sunt cele afișate de studio. Dacă vrei mai multe piercinguri într-o singură programare sau ai dubii legate de zonă, scrie-ne pe WhatsApp.</p>
               <Link className="text-arrow" href="/piercing">
                 {"TOT DESPRE PIERCING "}
-                <span>↗</span>
+                <span>↗︎</span>
               </Link>
             </div>
             <div className="reveal">
@@ -202,7 +202,7 @@ export default function PricingMain() {
               <p>Alte întrebări frecvente le găsești pe pagina dedicată.</p>
               <Link className="btn btn-outline" href="/intrebari-frecvente">
                 {"TOATE ÎNTREBĂRILE "}
-                <span>↗</span>
+                <span>↗︎</span>
               </Link>
             </div>
             <FaqList items={FAQ} />

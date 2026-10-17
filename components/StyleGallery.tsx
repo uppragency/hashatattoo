@@ -26,7 +26,7 @@ export default function StyleGallery({ fixed }: { fixed?: StyleTag }) {
               </button>
             ))}
           </div>
-          <span className="micro">APASĂ PENTRU A VEDEA ↗</span>
+          <span className="micro">APASĂ PENTRU A VEDEA ↗︎</span>
         </div>
       )}
       {link ? (
@@ -34,7 +34,7 @@ export default function StyleGallery({ fixed }: { fixed?: StyleTag }) {
           Despre acest stil:{" "}
           <Link className="text-arrow" href={link}>
             {`PAGINA ${STYLE_LABELS[tag as StyleTag].toUpperCase()} `}
-            <span>↗</span>
+            <span>↗︎</span>
           </Link>
         </p>
       ) : null}
@@ -55,7 +55,7 @@ export default function StyleGallery({ fixed }: { fixed?: StyleTag }) {
                   <b>{item[1].split(" / ")[0].toUpperCase()}</b>
                   <small>HASHA / TATTOO</small>
                 </div>
-                <span>↗</span>
+                <span>↗︎</span>
               </div>
             </button>
           );

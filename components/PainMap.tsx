@@ -151,7 +151,7 @@ export default function PainMap() {
             data-cta="whatsapp"
           >
             {"ÎNTREABĂ UN ARTIST "}
-            <span>↗</span>
+            <span>↗︎</span>
           </a>
         </div>
         <div className="pm-chips" role="list" aria-label="Zonele din această vedere">

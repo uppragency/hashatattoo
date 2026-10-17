@@ -159,7 +159,7 @@ export default function GuideArticle({ guide, content }: { guide: Guide; content
                     <p>{g.excerpt}</p>
                     <span className="text-arrow">
                       {"CITEȘTE GHIDUL "}
-                      <span>↗</span>
+                      <span>↗︎</span>
                     </span>
                   </div>
                 </Link>

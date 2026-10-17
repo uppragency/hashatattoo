@@ -33,18 +33,18 @@ export default function NotFound() {
             <Link key={l.href} href={l.href}>
               <small>{l.k}</small>
               <span>{l.t}</span>
-              <b>↗</b>
+              <b>↗︎</b>
             </Link>
           ))}
         </div>
         <div className="nf-cta">
           <a className="btn btn-light" href={waLink("Bună! Nu am găsit ce căutam pe site.")} target="_blank" rel="noopener noreferrer" data-cta="whatsapp">
             {"SCRIE-NE PE WHATSAPP "}
-            <span>↗</span>
+            <span>↗︎</span>
           </a>
           <Link className="btn btn-outline" href="/">
             {"ÎNAPOI ACASĂ "}
-            <span>↗</span>
+            <span>↗︎</span>
           </Link>
         </div>
       </main>
