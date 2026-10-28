@@ -362,3 +362,38 @@ areas.push(
 );
 
 export const areaBySlug = (slug: string) => areas.find((a) => a.slug === slug);
+
+/** Sector 6: pagina cu cele mai multe afisari din Search Console, optimizata separat pentru piercing si tatuaje. */
+const s6 = areas.find((a) => a.slug === "sector-6");
+if (s6) {
+  Object.assign(s6, {
+    h1: ["Piercing și tatuaje", "pentru Sector 6."],
+    title: "Salon piercing și tatuaje Sector 6 București | Hasha Tattoo",
+    description:
+      "Piercing și tatuaje pentru Sector 6: Militari și Drumul Taberei. Studio privat în Sector 4, prețuri afișate, ruta Google Maps și programare pe WhatsApp.",
+    lead: "Cauți un salon de piercing sau de tatuaje din Sectorul 6? Studioul nostru este în Sectorul 4, pe Bulevardul Mărășești nr. 80. Vezi ruta din zona ta în Google Maps și programează-te pe WhatsApp.",
+    contextTitle: ["Piercing și tatuaje,", "din Sectorul 6."],
+    reasons: [
+      { title: "Piercing, prețuri afișate", text: "Lob 80 lei, cartilaj, nas, buric și septum 150 lei, dermal 250 lei. Lista completă este pe pagina Prețuri." },
+      { title: "Tatuaje pe programare", text: "Tatuaje, cover-up-uri și corectări. Prețul se stabilește după idee, mărime și zonă, cu o estimare lămurită pe WhatsApp." },
+      { title: "Studio privat", text: "Un spațiu liniștit, cu programare, unde lucrăm fără grabă și fără aglomerație." },
+    ],
+    faq: [
+      {
+        q: "Aveți salon de piercing pentru cei din Sectorul 6?",
+        a: "Studioul este în Sectorul 4, pe Bulevardul Mărășești nr. 80, și face piercing în ureche, nas, buric, septum, buză, sprânceană, dermal și alte zone. Din Sectorul 6 te programezi pe WhatsApp, iar ruta o vezi live în Google Maps.",
+      },
+      {
+        q: "Cât costă un piercing la voi?",
+        a: "Lobul costă 80 lei. Cartilajul, nasul, buricul, septumul, buza și sprânceana costă 150 lei, piercingul intim 200 lei, iar dermalul 250 lei. La intim și dermal bijuteria este inclusă. Detaliile sunt pe pagina Prețuri.",
+      },
+      {
+        q: "Cum se calculează prețul unui tatuaj?",
+        a: "Prețul depinde de timpul de lucru, deci de mărime, detaliu și zonă. Ne scrii ideea pe WhatsApp, iar după ce vedem desenul și zona primești o estimare.",
+      },
+      ...commonFaq("Sectorul 6"),
+      routeQ("Sectorul 6"),
+    ],
+    card: "Piercing și tatuaje, din Militari, Drumul Taberei sau alt cartier.",
+  });
+}
