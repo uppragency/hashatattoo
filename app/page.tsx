@@ -5,7 +5,7 @@ import HomeMain from "@/components/sections/home-main";
 import Footer from "@/components/sections/footer";
 import Lightbox from "@/components/Lightbox";
 import JsonLd from "@/components/JsonLd";
-import { SITE_URL } from "@/lib/site";
+import { SITE_URL, SOCIAL_LINKS } from "@/lib/site";
 
 const title = "Salon tatuaje și piercing București | Hasha Tattoo";
 const description =
@@ -32,6 +32,7 @@ export default function HomePage() {
         data={{
           "@context": "https://schema.org",
           "@type": "TattooParlor",
+          sameAs: SOCIAL_LINKS,
           name: "Hasha Tattoo",
           description: "Studio de tatuaje și piercing în București, Sector 4.",
           telephone: "+40766422219",

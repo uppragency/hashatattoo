@@ -5,7 +5,7 @@ import { services } from "@/lib/services";
 import Footer from "@/components/sections/footer";
 import JsonLd from "@/components/JsonLd";
 import QuoteForm from "@/components/QuoteForm";
-import { SITE_URL } from "@/lib/site";
+import { SITE_URL, SOCIAL_LINKS } from "@/lib/site";
 
 const WA_BASE = "https://wa.me/40766422219?text=";
 const num = (n: number) => String(n).padStart(3, "0");
@@ -47,6 +47,7 @@ export default function LandingPage({ page: p }: { page: Landing }) {
               areaServed: { "@type": "City", name: "București" },
               provider: {
                 "@type": "TattooParlor",
+                sameAs: SOCIAL_LINKS,
                 name: "Hasha Tattoo",
                 url: `${SITE_URL}/`,
                 telephone: "+40766422219",

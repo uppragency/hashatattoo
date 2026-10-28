@@ -4,7 +4,7 @@ import type { Service } from "@/lib/services";
 import { services } from "@/lib/services";
 import Footer from "@/components/sections/footer";
 import JsonLd from "@/components/JsonLd";
-import { SITE_URL } from "@/lib/site";
+import { SITE_URL, SOCIAL_LINKS } from "@/lib/site";
 
 const WA = "https://wa.me/40766422219?text=Bun%C4%83%21%20A%C8%99%20dori%20o%20programare%20la%20Hasha%20Tattoo.";
 
@@ -25,6 +25,7 @@ export default function ServicePage({ service: s }: { service: Service }) {
               areaServed: { "@type": "City", name: "București" },
               provider: {
                 "@type": "TattooParlor",
+                sameAs: SOCIAL_LINKS,
                 name: "Hasha Tattoo",
                 url: `${SITE_URL}/`,
                 telephone: "+40766422219",

@@ -3,11 +3,12 @@ import Footer from "@/components/sections/footer";
 import JsonLd from "@/components/JsonLd";
 import { FaqList, FinalCta, PageHero, num, waLink } from "@/components/PageParts";
 import { areas, mapsRoute, STUDIO_ADDRESS, type Area } from "@/lib/areas";
-import { SITE_URL } from "@/lib/site";
+import { SITE_URL, SOCIAL_LINKS } from "@/lib/site";
 
 export function parlor() {
   return {
     "@type": "TattooParlor",
+    sameAs: SOCIAL_LINKS,
     name: "Hasha Tattoo",
     url: `${SITE_URL}/`,
     telephone: "+40766422219",

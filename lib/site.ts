@@ -7,3 +7,9 @@ export const SITE_URL = (
 ).replace(/\/$/, "");
 
 export const WHATSAPP_NUMBER = "40766422219";
+
+/** Profiluri oficiale, folosite in schema.org (sameAs). */
+export const SOCIAL_LINKS = [
+  "https://www.instagram.com/hasha_tattoo",
+  "https://www.facebook.com/HashaTattoo",
+];
