@@ -2,7 +2,8 @@ import { visibleIndices, type Category } from "@/lib/portfolio";
 
 export type GalleryState = {
   category: Category;
-  expanded: boolean;
+  /** de cate ori s-a apasat "mai multe" (fiecare apasare adauga 2 randuri) */
+  step: number;
   open: boolean;
   /** pozitia in lista filtrata */
   selected: number;
@@ -11,7 +12,7 @@ export type GalleryState = {
   list: number[] | null;
 };
 
-let state: GalleryState = { category: "all", expanded: false, open: false, selected: 0, focusBack: null, list: null };
+let state: GalleryState = { category: "all", step: 0, open: false, selected: 0, focusBack: null, list: null };
 const listeners = new Set<() => void>();
 
 function set(patch: Partial<GalleryState>) {
@@ -26,10 +27,13 @@ export const subscribe = (l: () => void) => {
 export const getState = () => state;
 
 export function setCategory(category: Category) {
-  set({ category, expanded: false });
+  set({ category, step: 0 });
 }
-export function toggleExpanded() {
-  set({ expanded: !state.expanded });
+export function moreRows() {
+  set({ step: state.step + 1 });
+}
+export function resetRows() {
+  set({ step: 0 });
 }
 export const currentList = (s: GalleryState = state) => s.list ?? visibleIndices(s.category);
 export function openLightbox(index: number, card: HTMLElement | null, list?: number[]) {

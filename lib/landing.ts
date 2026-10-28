@@ -227,6 +227,9 @@ export const landings: Landing[] = [
       { image: "lucrare-25.webp", alt: "Tatuaj color cu motociclete pe antebraț, realizat la Hasha Tattoo", label: "COLOR / ANTEBRAȚ" },
       { image: "lucrare-37.webp", alt: "Tatuaj cu motive animale în compoziție grafică, cu accente roșii, realizat la Hasha Tattoo", label: "GRAFIC / GAMBĂ" },
       { image: "lucrare-34.webp", alt: "Tatuaj color pe antebraț cu un personaj în costum, realizat la Hasha Tattoo", label: "COLOR / ANTEBRAȚ" },
+      { image: "lucrare-52.webp", alt: "Backpiece black and grey cu chipuri simetrice și motive ornamentale, realizat la Hasha Tattoo", label: "BACKPIECE / ORNAMENTAL" },
+      { image: "lucrare-69.webp", alt: "Sleeve color cu tigru și flori, realizat la Hasha Tattoo", label: "SLEEVE / COLOR" },
+      { image: "lucrare-48.webp", alt: "Tatuaj realist black and grey cu portret de bărbat în costum, realizat la Hasha Tattoo", label: "PORTRET / BLACK AND GREY" },
     ],
     pricing: {
       title: ["Cât costă", "un tatuaj."],
@@ -435,6 +438,9 @@ export const landings: Landing[] = [
       { image: "pierce-8.webp", alt: "Piercinguri multiple în ureche, realizate la Hasha Tattoo", label: "URECHE / PIERCING" },
       { image: "pierce-4.webp", alt: "Piercing în buric cu bijuterie simplă, realizat la Hasha Tattoo", label: "BURIC / PIERCING" },
       { image: "pierce-5.webp", alt: "Piercinguri de suprafață în zona toracelui, realizate la Hasha Tattoo", label: "SUPRAFAȚĂ" },
+      { image: "pierce-9.webp", alt: "Piercing în ureche cu bijuterii mici pe helix și lob, realizat la Hasha Tattoo", label: "URECHE / HELIX" },
+      { image: "pierce-10.webp", alt: "Piercing multiplu în ureche cu bijuterii aurii, realizat la Hasha Tattoo", label: "URECHE / COMPOZIȚIE" },
+      { image: "pierce-11.webp", alt: "Piercing în sprânceană cu bijuterie cu țepi, realizat la Hasha Tattoo", label: "SPRÂNCEANĂ" },
     ],
     pricing: {
       title: ["Cât costă", "un piercing."],

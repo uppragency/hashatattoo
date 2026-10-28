@@ -507,3 +507,80 @@ a.lp-guide-card:hover .lp-guide-card-img img{transform:scale(1.04)}
 .adm-login label{font-size:10px;letter-spacing:.22em;color:var(--muted)}
 .adm-login input{background:transparent;border:0;border-bottom:1px solid var(--ink);color:var(--ink);padding:12px 0;font-size:20px;outline:none;border-radius:0}
 .adm-login p{color:#e08a7a;margin:0;font-size:14px}
+
+/* Portofoliu: 5 coloane x 3 randuri pe desktop, 3 coloane x 3 randuri pe mobil; fiecare "mai multe" adauga 2 randuri */
+.pf-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:clamp(8px,1vw,14px)}
+.pf-card{position:relative;display:block;aspect-ratio:4/5;overflow:hidden;isolation:isolate;background:#1a1a19;border:0;padding:0;color:var(--ink);text-align:left;cursor:pointer}
+.pf-card img{width:100%;height:100%;object-fit:cover;filter:brightness(.82) saturate(.8);transition:transform 1.1s var(--ease),filter .6s}
+.pf-card:hover img,.pf-card:focus-visible img{transform:scale(1.05);filter:brightness(1) saturate(.98)}
+.pf-card::after{content:'';position:absolute;inset:0;background:linear-gradient(0deg,rgba(0,0,0,.72),transparent 38%);pointer-events:none;opacity:.9}
+.pf-caption{position:absolute;left:14px;right:14px;bottom:13px;z-index:2}
+.pf-caption b{display:block;font-weight:400;letter-spacing:.17em;font-size:10px}
+.pf-caption small{display:block;color:#c1bdb4;letter-spacing:.12em;font-size:8px;margin-top:7px}
+.pf-grid[data-step="0"] .pf-card:nth-child(n+16){display:none}
+.pf-grid[data-step="1"] .pf-card:nth-child(n+26){display:none}
+.pf-grid[data-step="2"] .pf-card:nth-child(n+36){display:none}
+.pf-grid[data-step="3"] .pf-card:nth-child(n+46){display:none}
+.pf-grid[data-step="4"] .pf-card:nth-child(n+56){display:none}
+.pf-grid[data-step="5"] .pf-card:nth-child(n+66){display:none}
+.pf-grid[data-step="6"] .pf-card:nth-child(n+76){display:none}
+.pf-grid[data-step="7"] .pf-card:nth-child(n+86){display:none}
+.pf-grid[data-step="8"] .pf-card:nth-child(n+96){display:none}
+.pf-grid[data-step="9"] .pf-card:nth-child(n+106){display:none}
+.pf-grid[data-step="10"] .pf-card:nth-child(n+116){display:none}
+.pf-grid[data-step="11"] .pf-card:nth-child(n+126){display:none}
+.pf-grid[data-step="12"] .pf-card:nth-child(n+136){display:none}
+.pf-grid[data-step="13"] .pf-card:nth-child(n+146){display:none}
+.pf-grid[data-step="14"] .pf-card:nth-child(n+156){display:none}
+.pf-grid[data-step="15"] .pf-card:nth-child(n+166){display:none}
+.pf-grid[data-step="16"] .pf-card:nth-child(n+176){display:none}
+.pf-grid[data-step="17"] .pf-card:nth-child(n+186){display:none}
+.pf-grid[data-step="18"] .pf-card:nth-child(n+196){display:none}
+.pf-grid[data-step="19"] .pf-card:nth-child(n+206){display:none}
+.pf-grid[data-step="20"] .pf-card:nth-child(n+216){display:none}
+.pf-grid[data-step="21"] .pf-card:nth-child(n+226){display:none}
+.pf-grid[data-step="22"] .pf-card:nth-child(n+236){display:none}
+.pf-grid[data-step="23"] .pf-card:nth-child(n+246){display:none}
+.pf-grid[data-step="24"] .pf-card:nth-child(n+256){display:none}
+.pf-grid[data-step="25"] .pf-card:nth-child(n+266){display:none}
+.pf-grid[data-step="26"] .pf-card:nth-child(n+276){display:none}
+.pf-grid[data-step="27"] .pf-card:nth-child(n+286){display:none}
+.pf-grid[data-step="28"] .pf-card:nth-child(n+296){display:none}
+.pf-grid[data-step="29"] .pf-card:nth-child(n+306){display:none}
+.pf-grid[data-step="30"] .pf-card:nth-child(n+316){display:none}
+@media(max-width:900px){
+  .pf-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:6px}
+  .pf-caption{display:none}
+  .pf-grid[data-step="0"] .pf-card:nth-child(n+10){display:none}
+  .pf-grid[data-step="1"] .pf-card:nth-child(n+16){display:none}
+  .pf-grid[data-step="2"] .pf-card:nth-child(n+22){display:none}
+  .pf-grid[data-step="3"] .pf-card:nth-child(n+28){display:none}
+  .pf-grid[data-step="4"] .pf-card:nth-child(n+34){display:none}
+  .pf-grid[data-step="5"] .pf-card:nth-child(n+40){display:none}
+  .pf-grid[data-step="6"] .pf-card:nth-child(n+46){display:none}
+  .pf-grid[data-step="7"] .pf-card:nth-child(n+52){display:none}
+  .pf-grid[data-step="8"] .pf-card:nth-child(n+58){display:none}
+  .pf-grid[data-step="9"] .pf-card:nth-child(n+64){display:none}
+  .pf-grid[data-step="10"] .pf-card:nth-child(n+70){display:none}
+  .pf-grid[data-step="11"] .pf-card:nth-child(n+76){display:none}
+  .pf-grid[data-step="12"] .pf-card:nth-child(n+82){display:none}
+  .pf-grid[data-step="13"] .pf-card:nth-child(n+88){display:none}
+  .pf-grid[data-step="14"] .pf-card:nth-child(n+94){display:none}
+  .pf-grid[data-step="15"] .pf-card:nth-child(n+100){display:none}
+  .pf-grid[data-step="16"] .pf-card:nth-child(n+106){display:none}
+  .pf-grid[data-step="17"] .pf-card:nth-child(n+112){display:none}
+  .pf-grid[data-step="18"] .pf-card:nth-child(n+118){display:none}
+  .pf-grid[data-step="19"] .pf-card:nth-child(n+124){display:none}
+  .pf-grid[data-step="20"] .pf-card:nth-child(n+130){display:none}
+  .pf-grid[data-step="21"] .pf-card:nth-child(n+136){display:none}
+  .pf-grid[data-step="22"] .pf-card:nth-child(n+142){display:none}
+  .pf-grid[data-step="23"] .pf-card:nth-child(n+148){display:none}
+  .pf-grid[data-step="24"] .pf-card:nth-child(n+154){display:none}
+  .pf-grid[data-step="25"] .pf-card:nth-child(n+160){display:none}
+  .pf-grid[data-step="26"] .pf-card:nth-child(n+166){display:none}
+  .pf-grid[data-step="27"] .pf-card:nth-child(n+172){display:none}
+  .pf-grid[data-step="28"] .pf-card:nth-child(n+178){display:none}
+  .pf-grid[data-step="29"] .pf-card:nth-child(n+184){display:none}
+  .pf-grid[data-step="30"] .pf-card:nth-child(n+190){display:none}
+}
+.pf-grid[data-step="all"] .pf-card{display:block}

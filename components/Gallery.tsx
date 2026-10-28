@@ -2,8 +2,8 @@
 "use client";
 
 import { useRef, useSyncExternalStore } from "react";
-import { INITIAL_VISIBLE, items, visibleIndices, type Category } from "@/lib/portfolio";
-import { getState, openLightbox, setCategory, subscribe, toggleExpanded } from "@/lib/gallery-store";
+import { GRID, items, visibleIndices, type Category } from "@/lib/portfolio";
+import { getState, moreRows, openLightbox, resetRows, setCategory, subscribe } from "@/lib/gallery-store";
 
 const FILTERS: { key: Category; label: string; count: number }[] = [
   { key: "all", label: "TOATE", count: items.length },
@@ -11,11 +11,29 @@ const FILTERS: { key: Category; label: string; count: number }[] = [
   { key: "piercing", label: "PIERCING", count: items.filter((i) => i[2] === "piercing").length },
 ];
 
+const MOBILE_QUERY = "(max-width: 900px)";
+const subscribeMobile = (cb: () => void) => {
+  const mq = window.matchMedia(MOBILE_QUERY);
+  mq.addEventListener("change", cb);
+  return () => mq.removeEventListener("change", cb);
+};
+
+/** Cate carduri sunt vizibile: afisarea e limitata din CSS (data-step), ca sa nu existe salt la hidratare. */
+const visibleCount = (mobile: boolean, step: number) => {
+  const g = mobile ? GRID.mobile : GRID.desktop;
+  return (g.rows + step * GRID.moreRows) * g.cols;
+};
+
 export default function Gallery({ showAll = false }: { showAll?: boolean }) {
   const state = useSyncExternalStore(subscribe, getState, getState);
+  const mobile = useSyncExternalStore(
+    subscribeMobile,
+    () => window.matchMedia(MOBILE_QUERY).matches,
+    () => false,
+  );
   const gridRef = useRef<HTMLDivElement>(null);
   const inds = visibleIndices(state.category);
-  const showing = state.expanded || showAll ? inds : inds.slice(0, INITIAL_VISIBLE);
+  const allShown = showAll || visibleCount(mobile, state.step) >= inds.length;
 
   return (
     <>
@@ -36,44 +54,44 @@ export default function Gallery({ showAll = false }: { showAll?: boolean }) {
         </div>
         <span className="micro">APASĂ PENTRU A VEDEA ↗︎</span>
       </div>
-      <div className="gallery-grid" id="galleryGrid" aria-live="polite" ref={gridRef}>
-        {showing.map((index) => {
+      <div className="pf-grid" id="galleryGrid" data-step={showAll ? "all" : Math.min(state.step, 30)} aria-live="polite" ref={gridRef}>
+        {inds.map((index) => {
           const item = items[index];
           return (
             <button
               key={item[0]}
               type="button"
-              className="gallery-card"
+              className="pf-card"
               data-index={index}
               aria-label={"Vezi lucrarea: " + item[1]}
               onClick={(e) => openLightbox(index, e.currentTarget)}
             >
               <img src={"/assets/" + item[0]} loading="lazy" decoding="async" alt={item[3]} />
-              <div className="gallery-card-caption">
-                <div>
-                  <b>{item[1].split(" / ")[0].toUpperCase()}</b>
-                  <small>{item[2] === "tattoo" ? "HASHA / TATTOO" : "HASHA / PIERCING"}</small>
-                </div>
-                <span>↗︎</span>
+              <div className="pf-caption">
+                <b>{item[1].split(" / ")[0].toUpperCase()}</b>
+                <small>{item[2] === "tattoo" ? "HASHA / TATTOO" : "HASHA / PIERCING"}</small>
               </div>
             </button>
           );
         })}
       </div>
-      <button
-        className="load-more"
-        type="button"
-        id="loadMore"
-        hidden={showAll || inds.length <= INITIAL_VISIBLE}
-        onClick={() => {
-          const wasExpanded = getState().expanded;
-          toggleExpanded();
-          if (wasExpanded) requestAnimationFrame(() => gridRef.current?.scrollIntoView({ behavior: "smooth", block: "start" }));
-        }}
-      >
-        <span>{state.expanded ? "ARATĂ MAI PUȚINE LUCRĂRI" : "DESCOPERĂ MAI MULTE LUCRĂRI"}</span>
-        <span>{state.expanded ? "↑︎" : "↓︎"}</span>
-      </button>
+      {showAll ? null : (
+        <button
+          className="load-more"
+          type="button"
+          id="loadMore"
+          hidden={inds.length <= visibleCount(mobile, 0)}
+          onClick={() => {
+            if (allShown) {
+              resetRows();
+              requestAnimationFrame(() => gridRef.current?.scrollIntoView({ behavior: "smooth", block: "start" }));
+            } else moreRows();
+          }}
+        >
+          <span>{allShown ? "ARATĂ MAI PUȚINE LUCRĂRI" : "DESCOPERĂ MAI MULTE LUCRĂRI"}</span>
+          <span>{allShown ? "↑︎" : "↓︎"}</span>
+        </button>
+      )}
     </>
   );
 }

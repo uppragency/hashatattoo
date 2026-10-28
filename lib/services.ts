@@ -49,8 +49,8 @@ export const services: Service[] = [
     statement:
       "Un tatuaj realist se bazează pe nuanțe fine, contraste controlate și proporții exacte. De aceea începem cu o discuție despre referințe, dimensiune și zona corpului, apoi stabilim împreună designul înainte de prima ședință. Lucrările mai mari pot necesita mai multe ședințe, iar numărul lor se stabilește după ce vedem designul.",
     gallery: [
-      { image: "lucrare-11.webp", alt: "Tatuaj portret realist pe braț, realizat la Hasha Tattoo", label: "PORTRET / REALISM" },
-      { image: "lucrare-12.webp", alt: "Tatuaj realist cu portret pe braț, realizat la Hasha Tattoo", label: "BLACK & GREY / PORTRET" },
+      { image: "lucrare-48.webp", alt: "Tatuaj realist black and grey cu portret de bărbat în costum pe braț, realizat la Hasha Tattoo", label: "PORTRET / REALISM" },
+      { image: "lucrare-60.webp", alt: "Tatuaj realist black and grey cu portret de femeie pe braț, realizat la Hasha Tattoo", label: "BLACK & GREY / PORTRET" },
     ],
     principlesTitle: ["Cum lucrăm", "un tatuaj", "realist."],
     principles: [
@@ -82,8 +82,8 @@ export const services: Service[] = [
     statement:
       "Black and grey înseamnă tatuaje realizate doar din negru și degradeuri de gri, fără culoare. Rezultatul depinde de felul în care sunt construite umbrele și luminile, de aceea alegem împreună designul, dimensiunea și zona potrivită înainte de ședință. Pentru lucrări mari, cum sunt mânecile sau backpiece-urile, planificăm etapele împreună.",
     gallery: [
-      { image: "lucrare-4.webp", alt: "Tatuaj black and grey pe braț, realizat la Hasha Tattoo", label: "BLACK & GREY / SLEEVE" },
-      { image: "lucrare-9.webp", alt: "Tatuaj artistic realist pe picior, realizat la Hasha Tattoo", label: "BLACK & GREY / LEG SLEEVE" },
+      { image: "lucrare-52.webp", alt: "Backpiece black and grey cu chipuri simetrice și motive ornamentale, realizat la Hasha Tattoo", label: "BLACK & GREY / BACKPIECE" },
+      { image: "lucrare-57.webp", alt: "Backpiece realist black and grey cu portrete și peisaj urban, realizat la Hasha Tattoo", label: "BLACK & GREY / BACKPIECE" },
     ],
     principlesTitle: ["Cum lucrăm", "black", "and grey."],
     principles: [
@@ -183,8 +183,8 @@ export const services: Service[] = [
     statement:
       "Fiecare ureche este diferită, iar un piercing arată bine și se vindecă mai ușor când este ales potrivit anatomiei. Discutăm despre locul dorit, bijuterie și stilul tău, de la piercinguri simple până la industrial și compoziții cu mai multe bijuterii. La final primești instrucțiuni clare de îngrijire.",
     gallery: [
-      { image: "pierce-3.webp", alt: "Piercing industrial și bijuterii în ureche, realizate la Hasha Tattoo", label: "INDUSTRIAL / EAR PIERCING" },
-      { image: "pierce-8.webp", alt: "Piercinguri multiple în ureche, realizate la Hasha Tattoo", label: "URECHE / PIERCING" },
+      { image: "pierce-9.webp", alt: "Piercing în ureche cu bijuterii mici pe helix și lob, realizat la Hasha Tattoo", label: "URECHE / HELIX" },
+      { image: "pierce-10.webp", alt: "Piercing multiplu în ureche cu bijuterii aurii, realizat la Hasha Tattoo", label: "URECHE / COMPOZIȚIE" },
     ],
     principlesTitle: ["Cum lucrăm", "un piercing", "în ureche."],
     principles: [
