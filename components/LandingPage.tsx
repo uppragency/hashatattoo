@@ -494,7 +494,7 @@ export default function LandingPage({ page: p }: { page: Landing }) {
             </h2>
             <div>
               <p>Vrei să afli cum este la Hasha Tattoo? Citește părerile clienților noștri direct pe Google Maps, apoi scrie-ne pe WhatsApp pentru o programare.</p>
-              <a href="https://www.google.com/maps/search/?api=1&query=Hasha+Tattoo+Bucuresti" target="_blank" rel="noopener noreferrer" className="text-arrow">
+              <a href="https://www.google.com/maps?cid=8814312455281840630" target="_blank" rel="noopener noreferrer" className="text-arrow">
                 {"CITEȘTE RECENZIILE PE GOOGLE "}
                 <span>↗︎</span>
               </a>

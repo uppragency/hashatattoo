@@ -42,7 +42,7 @@ export default function HomePage() {
           ],
           url: `${SITE_URL}/`,
           image: `${SITE_URL}/assets/studio.webp`,
-          hasMap: "https://www.google.com/maps/search/?api=1&query=Bulevardul+M%C4%83r%C4%83%C8%99e%C8%99ti+80+Bucure%C8%99ti",
+          hasMap: "https://www.google.com/maps?cid=8814312455281840630",
           address: {
             "@type": "PostalAddress",
             streetAddress: "Bulevardul Mărășești nr. 80",

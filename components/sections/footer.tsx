@@ -39,7 +39,7 @@ export default function Footer() {
         <div className="hasha-footer__group">
           <h3 className="hasha-footer__label">Ne găsești</h3>
           <p>
-            <a href={"https://www.google.com/maps/search/?api=1&query=Bulevardul+M%C4%83r%C4%83%C8%99e%C8%99ti+80+Bucure%C8%99ti"} target="_blank" rel="noopener noreferrer">
+            <a href={"https://www.google.com/maps?cid=8814312455281840630"} target="_blank" rel="noopener noreferrer">
               Bulevardul Mărășești nr. 80,
               <br />
               {"Sector 4, București "}

@@ -76,7 +76,7 @@ export default function HomeMain() {
           <span>PROGRAM</span>
           <strong>LUNI — VINERI · 12:00 — 20:00</strong>
         </a>
-        <a href={"https://www.google.com/maps/search/?api=1&query=Bulevardul+M%C4%83r%C4%83%C8%99e%C8%99ti+80+Bucure%C8%99ti"} target="_blank" rel="noopener noreferrer">
+        <a href={"https://www.google.com/maps?cid=8814312455281840630"} target="_blank" rel="noopener noreferrer">
           <span>GĂSEȘTE-NE</span>
           <strong>BD. MĂRĂȘEȘTI 80 · SECTOR 4 ↗︎</strong>
         </a>
@@ -327,7 +327,7 @@ export default function HomeMain() {
             <p>
               Vrei să afli cum este la Hasha Tattoo? Citește părerile clienților noștri direct pe Google Maps, apoi scrie-ne pe WhatsApp pentru o programare.
             </p>
-            <a href={"https://www.google.com/maps/search/?api=1&query=Hasha+Tattoo+Bucuresti"} target="_blank" rel="noopener noreferrer" className="text-arrow">
+            <a href={"https://www.google.com/maps?cid=8814312455281840630"} target="_blank" rel="noopener noreferrer" className="text-arrow">
               {"CITEȘTE RECENZIILE PE GOOGLE "}
               <span>↗︎</span>
             </a>

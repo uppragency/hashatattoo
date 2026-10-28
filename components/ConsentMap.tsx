@@ -3,7 +3,7 @@
 import { useEffect, useSyncExternalStore } from "react";
 import { allowFunctional, getState, loadConsent, subscribe } from "@/lib/consent";
 
-const MAPS_LINK = "https://www.google.com/maps/search/?api=1&query=Bulevardul+M%C4%83r%C4%83%C8%99e%C8%99ti+80+Bucure%C8%99ti";
+const MAPS_LINK = "https://www.google.com/maps?cid=8814312455281840630";
 const EMBED = "https://www.google.com/maps?q=Bulevardul+M%C4%83r%C4%83%C8%99e%C8%99ti+80+Bucure%C8%99ti&output=embed";
 
 /** Harta Google se incarca doar cu consimtamant (Google seteaza cookie-uri). */

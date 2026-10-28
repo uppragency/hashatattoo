@@ -115,7 +115,7 @@ export default function AboutMain() {
             <p>
               Ne găsești pe Bulevardul Mărășești nr. 80, în Sector 4, într-o zonă centrală și ușor de ajuns. Spațiul este curat, privat și organizat astfel încât să te poți concentra pe ședință, nu pe context.
             </p>
-            <a className="text-arrow" href={"https://www.google.com/maps/search/?api=1&query=Bulevardul+M%C4%83r%C4%83%C8%99e%C8%99ti+80+Bucure%C8%99ti"} target="_blank" rel="noopener noreferrer">
+            <a className="text-arrow" href={"https://www.google.com/maps?cid=8814312455281840630"} target="_blank" rel="noopener noreferrer">
               {"VEZI ADRESA PE HARTĂ "}
               <span>↗︎</span>
             </a>

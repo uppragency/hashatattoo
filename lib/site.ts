@@ -12,4 +12,8 @@ export const WHATSAPP_NUMBER = "40766422219";
 export const SOCIAL_LINKS = [
   "https://www.instagram.com/hasha_tattoo",
   "https://www.facebook.com/HashaTattoo",
+  "https://www.google.com/maps?cid=8814312455281840630",
 ];
+
+/** Profilul Google Business al studioului. */
+export const GOOGLE_BUSINESS_URL = "https://www.google.com/maps?cid=8814312455281840630";
