@@ -120,6 +120,15 @@ export default function ContactPage() {
               </a>
             ))}
           </div>
+          <p className="lp-social reveal">
+            <span>URMĂREȘTE-NE</span>
+            <a href="https://www.instagram.com/hasha_tattoo" target="_blank" rel="noopener noreferrer me">
+              INSTAGRAM <i>↗︎</i>
+            </a>
+            <a href="https://www.facebook.com/HashaTattoo" target="_blank" rel="noopener noreferrer me">
+              FACEBOOK <i>↗︎</i>
+            </a>
+          </p>
         </section>
 
         <section className="lp-healing section-pad">

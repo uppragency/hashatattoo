@@ -67,6 +67,18 @@ export default function Footer() {
                 <span aria-hidden="true">↗︎</span>
               </a>
             </li>
+            <li>
+              <a href="https://www.instagram.com/hasha_tattoo" target="_blank" rel="noopener noreferrer me">
+                {"Instagram "}
+                <span aria-hidden="true">↗︎</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.facebook.com/HashaTattoo" target="_blank" rel="noopener noreferrer me">
+                {"Facebook "}
+                <span aria-hidden="true">↗︎</span>
+              </a>
+            </li>
           </ul>
         </nav>
       </div>

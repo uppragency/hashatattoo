@@ -12,7 +12,7 @@ const sections: LegalSection[] = [
   {
     title: "Informații generale",
     paragraphs: [
-      `Acest site este operat de ${operator}, cu sediul în ${BUSINESS.address}. Poți să ne contactezi la ${BUSINESS.email} sau la ${BUSINESS.phone}.`,
+      `Acest site este operat de ${operator}, cu sediul social în ${BUSINESS.registeredOffice}, și punct de lucru în ${BUSINESS.address}. Poți să ne contactezi la ${BUSINESS.email} sau la ${BUSINESS.phone}.`,
       "Prin accesarea și folosirea site-ului accepți acești termeni. Dacă nu ești de acord cu ei, te rugăm să nu folosești site-ul.",
     ],
   },

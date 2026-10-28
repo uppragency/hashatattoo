@@ -7,7 +7,7 @@ export const PIERCING_PRICES: PriceRow[] = [
   { name: "Industrial", price: 150 },
   { name: "Buric", price: 150 },
   { name: "Nas", price: 150 },
-  { name: "Sfarc (septum)", price: 150 },
+  { name: "Septum", price: 150 },
   { name: "Buză", price: 150 },
   { name: "Sprânceană", price: 150 },
   { name: "Smiley", price: 150 },

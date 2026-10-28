@@ -12,7 +12,7 @@ const sections: LegalSection[] = [
   {
     title: "Cine este operatorul datelor",
     paragraphs: [
-      `Operatorul datelor tale personale este ${operator}, cu sediul în ${BUSINESS.address}. Pentru orice întrebare despre datele tale ne poți scrie la ${BUSINESS.email} sau ne poți suna la ${BUSINESS.phone}.`,
+      `Operatorul datelor tale personale este ${operator}, cu sediul social în ${BUSINESS.registeredOffice}, și punct de lucru în ${BUSINESS.address}. Pentru orice întrebare despre datele tale ne poți scrie la ${BUSINESS.email} sau ne poți suna la ${BUSINESS.phone}.`,
       "Prelucrăm datele în conformitate cu Regulamentul (UE) 2016/679 (GDPR) și cu legislația română aplicabilă.",
     ],
   },
@@ -21,10 +21,11 @@ const sections: LegalSection[] = [
     items: [
       "Datele din conversațiile de programare (nume, număr de telefon, mesajele și imaginile de referință pe care ni le trimiți pe WhatsApp, prin telefon sau email). Scop: răspundem solicitării tale și stabilim programarea. Temei: pașii premergători unui contract, la cererea ta (art. 6 alin. 1 lit. b GDPR).",
       "Datele tehnice trimise automat de browserul tău când accesezi site-ul (adresă IP, tip de browser, pagini vizitate, data și ora). Scop: funcționarea, securitatea și stabilitatea site-ului. Temei: interesul nostru legitim (art. 6 alin. 1 lit. f GDPR).",
-      "Datele colectate prin cookie-uri și servicii terțe, doar dacă ți-ai dat acordul, de exemplu harta Google. Scop: cel descris în Politica cookies. Temei: consimțământul tău (art. 6 alin. 1 lit. a GDPR).",
+      "Date statistice despre folosirea site-ului, prin Google Analytics (pagini vizitate, durata vizitei, tipul dispozitivului, țara și orașul aproximativ, apăsările pe butoanele de WhatsApp și telefon). Cookie-urile analitice se setează doar dacă ți-ai dat acordul. Scop: înțelegem cum este folosit site-ul și îl îmbunătățim. Temei: consimțământul tău (art. 6 alin. 1 lit. a GDPR).",
+      "Datele colectate prin alte cookie-uri și servicii terțe, doar dacă ți-ai dat acordul, de exemplu harta Google. Scop: cel descris în Politica cookies. Temei: consimțământul tău (art. 6 alin. 1 lit. a GDPR).",
     ],
     paragraphs: [
-      "Formularul de estimare salvează serviciul ales, zona corpului și descrierea ideii tale într-o bază de date a studioului (Supabase), pentru a te putea contacta și a gestiona solicitările. Nu cerem nume sau telefon în formular. Apoi se deschide WhatsApp cu un mesaj pregătit, pe care îl trimiți tu. Dacă scrii date personale în câmpul de descriere, acestea se salvează la fel.",
+      "Formularul de estimare salvează serviciul ales, zona corpului și descrierea ideii tale într-o bază de date a studioului (Supabase), pentru a te putea contacta și a gestiona solicitările. Nu cerem nume sau telefon în formular. La fiecare cerere nouă primim o notificare pe email, trimisă prin Resend, care conține aceleași informații din formular. Apoi se deschide WhatsApp cu un mesaj pregătit, pe care îl trimiți tu. Dacă scrii date personale în câmpul de descriere, acestea se salvează la fel.",
     ],
   },
   {
@@ -44,6 +45,8 @@ const sections: LegalSection[] = [
     items: [
       "Vercel Inc., furnizorul de găzduire al site-ului.",
       "Supabase Inc., furnizorul bazei de date în care se salvează cererile din formular (regiune UE, Paris).",
+      "Resend, Inc., furnizorul serviciului de email prin care trimitem studioului notificarea unei cereri noi din formular (servere în UE).",
+      "Google Ireland Limited și Google LLC (Google Analytics), pentru statistici anonimizate despre folosirea site-ului, doar dacă ești de acord cu cookie-urile analitice. Fără acord, Google primește doar semnale fără cookie-uri, care nu te identifică.",
       "Meta Platforms (WhatsApp), când ne scrii pe WhatsApp, conform propriilor termeni și politici.",
       "Google (Google Maps), dacă ești de acord cu afișarea hărții.",
       "Autorități publice, doar dacă legea ne obligă.",

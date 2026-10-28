@@ -106,7 +106,7 @@ export const piercingZones: PiercingZone[] = [
     id: "septum",
     name: "Septum",
     group: "Nas",
-    price: priceOf("Sfarc (septum)"),
+    price: priceOf("Septum"),
     heal: "2 până la 4 luni, uneori mai mult",
     feel: null,
     checks: [

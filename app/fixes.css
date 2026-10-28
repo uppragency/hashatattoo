@@ -584,3 +584,9 @@ a.lp-guide-card:hover .lp-guide-card-img img{transform:scale(1.04)}
   .pf-grid[data-step="30"] .pf-card:nth-child(n+190){display:none}
 }
 .pf-grid[data-step="all"] .pf-card{display:block}
+
+.lp-social{display:flex;flex-wrap:wrap;align-items:center;gap:10px 28px;margin-top:clamp(28px,3vw,44px);padding-top:22px;border-top:1px solid var(--line);font-size:11px;letter-spacing:.19em}
+.lp-social span{color:var(--muted)}
+.lp-social a{color:var(--ink);border-bottom:1px solid var(--line);padding-bottom:3px}
+.lp-social a:hover{border-color:var(--ink)}
+.lp-social i{font-style:normal}
