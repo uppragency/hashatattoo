@@ -167,7 +167,7 @@ export default function ServicePage({ service: s }: { service: Service }) {
                 {o.short} <span>↗︎</span>
               </Link>
             ))}
-            <Link className="text-arrow" href="/preturi">
+            <Link className="text-arrow" href="/preturi-tatuaje">
               DESPRE PREȚURI <span>↗︎</span>
             </Link>
           </div>

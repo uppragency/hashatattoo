@@ -44,7 +44,7 @@ export default function PricingMain() {
               "@type": "BreadcrumbList",
               itemListElement: [
                 { "@type": "ListItem", position: 1, name: "Acasă", item: `${SITE_URL}/` },
-                { "@type": "ListItem", position: 2, name: "Prețuri", item: `${SITE_URL}/preturi` },
+                { "@type": "ListItem", position: 2, name: "Prețuri", item: `${SITE_URL}/preturi-tatuaje` },
               ],
             },
             {

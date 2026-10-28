@@ -266,7 +266,7 @@ const content: GuideContent = {
         "O programare prea apropiată poate însemna lucru pe o piele încă sensibilă, iar rezultatul poate avea de suferit. Răbdarea este parte din planul unei lucrări mari.",
         { h3: "Ține evidența" },
         "Fotografiază lucrarea după vindecare, notează ce a mers bine și ce ai vrea ajustat și discută cu artistul înainte de ședința următoare. Astfel, proiectul avansează coerent.",
-        "Pentru lucrări mari, poți afla estimarea de preț și numărul de ședințe de la artist, după consultație. Detalii despre cum se calculează găsești pe pagina de [prețuri](/preturi).",
+        "Pentru lucrări mari, poți afla estimarea de preț și numărul de ședințe de la artist, după consultație. Detalii despre cum se calculează găsești pe pagina de [prețuri](/preturi-tatuaje).",
       ],
     },
     {
@@ -305,7 +305,7 @@ const content: GuideContent = {
           ],
         },
         { h3: "Cât durează fiecare etapă" },
-        "Durata variază foarte mult. Pregătirea și șablonul pot lua între 20 și 40 de minute. Lucrul propriu-zis depinde de mărime, detaliu și zonă. Un tatuaj mic se poate încheia într-o oră, în timp ce o piesă detaliată poate cere mai multe ore sau mai multe ședințe. Tatuajele se tarifează în funcție de timpul de lucru, deci o estimare corectă se face după ce artistul vede ideea și zona. Detalii găsești pe pagina de [prețuri](/preturi).",
+        "Durata variază foarte mult. Pregătirea și șablonul pot lua între 20 și 40 de minute. Lucrul propriu-zis depinde de mărime, detaliu și zonă. Un tatuaj mic se poate încheia într-o oră, în timp ce o piesă detaliată poate cere mai multe ore sau mai multe ședințe. Tatuajele se tarifează în funcție de timpul de lucru, deci o estimare corectă se face după ce artistul vede ideea și zona. Detalii găsești pe pagina de [prețuri](/preturi-tatuaje).",
         { h3: "Igiena: ce ar trebui să vezi" },
         {
           ul: [

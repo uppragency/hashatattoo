@@ -7,7 +7,7 @@ const LINKS: { href: string; label: string }[] = [
   { href: "/tatuaje", label: "Tatuaje" },
   { href: "/piercing", label: "Piercing" },
   { href: "/portofoliu", label: "Portofoliu" },
-  { href: "/preturi", label: "Prețuri" },
+  { href: "/preturi-tatuaje", label: "Prețuri" },
   { href: "/despre-noi", label: "Despre noi" },
   { href: "/ghiduri", label: "Ghiduri" },
   { href: "/cover-up-tatuaje-bucuresti", label: "Cover-up tatuaje" },

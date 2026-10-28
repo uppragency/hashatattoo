@@ -54,7 +54,7 @@ export default function SiteHeader() {
           <Link href="/tatuaje" aria-current={pathname === "/tatuaje" ? "page" : undefined}>TATUAJE</Link>
           <Link href="/piercing" aria-current={pathname === "/piercing" ? "page" : undefined}>PIERCING</Link>
           <Link href="/portofoliu" aria-current={pathname === "/portofoliu" ? "page" : undefined}>PORTOFOLIU</Link>
-          <Link href="/preturi" aria-current={pathname === "/preturi" ? "page" : undefined}>PREȚURI</Link>
+          <Link href="/preturi-tatuaje" aria-current={pathname === "/preturi-tatuaje" ? "page" : undefined}>PREȚURI</Link>
           <Link href="/despre-noi" aria-current={pathname === "/despre-noi" ? "page" : undefined}>
             DESPRE NOI
           </Link>
@@ -92,7 +92,7 @@ export default function SiteHeader() {
           <Link href="/portofoliu" onClick={closeMenu}>
             PORTOFOLIU <small>04</small>
           </Link>
-          <Link href="/preturi" onClick={closeMenu}>
+          <Link href="/preturi-tatuaje" onClick={closeMenu}>
             PREȚURI <small>05</small>
           </Link>
           <Link href="/despre-noi" onClick={closeMenu}>

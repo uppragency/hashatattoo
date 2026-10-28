@@ -250,7 +250,7 @@ const content: GuideContent = {
         "Dacă un magazin vinde „titan” la un preț mult sub cel al furnizorilor serioși, probabil nu este vorba despre titan de implant. Compară prețurile la bijuterii similare, de la mai mulți vânzători, și cere informații despre material. O bijuterie bună, purtată ani de zile, ajunge să coste mai puțin pe zi decât una slabă înlocuită de trei ori.",
         { h3: "Costul unei alegeri greșite" },
         "O bijuterie ieftină care provoacă o reacție poate duce la vindecare lentă, la cicatrici, la scoaterea piercingului și la cheltuieli pentru un nou piercing. Economia inițială dispare repede. De aceea, la piercingurile noi, investiția în materialul bun merită.",
-        "Prețurile piercingurilor de la Hasha Tattoo, inclusiv ce include fiecare preț, sunt pe pagina de [prețuri](/preturi). Pentru bijuterii finale, mai elaborate, discută cu piercerul după vindecare.",
+        "Prețurile piercingurilor de la Hasha Tattoo, inclusiv ce include fiecare preț, sunt pe pagina de [prețuri](/preturi-tatuaje). Pentru bijuterii finale, mai elaborate, discută cu piercerul după vindecare.",
       ],
     },
     {
@@ -284,7 +284,7 @@ const content: GuideContent = {
             "Dacă ai îndoieli, cere părerea piercerului înainte de cumpărare. Mulți sunt bucuroși să recomande.",
           ],
         },
-        "La Hasha Tattoo, pentru anumite piercinguri, bijuteria este inclusă în preț, conform listei de pe pagina de [prețuri](/preturi). Pentru detalii despre materiale și opțiunile disponibile, întreabă direct pe WhatsApp, înainte de programare.",
+        "La Hasha Tattoo, pentru anumite piercinguri, bijuteria este inclusă în preț, conform listei de pe pagina de [prețuri](/preturi-tatuaje). Pentru detalii despre materiale și opțiunile disponibile, întreabă direct pe WhatsApp, înainte de programare.",
       ],
     },
     {

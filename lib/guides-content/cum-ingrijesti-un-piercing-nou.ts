@@ -321,7 +321,7 @@ const content: GuideContent = {
             "Ce pot face diferit în îngrijire?",
           ],
         },
-        "La noi poți afla, pe lângă verificare, ce bijuterie se potrivește zonei tale. Manopera pentru verificare, curățare, schimbare sau remontare este 30 lei, iar toate prețurile le găsești pe pagina de [prețuri](/preturi).",
+        "La noi poți afla, pe lângă verificare, ce bijuterie se potrivește zonei tale. Manopera pentru verificare, curățare, schimbare sau remontare este 30 lei, iar toate prețurile le găsești pe pagina de [prețuri](/preturi-tatuaje).",
       ],
     },
     {

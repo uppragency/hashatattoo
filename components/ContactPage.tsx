@@ -222,7 +222,7 @@ export default function ContactPage() {
                 <em>ce îți dorești.</em>
               </h2>
               <p>Completează câteva rânduri și îți deschidem WhatsApp cu mesajul pregătit. Nu trimitem datele către un server.</p>
-              <Link className="text-arrow" href="/preturi">
+              <Link className="text-arrow" href="/preturi-tatuaje">
                 {"VEZI PREȚURILE "}
                 <span>↗︎</span>
               </Link>

@@ -127,7 +127,7 @@ export default function StylePage({ page: p }: { page: StylePageDef }) {
             <Link className="text-arrow" href="/ghiduri/harta-durerii">
               HARTA DURERII <span>↗︎</span>
             </Link>
-            <Link className="text-arrow" href="/preturi">
+            <Link className="text-arrow" href="/preturi-tatuaje">
               PREȚURI <span>↗︎</span>
             </Link>
           </div>

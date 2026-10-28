@@ -81,7 +81,7 @@ export default function FaqPage() {
                     <span>↗︎</span>
                   </Link>
                 ) : (
-                  <Link className="text-arrow" href="/preturi">
+                  <Link className="text-arrow" href="/preturi-tatuaje">
                     {"VEZI PREȚURILE "}
                     <span>↗︎</span>
                   </Link>

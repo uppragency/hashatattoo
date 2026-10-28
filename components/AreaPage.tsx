@@ -174,7 +174,7 @@ export default function AreaPage({ area: a }: { area: Area }) {
             <Link className="text-arrow" href="/piercing">
               PIERCING <span>↗︎</span>
             </Link>
-            <Link className="text-arrow" href="/preturi">
+            <Link className="text-arrow" href="/preturi-tatuaje">
               PREȚURI <span>↗︎</span>
             </Link>
           </div>

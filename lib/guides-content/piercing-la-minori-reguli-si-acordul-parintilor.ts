@@ -247,7 +247,7 @@ const content: GuideContent = {
             "Vino cu actele cerute și, dacă este cazul, cu părintele sau tutorele.",
           ],
         },
-        "Prețurile piercingurilor sunt publicate pe pagina de [prețuri](/preturi), iar pentru anatomie poți folosi [verificatorul de piercing](/verificator-piercing). Dacă nu ești sigur ce se aplică în cazul tău, întreabă: răspunsul e mai bun decât o presupunere.",
+        "Prețurile piercingurilor sunt publicate pe pagina de [prețuri](/preturi-tatuaje), iar pentru anatomie poți folosi [verificatorul de piercing](/verificator-piercing). Dacă nu ești sigur ce se aplică în cazul tău, întreabă: răspunsul e mai bun decât o presupunere.",
       ],
     },
     {

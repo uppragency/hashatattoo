@@ -9,7 +9,7 @@ const pages: SearchEntry[] = [
   { title: "Tatuaje", text: "tatuaje realism black and grey portrete mâneci backpiece studio privat programare", href: "/tatuaje", type: "Pagină" },
   { title: "Piercing", text: "piercing ureche buric nas septum limbă buză sprânceană bijuterii", href: "/piercing", type: "Pagină" },
   { title: "Portofoliu", text: "lucrări poze galerie tatuaje piercing realizate în studio", href: "/portofoliu", type: "Pagină" },
-  { title: "Prețuri", text: "cât costă tatuaj piercing lei tarife lob cartilaj industrial buric manoperă", href: "/preturi", type: "Pagină" },
+  { title: "Prețuri", text: "cât costă tatuaj piercing lei tarife lob cartilaj industrial buric manoperă", href: "/preturi-tatuaje", type: "Pagină" },
   { title: "Despre noi", text: "studio privat artiști echipă istorie Hasha Tattoo București", href: "/despre-noi", type: "Pagină" },
   { title: "Contact", text: "program adresă telefon whatsapp email Bulevardul Mărășești 80 Sector 4 luni vineri 12:00 20:00", href: "/contact", type: "Pagină" },
   { title: "Întrebări frecvente", text: "programare prețuri îngrijire infecție durere întrebări răspunsuri", href: "/intrebari-frecvente", type: "Pagină" },

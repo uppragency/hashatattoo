@@ -43,7 +43,7 @@ const content: GuideContent = {
         { h3: "Variante" },
         "Poți alege un lob clasic, un lob dublu sau triplu, cu perforări aliniate sau decalate, sau un lob mai sus, pe marginea lobului. Cu răbdare, un lob întins gradual poate găzdui bijuterii mai groase, dar acesta este un subiect separat, care cere atenție și timp.",
         { h3: "Preț" },
-        "La Hasha Tattoo, piercingul în lob costă **80 lei**. Detaliile complete sunt pe pagina de [prețuri](/preturi).",
+        "La Hasha Tattoo, piercingul în lob costă **80 lei**. Detaliile complete sunt pe pagina de [prețuri](/preturi-tatuaje).",
       ],
     },
     {
@@ -76,7 +76,7 @@ const content: GuideContent = {
         { h3: "Snug (antihelix)" },
         "Pliul paralel cu helixul, în interiorul urechii. Este un piercing complex, cu aspect spectaculos, dar nu se potrivește oricărei anatomii. Vindecarea poate fi lentă, iar mărimea bijuteriei trebuie aleasă cu grijă.",
         { h3: "Preț" },
-        "Toate aceste piercinguri din cartilaj se încadrează la **150 lei**, iar orice situație specială se discută în prealabil. Pentru detalii despre bijuterie, verifică pagina de [prețuri](/preturi) sau scrie-ne.",
+        "Toate aceste piercinguri din cartilaj se încadrează la **150 lei**, iar orice situație specială se discută în prealabil. Pentru detalii despre bijuterie, verifică pagina de [prețuri](/preturi-tatuaje) sau scrie-ne.",
       ],
     },
     {
@@ -281,7 +281,7 @@ const content: GuideContent = {
       id: "pret-si-programare",
       h2: "Prețuri și programare la Hasha Tattoo",
       blocks: [
-        "Prețurile pentru piercing sunt afișate și le poți verifica pe pagina de [prețuri](/preturi). Pe scurt, pentru ureche:",
+        "Prețurile pentru piercing sunt afișate și le poți verifica pe pagina de [prețuri](/preturi-tatuaje). Pe scurt, pentru ureche:",
         {
           table: {
             head: ["Serviciu", "Preț"],

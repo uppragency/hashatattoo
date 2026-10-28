@@ -112,7 +112,7 @@ export default function HomeMain() {
               </a>
               <div className="micro-links">
                 <a href="#portofoliu">VEZI LUCRĂRILE NOASTRE ↘︎</a>
-                <Link href="/preturi">DESPRE PREȚURI ↗︎</Link>
+                <Link href="/preturi-tatuaje">DESPRE PREȚURI ↗︎</Link>
               </div>
             </div>
           </div>

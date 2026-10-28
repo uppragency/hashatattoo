@@ -7,9 +7,9 @@ import Lightbox from "@/components/Lightbox";
 import JsonLd from "@/components/JsonLd";
 import { SITE_URL, SOCIAL_LINKS } from "@/lib/site";
 
-const title = "Salon tatuaje și piercing București | Hasha Tattoo";
+const title = "Salon piercing și tatuaje București Sector 4 | Hasha Tattoo";
 const description =
-  "Tatuaje și piercing în București, Sector 4. Ace sterile, tușuri vegane, spațiu privat. Programează-te direct pe WhatsApp, de luni până vineri.";
+  "Salon de piercing și tatuaje în București, Sector 4, aproape de Sectoarele 3, 5 și 6. Ace sterile, tușuri vegane, prețuri afișate. Programare pe WhatsApp.";
 
 export const metadata: Metadata = pageMetadata(title, description, "/");
 

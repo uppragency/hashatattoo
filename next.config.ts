@@ -8,7 +8,11 @@ const nextConfig: NextConfig = {
       { source: "/index.html", destination: "/", permanent: true },
       { source: "/despre-noi.html", destination: "/despre-noi", permanent: true },
       { source: "/acoperire-tatuaje-bucuresti", destination: "/cover-up-tatuaje-bucuresti", permanent: true },
-      { source: "/preturi.html", destination: "/preturi", permanent: true },
+      { source: "/preturi.html", destination: "/preturi-tatuaje", permanent: true },
+      { source: "/preturi", destination: "/preturi-tatuaje", permanent: true },
+      { source: "/video", destination: "/portofoliu", permanent: true },
+      { source: "/index.php", destination: "/", permanent: true },
+      { source: "/index.php/:path+", destination: "/:path+", permanent: true },
     ];
   },
   async headers() {

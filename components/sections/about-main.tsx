@@ -144,7 +144,7 @@ export default function AboutMain() {
               {"PROGRAMEAZĂ-TE PE WHATSAPP "}
               <span>↗︎</span>
             </a>
-            <Link href="/preturi" className="text-arrow">
+            <Link href="/preturi-tatuaje" className="text-arrow">
               {"VEZI PREȚURILE "}
               <span>↗︎</span>
             </Link>

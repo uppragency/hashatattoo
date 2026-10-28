@@ -240,7 +240,7 @@ const content: GuideContent = {
       blocks: [
         "Mărimea nu influențează doar aspectul, ci și costul, timpul și senzațiile din ședință. Merită să le iei în calcul înainte să decizi.",
         { h3: "Prețul" },
-        "La tatuaje, prețul se calculează în funcție de timpul de lucru, deci mărimea, detaliul și zona contribuie direct la cost. O piesă dublă ca suprafață poate cere mai mult decât dublul timpului, dacă are și mai multe detalii. O estimare exactă se dă după ce artistul vede desenul și zona. Pentru informații despre cum se calculează prețurile la studio, vezi pagina de [prețuri](/preturi).",
+        "La tatuaje, prețul se calculează în funcție de timpul de lucru, deci mărimea, detaliul și zona contribuie direct la cost. O piesă dublă ca suprafață poate cere mai mult decât dublul timpului, dacă are și mai multe detalii. O estimare exactă se dă după ce artistul vede desenul și zona. Pentru informații despre cum se calculează prețurile la studio, vezi pagina de [prețuri](/preturi-tatuaje).",
         { h3: "Durata" },
         "Un tatuaj mic poate dura sub o oră, unul mediu câteva ore, iar unul mare mai multe ședințe. Lucrările mari se împart pe ședințe, pentru că atât corpul, cât și concentrarea au limite. Un artist responsabil îți spune cât se estimează și ce se poate face într-o singură zi.",
         { h3: "Durerea" },
@@ -307,7 +307,7 @@ const content: GuideContent = {
         { h3: "Nu compara cu pozele de pe telefon" },
         "Imaginile de pe ecran nu au scară. Un desen care pare impunător pe telefon poate avea câțiva centimetri pe piele. Cere artistului dimensiunea exactă în centimetri și pune-o pe corp: măsoară cu o riglă sau decupează o hârtie de mărimea respectivă și ține-o pe zonă.",
         { h3: "Mărime și buget" },
-        "Prețul se leagă de timpul de lucru, deci de mărime și de detaliu. Dacă bugetul este limitat, discută cu artistul ce se poate simplifica sau ce se poate face în etape, în loc să micșorezi desenul până la pierderea lizibilității. Vezi [prețurile](/preturi) pentru principiul de calcul al studioului.",
+        "Prețul se leagă de timpul de lucru, deci de mărime și de detaliu. Dacă bugetul este limitat, discută cu artistul ce se poate simplifica sau ce se poate face în etape, în loc să micșorezi desenul până la pierderea lizibilității. Vezi [prețurile](/preturi-tatuaje) pentru principiul de calcul al studioului.",
       ],
     },
   ],

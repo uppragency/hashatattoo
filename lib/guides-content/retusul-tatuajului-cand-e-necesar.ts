@@ -235,7 +235,7 @@ const content: GuideContent = {
         { h3: "Condiții tipice" },
         "Multe studiouri cer ca tatuajul să fi fost îngrijit conform instrucțiunilor, ca retușul să se facă într-un anumit interval după ședința inițială și ca pielea să fie complet vindecată. Estomparea apărută din cauza expunerii la soare sau a neîngrijirii nu intră de regulă în retușul gratuit. Aceste reguli nu sunt abuzuri, ci reflectă faptul că rezultatul depinde și de client.",
         { h3: "Prețul unui retuș" },
-        "Prețul depinde de zona de lucru și de timpul necesar. Un retuș mic costă, în general, mai puțin decât o ședință completă, dar nu este întotdeauna gratuit. Întreabă artistul pentru o estimare, după ce ți-a văzut tatuajul. Pentru informații despre prețuri, vezi pagina de [prețuri](/preturi).",
+        "Prețul depinde de zona de lucru și de timpul necesar. Un retuș mic costă, în general, mai puțin decât o ședință completă, dar nu este întotdeauna gratuit. Întreabă artistul pentru o estimare, după ce ți-a văzut tatuajul. Pentru informații despre prețuri, vezi pagina de [prețuri](/preturi-tatuaje).",
       ],
     },
     {

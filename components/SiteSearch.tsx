@@ -5,7 +5,7 @@ import { useState } from "react";
 import { search, type SearchEntry } from "@/lib/search-index";
 
 const POPULAR: { label: string; href: string }[] = [
-  { label: "Prețuri", href: "/preturi" },
+  { label: "Prețuri", href: "/preturi-tatuaje" },
   { label: "Portofoliu", href: "/portofoliu" },
   { label: "Ghiduri", href: "/ghiduri" },
   { label: "Contact", href: "/contact" },

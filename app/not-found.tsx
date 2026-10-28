@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 const LINKS = [
   { href: "/tatuaje", k: "TATUAJE", t: "Realism, black and grey, portrete, mâneci." },
   { href: "/piercing", k: "PIERCING", t: "Ureche, buric, nas și alte zone." },
-  { href: "/preturi", k: "PREȚURI", t: "Lista de prețuri și cum se calculează." },
+  { href: "/preturi-tatuaje", k: "PREȚURI", t: "Lista de prețuri și cum se calculează." },
   { href: "/ghiduri", k: "GHIDURI", t: "Pregătire, îngrijire, alegerea stilului." },
 ];
 

@@ -12,7 +12,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const list: MetadataRoute.Sitemap = [
     { url: `${SITE_URL}/`, priority: 1.0 },
     { url: `${SITE_URL}/despre-noi`, priority: 0.7 },
-    { url: `${SITE_URL}/preturi`, priority: 0.7 },
+    { url: `${SITE_URL}/preturi-tatuaje`, priority: 0.7 },
     { url: `${SITE_URL}/tatuaje`, priority: 0.9 },
     { url: `${SITE_URL}/piercing`, priority: 0.9 },
     { url: `${SITE_URL}/contact`, priority: 0.8 },

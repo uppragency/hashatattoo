@@ -4,7 +4,7 @@ const content: GuideContent = {
   intro: [
     "„Cât costă un tatuaj?” este prima întrebare pe care o primește aproape orice studio, iar răspunsul onest începe cu „depinde”. Nu pentru că studiourile vor să ascundă ceva, ci pentru că două tatuaje cu aceeași mărime pot cere un număr foarte diferit de ore: unul este o linie simplă, celălalt are umbre fine, detalii mici și culoare.",
     "Ghidul explică ce intră într-un preț de tatuaj în București, cum se calculează, ce factori îl urcă sau îl coboară, cum compari două oferte, ce întrebări pui înainte să plătești un avans și cum eviți costurile neplănuite. Nu dă cifre inventate. Un ghid care promite „un tatuaj mediu costă X lei” induce în eroare, pentru că media nu spune nimic despre tatuajul tău.",
-    "Pentru prețurile publice ale Hasha Tattoo, vezi pagina de [prețuri](/preturi). Piercingurile au prețuri afișate, iar tatuajele se calculează după timpul de lucru, cu o estimare clară după ce se discută ideea. Mai jos găsești și tabelul cu prețurile de piercing, pe care le poți verifica direct.",
+    "Pentru prețurile publice ale Hasha Tattoo, vezi pagina de [prețuri](/preturi-tatuaje). Piercingurile au prețuri afișate, iar tatuajele se calculează după timpul de lucru, cu o estimare clară după ce se discută ideea. Mai jos găsești și tabelul cu prețurile de piercing, pe care le poți verifica direct.",
   ],
   sections: [
     {
@@ -256,7 +256,7 @@ const content: GuideContent = {
             ],
           },
         },
-        "Extra: schimbarea unui piercing intim costă 60 lei, iar manopera (schimbare, remontare, verificare, curățare) costă 30 lei. Lista completă și actualizată este pe pagina de [prețuri](/preturi).",
+        "Extra: schimbarea unui piercing intim costă 60 lei, iar manopera (schimbare, remontare, verificare, curățare) costă 30 lei. Lista completă și actualizată este pe pagina de [prețuri](/preturi-tatuaje).",
         { h3: "Ce să verifici la bijuterie" },
         "La piercingurile obișnuite, bijuteria se alege separat. Întreabă ce material include prețul și ce opțiuni există. Vezi [cum alegi bijuteria de piercing](/ghiduri/cum-alegi-bijuteria-de-piercing) și [piercing în ureche](/ghiduri/piercing-ureche-ghid).",
       ],

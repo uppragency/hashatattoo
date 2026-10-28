@@ -179,7 +179,7 @@ const content: GuideContent = {
         { h3: "Alegerea zonei" },
         "Unele zone sunt mai tolerante decât altele. Lobul urechii, cu țesut moale și circulație bună, este de obicei mai iertător decât cartilajul, care se vindecă mai lent și reacționează mai ușor la iritație. Zonele supuse frecării constante, cum ar fi buricul sau nasul, cer mai multă atenție. Dacă pielea ta este foarte reactivă, începe cu o zonă mai ușoară și vezi cum reacționezi.",
         { h3: "Bijuteria inițială" },
-        "Bijuteria pusă la piercing este cea pe care o porți săptămâni sau luni. De aceea merită să fie cea mai bună pe care ți-o permiți, nu cea mai ieftină. Un studio serios discută cu tine despre material și îți explică de ce a ales-o. Pentru prețurile practicate la Hasha Tattoo, vezi pagina de [prețuri](/preturi), unde bijuteria este inclusă pentru anumite tipuri de piercing.",
+        "Bijuteria pusă la piercing este cea pe care o porți săptămâni sau luni. De aceea merită să fie cea mai bună pe care ți-o permiți, nu cea mai ieftină. Un studio serios discută cu tine despre material și îți explică de ce a ales-o. Pentru prețurile practicate la Hasha Tattoo, vezi pagina de [prețuri](/preturi-tatuaje), unde bijuteria este inclusă pentru anumite tipuri de piercing.",
         { h3: "Dimensiunea și forma" },
         "O bijuterie prea scurtă strânge pielea când apare umflătura și provoacă iritație. Una prea lungă se mișcă și se agață. Piercerul alege lungimea în funcție de anatomia ta și de umflătura așteptată. Nu schimba singur bijuteria cu una mai mică sau mai mare în perioada de vindecare, fără sfatul lui.",
         { h3: "Închiderea bijuteriei" },

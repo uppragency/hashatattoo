@@ -21,7 +21,7 @@ export default function LandingPage({ page: p }: { page: Landing }) {
     if (svc) return { href: `/${svc.slug}`, label: svc.short };
     if (slug === "tatuaje") return { href: "/tatuaje", label: "TOATE TATUAJELE" };
     if (slug === "piercing") return { href: "/piercing", label: "TOATE PIERCINGURILE" };
-    return { href: "/preturi", label: "DESPRE PREȚURI" };
+    return { href: "/preturi-tatuaje", label: "DESPRE PREȚURI" };
   });
 
   return (
@@ -461,7 +461,7 @@ export default function LandingPage({ page: p }: { page: Landing }) {
                   </li>
                 ))}
               </ul>
-              <Link className="text-arrow" href="/preturi">
+              <Link className="text-arrow" href="/preturi-tatuaje">
                 {"AFLĂ MAI MULTE DESPRE PREȚURI "}
                 <span>↗︎</span>
               </Link>

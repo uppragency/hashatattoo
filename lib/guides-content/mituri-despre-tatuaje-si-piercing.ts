@@ -92,7 +92,7 @@ const content: GuideContent = {
         { h3: "„Liniile foarte fine sunt la fel de durabile ca cele groase”" },
         "Verdict: fals. Liniile foarte fine și detaliile mici se pot estompa sau se pot „dizolva” mai repede și se vindecă mai puțin predictibil. Un artist onest îți va spune dacă detaliile tale au nevoie de mai mult spațiu. Vezi [cum alegi mărimea tatuajului](/ghiduri/cum-alegi-marimea-tatuajului).",
         { h3: "„Un tatuaj mic costă puțin, indiferent de detalii”" },
-        "Verdict: fals. Prețul depinde de timpul de lucru și de complexitate. Un desen mic, dar foarte detaliat, poate cere mai mult timp decât unul mai mare și simplu. Vezi [prețurile](/preturi) pentru principiul de preț al studioului.",
+        "Verdict: fals. Prețul depinde de timpul de lucru și de complexitate. Un desen mic, dar foarte detaliat, poate cere mai mult timp decât unul mai mare și simplu. Vezi [prețurile](/preturi-tatuaje) pentru principiul de preț al studioului.",
         { h3: "„Un tatuaj se copiază după o poză și gata”" },
         "Verdict: parțial adevărat. Poza este un punct de pornire, dar un artist bun adaptează desenul la zona, la forma corpului și la pielea ta. Copierea servilă a lucrării altui artist este și o problemă de etică. Vezi [cum îi explici ideea unui tatuator](/ghiduri/cum-ii-explici-ideea-unui-tatuator).",
         { h3: "„Un nume scris pe corp aduce ghinion” și alte superstiții" },

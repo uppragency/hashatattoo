@@ -70,7 +70,7 @@ const content: GuideContent = {
         { h3: "Ședință (sesiune)" },
         "O sesiune de lucru. Un tatuaj mic se poate face într-o singură ședință, iar unul mare, în mai multe. Între ședințe pielea se vindecă.",
         { h3: "Timp de lucru" },
-        "Durata efectivă a execuției. Prețul unui tatuaj se stabilește, de obicei, în funcție de timpul necesar, mărime și complexitate. Vezi [prețurile](/preturi).",
+        "Durata efectivă a execuției. Prețul unui tatuaj se stabilește, de obicei, în funcție de timpul necesar, mărime și complexitate. Vezi [prețurile](/preturi-tatuaje).",
         { h3: "Avans" },
         "Sumă plătită anticipat pentru rezervarea datei. Condițiile (valoare, returnare, mutare) diferă de la studio la studio, așa că întreabă înainte să plătești.",
         { h3: "Declarație de informare" },

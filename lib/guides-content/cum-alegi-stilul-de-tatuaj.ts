@@ -200,7 +200,7 @@ const content: GuideContent = {
         { h3: "Regula mărimii" },
         "Cu cât desenul are mai multe detalii, cu atât are nevoie de mai mult spațiu. Un portret în realism, care să-și păstreze expresia peste ani, necesită, de regulă, o dimensiune de câteva zeci de centimetri pătrați. Nu o mică miniatură de câțiva centimetri. Dacă vrei ceva mic, spune-i artistului și va adapta desenul: mai puține elemente, contururi mai clare, spații mai generoase.",
         { h3: "Cum se leagă mărimea de preț" },
-        "La Hasha Tattoo, prețurile pentru tatuaje se calculează după timpul de lucru. Un design mai mare și mai detaliat înseamnă mai mult timp, deci un cost mai ridicat. Detalii despre ce influențează prețul găsești pe pagina de [prețuri](/preturi).",
+        "La Hasha Tattoo, prețurile pentru tatuaje se calculează după timpul de lucru. Un design mai mare și mai detaliat înseamnă mai mult timp, deci un cost mai ridicat. Detalii despre ce influențează prețul găsești pe pagina de [prețuri](/preturi-tatuaje).",
       ],
     },
     {

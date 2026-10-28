@@ -26,7 +26,7 @@ const content: GuideContent = {
         },
         "Un mesaj clar duce la un răspuns clar. Dacă ideea nu e încă formată, spune și asta: poți cere o discuție sau o consultație pentru a o contura.",
         { h3: "Ce poți aștepta de la răspuns" },
-        "Un studio serios îți răspunde cu întrebări de clarificare, cu o estimare orientativă și cu un interval de programare. La tatuaje, prețul se calculează în funcție de timpul de lucru, deci estimarea rămâne orientativă până la stabilirea designului. La piercing, prețurile sunt fixe, conform listei din pagina de [prețuri](/preturi).",
+        "Un studio serios îți răspunde cu întrebări de clarificare, cu o estimare orientativă și cu un interval de programare. La tatuaje, prețul se calculează în funcție de timpul de lucru, deci estimarea rămâne orientativă până la stabilirea designului. La piercing, prețurile sunt fixe, conform listei din pagina de [prețuri](/preturi-tatuaje).",
         { h3: "Semne bune" },
         {
           ul: [
@@ -308,7 +308,7 @@ const content: GuideContent = {
       blocks: [
         "Prețul este una dintre primele întrebări, iar răspunsul diferă între tatuaj și piercing.",
         { h3: "Piercingul" },
-        "Piercingurile au prețuri fixe, publicate. La Hasha Tattoo, de exemplu, prețurile sunt de la 80 de lei pentru lob și 150 de lei pentru cartilaj, industrial, buric, nas, septum, buză, sprânceană sau smiley, 200 de lei pentru piercing intim și 250 de lei pentru dermal. La intim și dermal, bijuteria este inclusă. Lista completă și ce include fiecare preț sunt pe pagina de [prețuri](/preturi).",
+        "Piercingurile au prețuri fixe, publicate. La Hasha Tattoo, de exemplu, prețurile sunt de la 80 de lei pentru lob și 150 de lei pentru cartilaj, industrial, buric, nas, septum, buză, sprânceană sau smiley, 200 de lei pentru piercing intim și 250 de lei pentru dermal. La intim și dermal, bijuteria este inclusă. Lista completă și ce include fiecare preț sunt pe pagina de [prețuri](/preturi-tatuaje).",
         { h3: "Tatuajul" },
         "Tatuajele se calculează în funcție de timpul de lucru, deci prețul depinde de mărime, de detaliu, de zonă și de stil. O estimare exactă se dă după ce artistul vede ideea și zona. Pentru un punct de plecare, ai pe site un formular de estimare, care deschide WhatsApp cu un mesaj pregătit.",
         { h3: "Ce să nu faci" },

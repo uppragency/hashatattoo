@@ -153,7 +153,7 @@ const content: GuideContent = {
         { h3: "Timpul" },
         "Spune când vrei să fie gata și dacă ai un eveniment sau o deadline: o nuntă, o vacanță, o competiție. Un tatuaj nu se grăbește. Dacă ai o dată-limită apropiată, discută cu artistul despre ce este realist și despre perioada de vindecare. Pentru planificarea în funcție de sport sau de sezon, vezi ghidurile despre [tatuaj și sport](/ghiduri/tatuajul-si-sportul) și [tatuaj vara](/ghiduri/tatuaj-vara-soare-plaja-piscina).",
         { h3: "Estimarea la Hasha Tattoo" },
-        "Pe pagina de [prețuri](/preturi) găsești informații despre cum se calculează tatuajele și lista de prețuri la piercing. Poți folosi și formularul de estimare, care deschide WhatsApp cu mesajul pregătit. Un artist îți răspunde cu o estimare orientativă și cu un interval de programare.",
+        "Pe pagina de [prețuri](/preturi-tatuaje) găsești informații despre cum se calculează tatuajele și lista de prețuri la piercing. Poți folosi și formularul de estimare, care deschide WhatsApp cu mesajul pregătit. Un artist îți răspunde cu o estimare orientativă și cu un interval de programare.",
       ],
     },
     {

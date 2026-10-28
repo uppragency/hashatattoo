@@ -146,7 +146,7 @@ const content: GuideContent = {
       id: "cat-costa",
       h2: "Cât costă un tatuaj și de ce nu există un preț fix",
       blocks: [
-        "Prețul unui tatuaj nu se calculează după „cât de mare e”, ci în primul rând după **timpul de lucru**. La Hasha Tattoo, tatuajele sunt tarifate în funcție de timpul necesar realizării lor. Pe pagina de [prețuri](/preturi) găsești explicația completă, inclusiv prețurile afișate pentru piercing.",
+        "Prețul unui tatuaj nu se calculează după „cât de mare e”, ci în primul rând după **timpul de lucru**. La Hasha Tattoo, tatuajele sunt tarifate în funcție de timpul necesar realizării lor. Pe pagina de [prețuri](/preturi-tatuaje) găsești explicația completă, inclusiv prețurile afișate pentru piercing.",
         { h3: "Factorii care influențează prețul" },
         {
           ul: [
@@ -160,7 +160,7 @@ const content: GuideContent = {
         },
         "Un artist cu experiență lucrează mai precis și, deseori, mai eficient, dar tarifează experiența. Pe de altă parte, un tatuaj făcut corect din prima nu necesită corecturi costisitoare și retușuri, deci prețul real pe termen lung poate fi mai mic.",
         { h3: "Cum primești o estimare" },
-        "Pentru tatuaje mici și simple, poți suna sau scrie pe WhatsApp la +40 766 422 219 și primești o estimare orientativă. Pentru lucrări mai mari, estimarea vine după ce artistul vede ideea, dimensiunea și zona. Poți folosi și formularul de pe [pagina de prețuri](/preturi).",
+        "Pentru tatuaje mici și simple, poți suna sau scrie pe WhatsApp la +40 766 422 219 și primești o estimare orientativă. Pentru lucrări mai mari, estimarea vine după ce artistul vede ideea, dimensiunea și zona. Poți folosi și formularul de pe [pagina de prețuri](/preturi-tatuaje).",
         {
           title: "BUGET REALIST",
           note: "Dacă ai un buget limitat, spune-l din prima. Un artist bun îți poate propune un design adaptat, o lucrare în mai multe ședințe sau o variantă mai simplă, fără să compromită calitatea. Nu e rușinos să ai un buget. Este rușinos să alegi un tatuaj ieftin și să plătești de două ori.",
