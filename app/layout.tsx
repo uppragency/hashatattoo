@@ -18,6 +18,7 @@ import Behavior from "@/components/Behavior";
 import PageTransition from "@/components/PageTransition";
 import CookieBanner from "@/components/CookieBanner";
 import { SITE_URL } from "@/lib/site";
+import { ogUrl } from "@/lib/og";
 
 const GA_ID = "G-2HE5ZV7L84";
 /* Consent Mode v2: totul refuzat implicit; se actualizeaza din lib/consent.ts dupa alegerea utilizatorului. */
@@ -30,7 +31,7 @@ export const metadata: Metadata = {
     type: "website",
     locale: "ro_RO",
     siteName: "Hasha Tattoo",
-    images: ["/assets/lucrare-5.webp"],
+    images: [{ url: ogUrl("Tatuaje și piercing în București", "/", "/assets/lucrare-5.webp"), width: 1200, height: 630 }],
   },
   twitter: { card: "summary_large_image" },
 };

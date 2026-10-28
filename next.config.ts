@@ -2,6 +2,7 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   poweredByHeader: false,
+  outputFileTracingIncludes: { "/og": ["./app/og/fonts/**/*"] },
   async redirects() {
     return [
       { source: "/index.html", destination: "/", permanent: true },
