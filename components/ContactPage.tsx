@@ -5,13 +5,18 @@ import JsonLd from "@/components/JsonLd";
 import ConsentMap from "@/components/ConsentMap";
 import QuoteForm from "@/components/QuoteForm";
 import { FaqList, FinalCta, PageHero, num, waLink } from "@/components/PageParts";
-import { SITE_URL } from "@/lib/site";
+import { SITE_URL, contactFor } from "@/lib/site";
 
+const TT = contactFor(false);
+const PC = contactFor(true);
 const WA = waLink("Bună! Aș dori o programare la Hasha Tattoo.");
+const WA_PIERCING = PC.wa("Bună! Aș dori o programare pentru un piercing la Hasha Tattoo.");
 
 const CARDS = [
-  { k: "WHATSAPP", v: "Cel mai rapid", t: "Scrie-ne ideea ta și primești răspuns de la un artist.", href: WA, cta: "SCRIE PE WHATSAPP", ext: true, data: "contact_whatsapp" },
-  { k: "TELEFON", v: "+40 766 422 219", t: "Sună-ne luni până vineri, între 12:00 și 20:00.", href: "tel:+40766422219", cta: "SUNĂ ACUM", data: "call" },
+  { k: "WHATSAPP TATUAJE", v: TT.display, t: "Scrie-ne ideea ta și primești răspuns de la un artist.", href: WA, cta: "SCRIE PE WHATSAPP", ext: true, data: "contact_whatsapp" },
+  { k: "WHATSAPP PIERCING", v: PC.display, t: "Spune-ne ce piercing vrei și primești răspuns.", href: WA_PIERCING, cta: "SCRIE PE WHATSAPP", ext: true, data: "contact_whatsapp_piercing" },
+  { k: "TELEFON TATUAJE", v: TT.display, t: "Sună-ne luni până vineri, între 12:00 și 20:00.", href: TT.tel, cta: "SUNĂ ACUM", data: "call" },
+  { k: "TELEFON PIERCING", v: PC.display, t: "Sună-ne luni până vineri, între 12:00 și 20:00.", href: PC.tel, cta: "SUNĂ ACUM", data: "call" },
   { k: "EMAIL", v: "hashatattoo@gmail.com", t: "Pentru întrebări mai lungi sau imagini de referință.", href: "mailto:hashatattoo@gmail.com", cta: "TRIMITE UN EMAIL" },
   { k: "ADRESĂ", v: "Bulevardul Mărășești nr. 80", t: "Sector 4, București. Studio privat, într-o zonă centrală.", href: "https://www.google.com/maps/dir/?api=1&destination=Bulevardul+M%C4%83r%C4%83%C8%99e%C8%99ti+80+Bucure%C8%99ti", cta: "DIRECȚII", ext: true, data: "directions" },
 ];
@@ -27,7 +32,7 @@ const HOURS = [
 ];
 
 const FAQ = [
-  { q: "Cum mă programez?", a: "Cel mai simplu este pe WhatsApp, la +40 766 422 219. Ne spui ce ți-ai dori, zona corpului și, dacă ai, imagini de referință, iar un artist îți răspunde cu recomandări și un interval de programare. Poți suna și luni până vineri, între 12:00 și 20:00." },
+  { q: "Cum mă programez?", a: "Cel mai simplu este pe WhatsApp: la +40 766 422 219 pentru tatuaje și la +40 752 259 040 pentru piercing. Ne spui ce ți-ai dori, zona corpului și, dacă ai, imagini de referință, iar un artist îți răspunde cu recomandări și un interval de programare. Poți suna și luni până vineri, între 12:00 și 20:00." },
   { q: "Care este programul studioului?", a: "Lucrăm de luni până vineri, între 12:00 și 20:00. Sâmbăta și duminica studioul este închis." },
   { q: "Unde se află studioul?", a: "Pe Bulevardul Mărășești nr. 80, Sector 4, București. Pe această pagină ai butonul de direcții și harta." },
   { q: "Cum cer o estimare de preț?", a: "Completează formularul de mai jos sau scrie-ne pe WhatsApp. Piercingurile au prețuri afișate pe pagina Prețuri. Pentru tatuaje, estimarea se face după ce discutăm ideea, dimensiunea și zona." },
@@ -51,7 +56,7 @@ export default function ContactPage() {
                 "@type": "TattooParlor",
                 name: "Hasha Tattoo",
                 url: `${SITE_URL}/`,
-                telephone: "+40766422219",
+                telephone: [TT.e164, PC.e164],
                 email: "hashatattoo@gmail.com",
                 address: {
                   "@type": "PostalAddress",
@@ -87,11 +92,11 @@ export default function ContactPage() {
         >
           <div className="lp-hero-ctas">
             <a className="btn btn-light" href={WA} target="_blank" rel="noopener noreferrer" data-cta="whatsapp">
-              {"PROGRAMEAZĂ-TE PE WHATSAPP "}
+              {"TATUAJE PE WHATSAPP "}
               <span>↗︎</span>
             </a>
-            <a className="btn btn-outline lp-btn-ghost" href="tel:+40766422219" data-cta="call">
-              {"SUNĂ ACUM "}
+            <a className="btn btn-outline lp-btn-ghost" href={WA_PIERCING} target="_blank" rel="noopener noreferrer" data-cta="whatsapp_piercing">
+              {"PIERCING PE WHATSAPP "}
               <span>↗︎</span>
             </a>
           </div>
@@ -100,9 +105,9 @@ export default function ContactPage() {
         <section className="lp-contact-cards section-pad">
           <div className="section-kicker reveal">
             <span>{num(1)} / CUM NE CONTACTEZI</span>
-            <span>4 MODURI</span>
+            <span>{CARDS.length} MODURI</span>
           </div>
-          <div className="lp-card-grid">
+          <div className="lp-card-grid is-six">
             {CARDS.map((c) => (
               <a
                 key={c.k}
@@ -184,7 +189,9 @@ export default function ContactPage() {
                 <div>
                   <dt>TELEFON</dt>
                   <dd>
-                    <a href="tel:+40766422219" data-cta="call">+40 766 422 219</a>
+                    Tatuaje: <a href={TT.tel} data-cta="call">{TT.display}</a>
+                    <br />
+                    Piercing: <a href={PC.tel} data-cta="call">{PC.display}</a>
                   </dd>
                 </div>
                 <div>
@@ -196,10 +203,14 @@ export default function ContactPage() {
               </dl>
               <div className="contact-actions">
                 <a className="btn btn-light" href={WA} target="_blank" rel="noopener noreferrer" data-cta="contact_whatsapp">
-                  {"PROGRAMARE "}
+                  {"PROGRAMARE TATUAJ "}
                   <span>↗︎</span>
                 </a>
-                <a className="btn btn-outline" href={CARDS[3].href} target="_blank" rel="noopener noreferrer" data-cta="directions">
+                <a className="btn btn-light" href={WA_PIERCING} target="_blank" rel="noopener noreferrer" data-cta="contact_whatsapp_piercing">
+                  {"PROGRAMARE PIERCING "}
+                  <span>↗︎</span>
+                </a>
+                <a className="btn btn-outline" href={CARDS.find((c) => c.k === "ADRESĂ")?.href} target="_blank" rel="noopener noreferrer" data-cta="directions">
                   {"DIRECȚII "}
                   <span>↗︎</span>
                 </a>
