@@ -385,6 +385,33 @@ export const services: Service[] = [
     cta: ["Hai să discutăm", "despre piercingul tău."],
     short: "PIERCING NAS ȘI SEPTUM",
   },
+  {
+    slug: "piercing-limba-bucuresti",
+    kicker: "PIERCING ÎN LIMBĂ",
+    h1: ["Piercing în limbă", "în București."],
+    title: "Piercing în limbă București | Hasha Tattoo",
+    description:
+      "Piercing în limbă în București, Sector 4. Poziționare atentă, montare cu instrumente sterile, îngrijire explicată pas cu pas. Programare pe WhatsApp.",
+    lead: "Piercingul în limbă cere atenție la poziționare și la bijuterie. Discutăm anatomia și îngrijirea înainte de montare, într-un studio privat din Sector 4.",
+    heroImage: "pierce-1.webp",
+    heroAlt: "Piercing în limbă cu bijuterie metalică, realizat la Hasha Tattoo",
+    statementTitle: ["Poziționare atentă,", "îngrijire explicată."],
+    statement:
+      "Limba are o anatomie care decide unde se poate monta piercingul. Artistul se uită la forma limbii tale, îți spune ce se potrivește și îți explică cum arată perioada de vindecare. La final primești instrucțiuni clare de îngrijire.",
+    gallery: [
+      { image: "pierce-1.webp", alt: "Piercing în limbă cu bijuterie metalică, realizat la Hasha Tattoo", label: "LIMBĂ / PIERCING" },
+      { image: "pierce-11.webp", alt: "Piercing în sprânceană cu bijuterie cu țepi, realizat la Hasha Tattoo", label: "PIERCING / FAȚĂ" },
+    ],
+    principlesTitle: ["Cum lucrăm", "un piercing", "în limbă."],
+    principles: SAFE_PRINCIPLES("limbii tale", "Verificăm anatomia"),
+    faq: [
+      PAIN_FAQ("limbă"),
+      { q: "Cum îngrijesc un piercing în limbă?", a: "Se vindecă în 4 până la 6 săptămâni. Clătește cu apă sărată caldă și evită fumatul cel puțin 3 până la 4 zile. Instrucțiunile complete le primești la finalul ședinței." },
+      { q: "Cât costă?", a: "Prețul piercingului în limbă nu este în lista publică de prețuri. Îl confirmăm pe WhatsApp, înainte de programare. Lista celorlalte piercinguri este pe pagina Prețuri." },
+    ],
+    cta: ["Hai să discutăm", "despre piercingul tău."],
+    short: "PIERCING ÎN LIMBĂ",
+  },
 ];
 
 export const getService = (slug: string) => services.find((s) => s.slug === slug);

@@ -428,3 +428,33 @@ for (const x of sectorSeo) {
     card: `Piercing și tatuaje, din ${x.places.replace(" și ", " sau ")}.`,
   });
 }
+
+/** Cartiere: aceeasi optimizare pe piercing si tatuaje (interogari tip "piercing titan bucuresti"). */
+const hoodSeo: { slug: string; short: string; keepReasons?: boolean }[] = [
+  { slug: "tineretului", short: "Tineretului", keepReasons: true },
+  { slug: "unirii", short: "Unirii", keepReasons: true },
+  { slug: "berceni", short: "Berceni", keepReasons: true },
+  { slug: "militari", short: "Militari" },
+  { slug: "drumul-taberei", short: "Drumul Taberei" },
+  { slug: "titan", short: "Titan" },
+  { slug: "vitan", short: "Vitan" },
+  { slug: "colentina", short: "Colentina" },
+];
+for (const x of hoodSeo) {
+  const a = areas.find((z) => z.slug === x.slug);
+  if (!a) continue;
+  Object.assign(a, {
+    h1: ["Piercing și tatuaje", `pentru ${x.short}.`],
+    title: `Piercing și tatuaje ${x.short} București | Hasha Tattoo`,
+    description: `Piercing și tatuaje pentru ${x.short}, București. Studio privat în Sector 4, Bd. Mărășești 80, prețuri afișate, ruta Google Maps și programare pe WhatsApp.`,
+    reasons: x.keepReasons ? a.reasons : (s6?.reasons ?? a.reasons),
+    faq: [
+      {
+        q: `Aveți piercing și tatuaje pentru cei din ${x.short}?`,
+        a: `Da. Studioul este în Sectorul 4, pe Bulevardul Mărășești nr. 80, și face piercing în ureche, nas, buric, septum, buză, sprânceană, dermal și alte zone, plus tatuaje, cover-up-uri și corectări. Te programezi pe WhatsApp, iar ruta din ${x.short} o vezi live în Google Maps.`,
+      },
+      ...(s6 ? s6.faq.slice(1, 3) : []),
+      ...a.faq,
+    ],
+  });
+}
