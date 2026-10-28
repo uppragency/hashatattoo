@@ -26,7 +26,9 @@ export function parlor() {
 
 export default function AreaPage({ area: a }: { area: Area }) {
   const url = `${SITE_URL}/zone/${a.slug}`;
-  const others = areas.filter((x) => x.slug !== a.slug);
+  const idx = areas.findIndex((x) => x.slug === a.slug);
+  /* urmatoarele zone in ordine circulara: fiecare zona primeste linkuri interne de la alte 4 pagini */
+  const others = Array.from({ length: areas.length - 1 }, (_, i) => areas[(idx + 1 + i) % areas.length]);
   return (
     <>
       <JsonLd
@@ -160,7 +162,7 @@ export default function AreaPage({ area: a }: { area: Area }) {
             <Link className="text-arrow" href="/zone">
               TOATE ZONELE <span>↗︎</span>
             </Link>
-            {others.slice(0, 3).map((o) => (
+            {others.slice(0, 4).map((o) => (
               <Link className="text-arrow" href={`/zone/${o.slug}`} key={o.slug}>
                 {o.name.toUpperCase()} <span>↗︎</span>
               </Link>

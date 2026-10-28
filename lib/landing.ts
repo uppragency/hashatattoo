@@ -51,7 +51,7 @@ export const landings: Landing[] = [
     h1: ["Tatuaje în București,", "făcute cu răbdare."],
     title: "Tatuaje București, studio privat în Sector 4 | Hasha Tattoo",
     description:
-      "Salon de tatuaje în București, Sector 4. Realism, black and grey, portrete, mâneci și backpiece. Ace sterile, tușuri vegane, consultanță înainte de ședință. Programează-te pe WhatsApp.",
+      "Salon de tatuaje în București, Sector 4: realism, black and grey, portrete, mâneci. Ace sterile, tușuri vegane, consultanță gratuită. Programare pe WhatsApp.",
     lead: "Realism, black and grey, portrete și lucrări ample, create după ideea ta într-un studio privat din Sector 4. Discutăm designul, zona și dimensiunea înainte de prima linie, iar tu aprobi tot ce urmează să ajungă pe piele.",
     heroImage: "lucrare-5.webp",
     heroAlt: "Tatuaj black and grey amplu pe spate, realizat la Hasha Tattoo",
@@ -263,7 +263,7 @@ export const landings: Landing[] = [
     h1: ["Piercing în București,", "montat cu grijă."],
     title: "Piercing București, studio privat în Sector 4 | Hasha Tattoo",
     description:
-      "Studio de piercing în București, Sector 4. Piercing în ureche, buric, industrial, limbă și suprafață. Montare cu instrumente sterile, bijuterii alese împreună, îngrijire explicată. Programează-te pe WhatsApp.",
+      "Studio de piercing în București, Sector 4: ureche, buric, industrial. Instrumente sterile, bijuterii alese împreună, îngrijire explicată. Programare online.",
     lead: "De la un piercing simplu în ureche până la industrial, buric sau compoziții cu mai multe bijuterii. Alegem împreună locul, bijuteria și poziția potrivite anatomiei tale, iar montarea se face cu instrumente sterile, într-un studio privat din Sector 4.",
     heroImage: "pierce-6.webp",
     heroAlt: "Piercinguri și bijuterii pentru ureche, realizate la Hasha Tattoo",

@@ -4,7 +4,7 @@ import CookiePreferencesButton from "@/components/CookiePreferencesButton";
 import { BUSINESS, type LegalSection } from "@/lib/legal";
 
 const title = "Politica cookies | Hasha Tattoo București";
-const description = "Ce cookie-uri și servicii terțe folosește site-ul Hasha Tattoo, în ce scop și cum îți poți modifica preferințele.";
+const description = "Ce cookie-uri și servicii terțe folosește site-ul Hasha Tattoo, în ce scop și cum îți poți modifica oricând preferințele, inclusiv retragerea acordului.";
 export const metadata = pageMetadata(title, description, "/politica-cookies");
 
 const TABLE = (

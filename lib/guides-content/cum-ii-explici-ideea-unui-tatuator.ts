@@ -413,7 +413,7 @@ const content: GuideContent = {
     text: "Trimite-ne referințele, zona și mărimea aproximativă. Un artist îți răspunde cu recomandări și o estimare, iar împreună o transformăm într-un desen.",
     wa: "Bună! Am o idee de tatuaj și vreau să o discut cu un artist de la Hasha Tattoo. Vă trimit zona, mărimea și câteva referințe.",
   },
-  related: ["primul-tau-tatuaj", "cum-alegi-stilul-de-tatuaj", "prima-vizita-la-studio-pas-cu-pas"],
+  related: ["primul-tau-tatuaj", "cum-alegi-stilul-de-tatuaj", "glosar-tatuaj-si-piercing"],
 };
 
 export default content;

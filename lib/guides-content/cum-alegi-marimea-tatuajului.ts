@@ -362,7 +362,7 @@ const content: GuideContent = {
     text: "Trimite-ne desenul sau referințele și zona. Îți spunem ce mărime recomandăm pentru ca detaliile să rămână clare ani la rând.",
     wa: "Bună! Vreau să aflu ce mărime se potrivește unui tatuaj la Hasha Tattoo. Vă trimit ideea și zona.",
   },
-  related: ["cum-ii-explici-ideea-unui-tatuator", "primul-tau-tatuaj", "retusul-tatuajului-cand-e-necesar"],
+  related: ["cum-ii-explici-ideea-unui-tatuator", "primul-tau-tatuaj", "cat-costa-un-tatuaj-in-bucuresti"],
 };
 
 export default content;

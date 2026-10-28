@@ -125,7 +125,7 @@ export default function PainMap() {
       <div className="pm-side">
         <div className="pm-panel" aria-live="polite">
           <small>ZONA SELECTATĂ</small>
-          <h3>{current.name}</h3>
+          <h2>{current.name}</h2>
           <div className="pm-meter" aria-label={`Durere orientativă ${current.level} din 10`}>
             <div className="pm-bars">
               {Array.from({ length: 10 }, (_, i) => (

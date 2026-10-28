@@ -347,7 +347,7 @@ const content: GuideContent = {
     text: "Scrie-ne ideea ta pe WhatsApp. Un artist îți răspunde cu recomandări, o estimare de preț și un interval de programare.",
     wa: "Bună! Vreau să fac primul meu tatuaj la Hasha Tattoo. Aș vrea să discutăm ideea mea.",
   },
-  related: ["cum-te-pregatesti-pentru-sedinta-de-tatuaj", "cum-ingrijesti-un-tatuaj-nou", "cum-alegi-stilul-de-tatuaj"],
+  related: ["cum-te-pregatesti-pentru-sedinta-de-tatuaj", "cum-ingrijesti-un-tatuaj-nou", "cat-costa-un-tatuaj-in-bucuresti"],
 };
 
 export default content;

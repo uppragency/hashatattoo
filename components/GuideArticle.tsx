@@ -4,7 +4,7 @@ import type { ReactNode } from "react";
 import Footer from "@/components/sections/footer";
 import JsonLd from "@/components/JsonLd";
 import { FaqList, FinalCta, PageHero, waLink } from "@/components/PageParts";
-import { guideBySlug, type Guide } from "@/lib/guides";
+import { guideBySlug, publishedGuides, type Guide } from "@/lib/guides";
 import { countWords, type Block, type GuideContent } from "@/lib/guide-types";
 import { SITE_URL } from "@/lib/site";
 
@@ -59,7 +59,15 @@ const fmt = (iso: string) =>
 export default function GuideArticle({ guide, content }: { guide: Guide; content: GuideContent }) {
   const words = countWords(content);
   const url = `${SITE_URL}/ghiduri/${guide.slug}`;
-  const related = content.related.map(guideBySlug).filter((g): g is Guide => Boolean(g && g.published));
+  const explicit = content.related.map(guideBySlug).filter((g): g is Guide => Boolean(g && g.published));
+  /* completeaza pana la 4 cu urmatoarele ghiduri in ordine circulara, ca fiecare ghid sa primeasca linkuri interne */
+  const all = publishedGuides();
+  const at = all.findIndex((g) => g.slug === guide.slug);
+  const related = [...explicit];
+  for (let i = 1; i < all.length && related.length < 4; i++) {
+    const c = all[(at + i) % all.length];
+    if (c.slug !== guide.slug && !related.some((r) => r.slug === c.slug)) related.push(c);
+  }
   const toc = [...content.sections.map((s) => ({ id: s.id, label: s.h2 })), { id: "intrebari", label: "Întrebări frecvente" }];
 
   return (

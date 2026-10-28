@@ -3,7 +3,7 @@ import PiercingCheckerPage from "@/components/PiercingCheckerPage";
 import { pageMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = pageMetadata(
-  "Verificator piercing: ce se potrivește anatomiei tale | Hasha Tattoo",
+  "Verificator piercing: ce se potrivește anatomiei tale",
   "Alege zona și răspunde la câteva întrebări despre anatomie: vezi dacă piercingul pare potrivit, cât costă și cât durează vindecarea. Hasha Tattoo, București.",
   "/verificator-piercing",
   "/assets/pierce-6.webp",

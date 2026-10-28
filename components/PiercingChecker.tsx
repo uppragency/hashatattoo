@@ -56,7 +56,7 @@ export default function PiercingChecker() {
         <div className="pc-zones">
           {GROUPS.map((g) => (
             <div key={g} className="pc-group">
-              <h3>{g.toUpperCase()}</h3>
+              <h2>{g.toUpperCase()}</h2>
               <div>
                 {piercingZones
                   .filter((z) => z.group === g)
@@ -82,7 +82,7 @@ export default function PiercingChecker() {
         >
           <div className="pc-form-head">
             <small>ZONA ALEASĂ</small>
-            <h3>{zone.name}</h3>
+            <h2>{zone.name}</h2>
             <button type="button" className="pc-link" onClick={reset}>
               SCHIMBĂ ZONA
             </button>
@@ -122,7 +122,7 @@ export default function PiercingChecker() {
         <div className="pc-result" aria-live="polite">
           <div className={`pc-verdict is-${res.verdict}`}>
             <small>REZULTAT PENTRU {zone.name.toUpperCase()}</small>
-            <h3>{VERDICT[res.verdict].title}</h3>
+            <h2>{VERDICT[res.verdict].title}</h2>
             <p>{VERDICT[res.verdict].text}</p>
           </div>
           {res.mismatches.length || res.unsure.length ? (

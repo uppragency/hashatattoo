@@ -3,7 +3,7 @@ import LegalPage from "@/components/LegalPage";
 import { BUSINESS, type LegalSection } from "@/lib/legal";
 
 const title = "Termeni și condiții | Hasha Tattoo București";
-const description = "Termenii și condițiile de utilizare a site-ului Hasha Tattoo, studio de tatuaje și piercing din București, Sector 4.";
+const description = "Termenii și condițiile de utilizare a site-ului Hasha Tattoo, studio de tatuaje și piercing din București, Sector 4. Programări, prețuri, drepturi.";
 export const metadata = pageMetadata(title, description, "/termeni-si-conditii");
 
 const operator = BUSINESS.legalEntity ? `${BUSINESS.legalEntity}, care operează sub numele comercial ${BUSINESS.name}` : BUSINESS.name;

@@ -3,7 +3,7 @@ import LegalPage from "@/components/LegalPage";
 import { BUSINESS, type LegalSection } from "@/lib/legal";
 
 const title = "Politica de confidențialitate | Hasha Tattoo București";
-const description = "Cum prelucrează Hasha Tattoo datele tale personale, în ce scopuri, cât timp și ce drepturi ai conform GDPR.";
+const description = "Cum prelucrează Hasha Tattoo datele tale personale, în ce scopuri, cât timp și ce drepturi ai conform GDPR. Contact pentru exercitarea drepturilor.";
 export const metadata = pageMetadata(title, description, "/politica-de-confidentialitate");
 
 const operator = BUSINESS.legalEntity ? `${BUSINESS.legalEntity}, sub numele comercial ${BUSINESS.name}` : BUSINESS.name;

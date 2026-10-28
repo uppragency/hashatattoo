@@ -208,7 +208,7 @@ export const services: Service[] = [
     h1: ["Piercing buric", "în București."],
     title: "Piercing buric București | Hasha Tattoo",
     description:
-      "Piercing în buric în București, Sector 4. Montare cu instrumente sterile și bijuterii alese împreună. Programează-te pe WhatsApp.",
+      "Piercing în buric în București, Sector 4. Montare cu instrumente sterile, bijuterie aleasă potrivit anatomiei tale, îngrijire explicată. Programare pe WhatsApp.",
     lead: "Alegem împreună bijuteria și poziția potrivite. Montarea se face cu instrumente sterile, într-un spațiu privat și liniștit din Sector 4.",
     heroImage: "pierce-2.webp",
     heroAlt: "Piercing în buric cu bijuterie argintie, realizat la Hasha Tattoo",

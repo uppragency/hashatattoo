@@ -10,7 +10,7 @@ function Card({ g }: { g: Guide }) {
   const inner = (
     <>
       <div className="lp-guide-card-img">
-        <img src={`/assets/${g.image}`} alt="" loading="lazy" />
+        <img src={`/assets/${g.image}`} alt={g.imageAlt} loading="lazy" />
         {!g.published ? <em>ÎN CURÂND</em> : null}
       </div>
       <div className="lp-guide-card-body">

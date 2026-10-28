@@ -426,7 +426,7 @@ const content: GuideContent = {
     text: "Scrie-ne ideea, zona și întrebările tale. Îți spunem cum decurge totul și ce să pregătești, ca să ajungi liniștit.",
     wa: "Bună! Urmează să fac prima vizită la Hasha Tattoo și aș vrea să aflu cum decurge și ce trebuie să pregătesc.",
   },
-  related: ["primul-tau-tatuaj", "cum-te-pregatesti-pentru-sedinta-de-tatuaj", "pentru-cei-care-se-tem-de-tatuaj"],
+  related: ["primul-tau-tatuaj", "cum-te-pregatesti-pentru-sedinta-de-tatuaj", "glosar-tatuaj-si-piercing"],
 };
 
 export default content;
