@@ -290,7 +290,7 @@ export const landings: Landing[] = [
       facts: [
         { k: "LOCAȚIE", v: "Bulevardul Mărășești nr. 80, Sector 4, București" },
         { k: "PROGRAM", v: "Luni până vineri, 12:00 până la 20:00" },
-        { k: "PROGRAMARE", v: "WhatsApp sau telefon, +40 766 422 219" },
+        { k: "PROGRAMARE", v: "WhatsApp sau telefon, +40 752 259 040" },
         { k: "STUDIO", v: "Spațiu privat, montare fără grabă" },
       ],
     },
@@ -463,7 +463,7 @@ export const landings: Landing[] = [
       { q: "Cum îmi curăț piercingul?", a: "Spală-te pe mâini, apoi curăță zona cu apă călduță și un săpun cu pH neutru sau o soluție dedicată de îngrijire, după care clătește. Nu este nevoie să scoți bijuteria." },
       { q: "Cum îmi îngrijesc piercingul anti-helix?", a: "Cartilajul se vindecă lent și în straturi, așa că ai nevoie de răbdare. Urmează instrucțiunile artistului și nu forța bijuteria." },
       { q: "Pot să schimb singur bijuteria?", a: "Nu în perioada de vindecare. Scrie-ne și îți spunem când este momentul potrivit pentru schimbare." },
-      { q: "Cum mă programez?", a: "Cel mai simplu este pe WhatsApp, la +40 766 422 219. Ne spui ce zonă te interesează și, dacă ai, trimiți o imagine cu stilul dorit. Poți suna și luni până vineri, între 12:00 și 20:00." },
+      { q: "Cum mă programez?", a: "Cel mai simplu este pe WhatsApp, la +40 752 259 040. Ne spui ce zonă te interesează și, dacă ai, trimiți o imagine cu stilul dorit. Poți suna și luni până vineri, între 12:00 și 20:00." },
       { q: "Cât costă un piercing?", a: "Lobul urechii costă 80 lei. Cartilaj, industrial, buric, nas, septum, buză, sprânceană și smiley costă câte 150 lei. Piercingul intim costă 200 lei, iar dermalul 250 lei, cu bijuteria inclusă la ambele. Manopera (schimbare, remontare, verificare, curățare) costă 30 lei. Lista completă este pe pagina Prețuri." },
     ],
     related: ["piercing-ureche-bucuresti", "piercing-cartilaj-bucuresti", "piercing-industrial-bucuresti", "piercing-nas-bucuresti", "piercing-dermal-bucuresti", "piercing-limba-bucuresti", "piercing-buric-bucuresti", "tatuaje", "preturi"],

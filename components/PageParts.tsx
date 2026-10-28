@@ -2,7 +2,7 @@
 import type { ReactNode } from "react";
 
 export const WA_BASE = "https://wa.me/40766422219?text=";
-export const waLink = (text: string) => WA_BASE + encodeURIComponent(text);
+export const waLink = (text: string, number?: string) => (number ? `https://wa.me/${number}?text=` : WA_BASE) + encodeURIComponent(text);
 export const num = (n: number) => String(n).padStart(3, "0");
 
 export function PageHero({

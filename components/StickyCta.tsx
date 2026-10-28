@@ -3,11 +3,12 @@
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 
-const WA = "https://wa.me/40766422219?text=Bun%C4%83%21%20A%C8%99%20dori%20o%20programare%20la%20Hasha%20Tattoo.";
+import { contactFor, isPiercingPath } from "@/lib/site";
 
 export default function StickyCta() {
   const pathname = usePathname();
   const [shown, setShown] = useState(false);
+  const c = contactFor(isPiercingPath(pathname));
 
   useEffect(() => {
     const toggle = () => {
@@ -21,10 +22,10 @@ export default function StickyCta() {
 
   return (
     <div className={shown ? "sticky-cta is-shown" : "sticky-cta"} id="stickyCta">
-      <a className="sticky-wa" href={WA} target="_blank" rel="noopener noreferrer" data-cta="sticky_whatsapp">
+      <a className="sticky-wa" href={c.wa()} target="_blank" rel="noopener noreferrer" data-cta="sticky_whatsapp">
         PROGRAMEAZĂ-TE PE WHATSAPP
       </a>
-      <a className="sticky-call" href="tel:+40766422219" data-cta="sticky_call" aria-label="Sună la +40 766 422 219">
+      <a className="sticky-call" href={c.tel} data-cta="sticky_call" aria-label={`Sună la ${c.display}`}>
         SUNĂ
       </a>
     </div>

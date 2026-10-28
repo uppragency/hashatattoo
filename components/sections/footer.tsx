@@ -3,6 +3,7 @@ import Link from "next/link";
 import Year from "@/components/Year";
 import BackToTop from "@/components/BackToTop";
 import ExploreLinks from "@/components/ExploreLinks";
+import { PhoneLink, WaLink } from "@/components/ContactLink";
 
 export default function Footer() {
   return (
@@ -16,7 +17,7 @@ export default function Footer() {
             <span>amprentă.</span>
           </h2>
         </div>
-        <a className="hasha-footer__booking" href="https://wa.me/40766422219?text=Bun%C4%83%21%20A%C8%99%20dori%20o%20programare%20la%20Hasha%20Tattoo." target="_blank" rel="noopener noreferrer" data-cta="footer_whatsapp" aria-label="Programează-te pe WhatsApp">
+        <WaLink className="hasha-footer__booking" cta="footer_whatsapp" label="Programează-te pe WhatsApp">
           <svg viewBox="0 0 160 160" aria-hidden="true">
             <defs>
               <path id="hasha-booking-arc" d="M 27,100 A 57,57 0 1,1 134,100" />
@@ -29,7 +30,7 @@ export default function Footer() {
           <svg className="booking-arrow" viewBox="0 0 50 50" aria-hidden="true">
             <path d="M8 42 42 8M9 8h33v33" />
           </svg>
-        </a>
+        </WaLink>
       </div>
       <div className="hasha-footer__details">
         <nav className="hasha-footer__group" aria-labelledby="hasha-explore">
@@ -56,16 +57,16 @@ export default function Footer() {
           <h3 id="hasha-contact" className="hasha-footer__label"><Link href="/contact">Contact</Link></h3>
           <ul className="hasha-footer__links">
             <li>
-              <a href="tel:+40766422219" data-cta="call">+40 766 422 219</a>
+              <PhoneLink />
             </li>
             <li>
               <a href="mailto:hashatattoo@gmail.com">hashatattoo@gmail.com</a>
             </li>
             <li>
-              <a href="https://wa.me/40766422219?text=Bun%C4%83%21%20A%C8%99%20dori%20o%20programare%20la%20Hasha%20Tattoo." target="_blank" rel="noopener noreferrer" data-cta="footer_whatsapp_link">
+              <WaLink cta="footer_whatsapp_link">
                 {"WhatsApp "}
                 <span aria-hidden="true">↗︎</span>
-              </a>
+              </WaLink>
             </li>
             <li>
               <a href="https://www.instagram.com/hasha_tattoo" target="_blank" rel="noopener noreferrer me">

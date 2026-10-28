@@ -2,6 +2,7 @@ import Link from "next/link";
 import Footer from "@/components/sections/footer";
 import JsonLd from "@/components/JsonLd";
 import PiercingChecker from "@/components/PiercingChecker";
+import { PIERCING_NUMBER } from "@/lib/site";
 import { FaqList, FinalCta, PageHero, num, waLink } from "@/components/PageParts";
 import { piercingZones } from "@/lib/piercing-checker";
 import { SITE_URL } from "@/lib/site";
@@ -12,7 +13,7 @@ const FAQ = [
   { q: "Ce fac dacă răspund „nu știu” la o întrebare?", a: "Nu e o problemă. Piercerul verifică acel punct direct, la consultație. Poți trimite și o fotografie pe WhatsApp, înainte de programare." },
   { q: "Cât costă un piercing?", a: "Lobul costă 80 lei, iar cartilajul, industrialul, buricul, nasul, septumul, buza și sprânceana costă 150 lei. Lista completă este pe pagina Prețuri. Pentru limbă îți spunem prețul pe WhatsApp." },
   { q: "Pot face piercing dacă am alergie la nichel?", a: "Spune-i piercerului înainte. O alergie la metale cere o bijuterie special aleasă. Dacă ai dubii, discută și cu medicul." },
-  { q: "Cum mă programez?", a: "Scrie-ne pe WhatsApp la +40 766 422 219 sau sună luni până vineri, între 12:00 și 20:00. Poți trimite o fotografie a zonei, ca să discutăm din timp." },
+  { q: "Cum mă programez?", a: "Scrie-ne pe WhatsApp la +40 752 259 040 sau sună luni până vineri, între 12:00 și 20:00. Poți trimite o fotografie a zonei, ca să discutăm din timp." },
 ];
 
 export default function PiercingCheckerPage() {
@@ -103,7 +104,7 @@ export default function PiercingCheckerPage() {
           title={["Hai să vedem", "anatomia ta."]}
           text="Trimite-ne pe WhatsApp zona dorită și, dacă vrei, o fotografie. Un piercer îți răspunde cu recomandări și un interval de programare."
           image="lucrare-8.webp"
-          wa={waLink("Bună! Vreau un piercing și aș dori să discutăm ce se potrivește anatomiei mele.")}
+          wa={waLink("Bună! Vreau un piercing și aș dori să discutăm ce se potrivește anatomiei mele.", PIERCING_NUMBER)}
         />
       </main>
       <Footer />

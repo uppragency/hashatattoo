@@ -5,10 +5,11 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useCallback, useEffect, useRef, useState } from "react";
 
-const WA = "https://wa.me/40766422219?text=Bun%C4%83%21%20A%C8%99%20dori%20o%20programare%20la%20Hasha%20Tattoo.";
+import { contactFor, isPiercingPath } from "@/lib/site";
 
 export default function SiteHeader() {
   const pathname = usePathname();
+  const WA = contactFor(isPiercingPath(pathname)).wa();
   const [fixed, setFixed] = useState(false);
   const [open, setOpen] = useState(false);
   const menuRef = useRef<HTMLElement>(null);

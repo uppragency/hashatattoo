@@ -1,9 +1,14 @@
 "use client";
 
 import type { FormEvent } from "react";
-import { WHATSAPP_NUMBER } from "@/lib/site";
+import { useState } from "react";
+import { usePathname } from "next/navigation";
+import { contactFor, isPiercingPath } from "@/lib/site";
 
 export default function QuoteForm({ defaultService = "" }: { defaultService?: string }) {
+  const pathname = usePathname();
+  const [svc, setSvc] = useState(defaultService);
+  const c = contactFor(svc === "piercing" || (svc === "" && isPiercingPath(pathname)));
   const onSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     const form = e.currentTarget;
@@ -13,7 +18,7 @@ export default function QuoteForm({ defaultService = "" }: { defaultService?: st
     const zone = value("quotePlacement").trim();
     const idea = value("quoteIdea").trim();
     const message = `Bună! Aș dori o estimare de preț la Hasha Tattoo.\nServiciu: ${service}\nZona: ${zone || "de stabilit"}\nIdeea mea: ${idea}`;
-    const wa = `https://wa.me/${WHATSAPP_NUMBER}?text=` + encodeURIComponent(message);
+    const wa = c.wa(message);
     const website = value("quoteWebsite");
     fetch("/api/requests", {
       method: "POST",
@@ -28,7 +33,7 @@ export default function QuoteForm({ defaultService = "" }: { defaultService?: st
     <form className="quote-form reveal" id="quoteForm" onSubmit={onSubmit}>
       <span className="micro">CERE O ESTIMARE PERSONALIZATĂ</span>
       <label htmlFor="quoteService">SERVICIU</label>
-      <select id="quoteService" required defaultValue={defaultService}>
+      <select id="quoteService" required defaultValue={defaultService} onChange={(e) => setSvc(e.target.value)}>
         <option value="">Alege un serviciu</option>
         <option value="tatuaj">Tatuaj</option>
         <option value="piercing">Piercing</option>
@@ -45,8 +50,8 @@ export default function QuoteForm({ defaultService = "" }: { defaultService?: st
       <p className="quote-note">Butonul deschide WhatsApp cu mesajul pregătit. Cererea (serviciu, zonă, descriere) este salvată și pentru echipa studioului, ca să te putem contacta. Detalii în politica de confidențialitate.</p>
       <p className="quote-note">
         Preferi să vorbim direct?{" "}
-        <a className="inline-link" href="tel:+40766422219" data-cta="call">
-          Sună la +40 766 422 219
+        <a className="inline-link" href={c.tel} data-cta="call">
+          Sună la {c.display}
         </a>
         , luni – vineri, 12:00 – 20:00.
       </p>

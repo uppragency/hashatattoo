@@ -5,15 +5,15 @@ import { services } from "@/lib/services";
 import Footer from "@/components/sections/footer";
 import JsonLd from "@/components/JsonLd";
 import QuoteForm from "@/components/QuoteForm";
-import { SITE_URL, SOCIAL_LINKS } from "@/lib/site";
+import { SITE_URL, SOCIAL_LINKS, contactFor } from "@/lib/site";
 
-const WA_BASE = "https://wa.me/40766422219?text=";
 const num = (n: number) => String(n).padStart(3, "0");
 const strip = (s: string) => s.replace(/^\d+ \/ /, "");
 
 export default function LandingPage({ page: p }: { page: Landing }) {
   const url = `${SITE_URL}/${p.slug}`;
-  const wa = WA_BASE + encodeURIComponent(p.waText);
+  const c = contactFor(p.slug === "piercing");
+  const wa = c.wa(p.waText);
   const name = p.kicker.charAt(0) + p.kicker.slice(1).toLowerCase();
 
   const related = p.related.map((slug) => {
@@ -50,7 +50,7 @@ export default function LandingPage({ page: p }: { page: Landing }) {
                 sameAs: SOCIAL_LINKS,
                 name: "Hasha Tattoo",
                 url: `${SITE_URL}/`,
-                telephone: "+40766422219",
+                telephone: c.e164,
                 address: {
                   "@type": "PostalAddress",
                   streetAddress: "Bulevardul Mărășești nr. 80",

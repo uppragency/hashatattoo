@@ -8,6 +8,26 @@ export const SITE_URL = (
 
 export const WHATSAPP_NUMBER = "40766422219";
 
+/** Numar separat pentru paginile de piercing (WhatsApp si apel). */
+export const PIERCING_NUMBER = "40752259040";
+
+const WA_DEFAULT_TEXT = "Bună! Aș dori o programare la Hasha Tattoo.";
+
+/** Paginile de piercing: /piercing, /piercing-*, /verificator-piercing. */
+export const isPiercingPath = (pathname: string | null | undefined) =>
+  !!pathname && (pathname === "/piercing" || pathname.startsWith("/piercing-") || pathname === "/verificator-piercing");
+
+export const contactFor = (piercing: boolean) => {
+  const n = piercing ? PIERCING_NUMBER : WHATSAPP_NUMBER;
+  return {
+    number: n,
+    e164: `+${n}`,
+    display: piercing ? "+40 752 259 040" : "+40 766 422 219",
+    tel: `tel:+${n}`,
+    wa: (text: string = WA_DEFAULT_TEXT) => `https://wa.me/${n}?text=${encodeURIComponent(text)}`,
+  };
+};
+
 /** Profiluri oficiale, folosite in schema.org (sameAs). */
 export const SOCIAL_LINKS = [
   "https://www.instagram.com/hasha_tattoo",

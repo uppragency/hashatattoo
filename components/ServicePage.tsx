@@ -4,12 +4,13 @@ import type { Service } from "@/lib/services";
 import { services } from "@/lib/services";
 import Footer from "@/components/sections/footer";
 import JsonLd from "@/components/JsonLd";
-import { SITE_URL, SOCIAL_LINKS } from "@/lib/site";
+import { SITE_URL, SOCIAL_LINKS, contactFor } from "@/lib/site";
 
-const WA = "https://wa.me/40766422219?text=Bun%C4%83%21%20A%C8%99%20dori%20o%20programare%20la%20Hasha%20Tattoo.";
 
 export default function ServicePage({ service: s }: { service: Service }) {
   const url = `${SITE_URL}/${s.slug}`;
+  const c = contactFor(s.slug.startsWith("piercing"));
+  const WA = c.wa();
   const family = s.slug.startsWith("piercing");
   const others = services.filter((x) => x.slug !== s.slug && x.slug.startsWith("piercing") === family);
   return (
@@ -29,7 +30,7 @@ export default function ServicePage({ service: s }: { service: Service }) {
                 sameAs: SOCIAL_LINKS,
                 name: "Hasha Tattoo",
                 url: `${SITE_URL}/`,
-                telephone: "+40766422219",
+                telephone: c.e164,
                 address: {
                   "@type": "PostalAddress",
                   streetAddress: "Bulevardul Mărășești nr. 80",
