@@ -402,6 +402,7 @@ if (s6) {
 const sectorSeo: { slug: string; n: number; places: string; ctxTitle: [string, string] }[] = [
   { slug: "sector-2", n: 2, places: "Colentina și Pantelimon", ctxTitle: ["Piercing și tatuaje,", "din Sectorul 2."] },
   { slug: "sector-3", n: 3, places: "Titan și Dristor", ctxTitle: ["Piercing și tatuaje,", "din Sectorul 3."] },
+  { slug: "sector-1", n: 1, places: "Aviatorilor și Băneasa", ctxTitle: ["Piercing și tatuaje,", "din Sectorul 1."] },
   { slug: "sector-5", n: 5, places: "Rahova și Cotroceni", ctxTitle: ["Piercing și tatuaje,", "din Sectorul 5."] },
 ];
 for (const x of sectorSeo) {
