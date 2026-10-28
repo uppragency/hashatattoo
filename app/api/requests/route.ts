@@ -31,27 +31,37 @@ export async function POST(req: Request) {
   const ip = req.headers.get("x-forwarded-for")?.split(",")[0]?.trim() ?? "x";
   const now = Date.now();
   const recent = (hits.get(ip) ?? []).filter((t) => now - t < 600_000);
-  if (recent.length >= 5) return NextResponse.json({ ok: false }, { status: 429 });
+  if (recent.length >= 5) {
+    console.warn("[requests] rate limit", ip);
+    return NextResponse.json({ ok: false }, { status: 429 });
+  }
   hits.set(ip, [...recent, now]);
 
   let b: Record<string, unknown>;
   try {
     b = await req.json();
   } catch {
+    console.warn("[requests] invalid json");
     return NextResponse.json({ ok: false }, { status: 400 });
   }
-  if (typeof b.website === "string" && b.website) return NextResponse.json({ ok: true });
+  if (typeof b.hp === "string" && b.hp) {
+    console.warn("[requests] honeypot filled, request dropped");
+    return NextResponse.json({ ok: true });
+  }
   const service = String(b.service ?? "").trim().slice(0, 40);
   const placement = String(b.placement ?? "").trim().slice(0, 80);
   const idea = String(b.idea ?? "").trim().slice(0, 600);
   if (!["tatuaj", "piercing", "consultație"].includes(service) || !idea) {
+    console.warn("[requests] invalid payload", service);
     return NextResponse.json({ ok: false }, { status: 400 });
   }
   try {
     await rpc("submit_request", { p_service: service, p_placement: placement, p_idea: idea });
+    console.log("[requests] saved", service);
     await notify(service, placement, idea);
     return NextResponse.json({ ok: true });
-  } catch {
+  } catch (e) {
+    console.error("[requests] save failed", service, e);
     return NextResponse.json({ ok: false }, { status: 502 });
   }
 }

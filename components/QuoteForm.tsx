@@ -19,11 +19,11 @@ export default function QuoteForm({ defaultService = "" }: { defaultService?: st
     const idea = value("quoteIdea").trim();
     const message = `Bună! Aș dori o estimare de preț la Hasha Tattoo.\nServiciu: ${service}\nZona: ${zone || "de stabilit"}\nIdeea mea: ${idea}`;
     const wa = c.wa(message);
-    const website = value("quoteWebsite");
+    const hp = value("quoteHp");
     fetch("/api/requests", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ service, placement: zone, idea, website }),
+      body: JSON.stringify({ service, placement: zone, idea, hp }),
       keepalive: true,
     }).catch(() => {});
     window.open(wa, "_blank", "noopener,noreferrer");
@@ -43,7 +43,7 @@ export default function QuoteForm({ defaultService = "" }: { defaultService?: st
       <input id="quotePlacement" placeholder="Ex.: antebraț / ureche" maxLength={80} />
       <label htmlFor="quoteIdea">DESCRIE-NE IDEEA TA</label>
       <textarea id="quoteIdea" rows={5} placeholder="Ce îți dorești? Dimensiune, stil, referințe..." required maxLength={600} />
-      <input id="quoteWebsite" name="website" tabIndex={-1} autoComplete="off" aria-hidden="true" style={{ position: "absolute", left: "-9999px", width: 1, height: 1, opacity: 0 }} />
+      <input id="quoteHp" name="hp_ref_7" tabIndex={-1} autoComplete="off" data-lpignore="true" data-1p-ignore="true" data-form-type="other" aria-hidden="true" style={{ position: "absolute", left: "-9999px", width: 1, height: 1, opacity: 0 }} />
       <button type="submit" className="btn btn-light">
         TRIMITE PE WHATSAPP <span>↗︎</span>
       </button>
