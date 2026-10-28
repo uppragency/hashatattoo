@@ -590,3 +590,4 @@ a.lp-guide-card:hover .lp-guide-card-img img{transform:scale(1.04)}
 .lp-social a{color:var(--ink);border-bottom:1px solid var(--line);padding-bottom:3px}
 .lp-social a:hover{border-color:var(--ink)}
 .lp-social i{font-style:normal}
+.price-list a{border-bottom:1px solid var(--line)}.price-list a:hover{border-bottom-color:currentColor}

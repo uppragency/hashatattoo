@@ -11,7 +11,10 @@ const title = "Salon piercing și tatuaje București Sector 4 | Hasha Tattoo";
 const description =
   "Salon de piercing și tatuaje în București, Sector 4, aproape de Sectoarele 3, 5 și 6. Ace sterile, tușuri vegane, prețuri afișate. Programare pe WhatsApp.";
 
-export const metadata: Metadata = pageMetadata(title, description, "/");
+export const metadata: Metadata = {
+  ...pageMetadata(title, description, "/"),
+  alternates: { canonical: "/", languages: { "ro-RO": "/", en: "/en", "x-default": "/" } },
+};
 
 const faq: [string, string][] = [
   ["Cum se face un tatuaj?", "Un aparat electric introduce cerneala în piele cu ajutorul unor ace sterile. Pielea se vindecă în jurul pigmentului, iar desenul rămâne vizibil."],

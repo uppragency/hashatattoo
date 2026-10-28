@@ -34,6 +34,44 @@ const NAVEL_PRICE_FAQ = {
   a: "Piercingul în buric costă 150 lei. Lista completă de prețuri este pe pagina Prețuri.",
 };
 
+
+const CARTILAGE_PRICE_FAQ = {
+  q: "Cât costă?",
+  a: "Piercingurile în cartilaj, helix și tragus costă 150 lei. Lista completă de prețuri este pe pagina Prețuri.",
+};
+
+const INDUSTRIAL_PRICE_FAQ = {
+  q: "Cât costă?",
+  a: "Piercingul industrial costă 150 lei. Lista completă de prețuri este pe pagina Prețuri.",
+};
+
+const DERMAL_PRICE_FAQ = {
+  q: "Cât costă?",
+  a: "Piercingul dermal costă 250 lei, cu bijuteria inclusă. Lista completă de prețuri este pe pagina Prețuri.",
+};
+
+const NOSE_PRICE_FAQ = {
+  q: "Cât costă?",
+  a: "Piercingul în nas și cel în septum costă câte 150 lei. Lista completă de prețuri este pe pagina Prețuri.",
+};
+
+const SAFE_PRINCIPLES = (zone: string, place: string) => [
+  { title: place, text: `Artistul se uită la anatomia ta și îți recomandă ce se potrivește ${zone}.` },
+  { title: "Bijuterie aleasă împreună", text: "Îți arătăm variantele disponibile, iar alegerea finală îți aparține. Dacă ai alergie la nichel, ne spui înainte." },
+  { title: "Montare sterilă", text: "Lucrăm cu instrumente sterile și respectăm normele sanitare." },
+  { title: "Îngrijire clară", text: "La final primești instrucțiuni de îngrijire, iar pentru întrebări ne poți scrie pe WhatsApp." },
+];
+
+const CARE_FAQ = {
+  q: "Cum îngrijesc un piercing nou?",
+  a: "Primești instrucțiuni clare la finalul ședinței. Vindecarea diferă de la o persoană la alta și în funcție de zonă, iar dacă ai dubii ne poți scrie pe WhatsApp.",
+};
+
+const PAIN_FAQ = (zone: string) => ({
+  q: `Doare piercingul în ${zone}?`,
+  a: "Senzația diferă de la o persoană la alta. Artistul îți explică procesul înainte de montare, ca să știi la ce să te aștepți.",
+});
+
 export const services: Service[] = [
   {
     slug: "tatuaje-realism-bucuresti",
@@ -234,6 +272,118 @@ export const services: Service[] = [
     ],
     cta: ["Hai să discutăm", "despre piercingul tău."],
     short: "PIERCING BURIC",
+  },
+  {
+    slug: "piercing-cartilaj-bucuresti",
+    kicker: "PIERCING HELIX ȘI TRAGUS",
+    h1: ["Piercing helix și tragus", "în București."],
+    title: "Piercing helix și tragus București | Hasha Tattoo",
+    description:
+      "Piercing helix, tragus și alte piercinguri în cartilaj în București, Sector 4. Montare sterilă, bijuterie aleasă împreună, preț 150 lei. Scrie-ne pe WhatsApp.",
+    lead: "Piercingurile în cartilaj cer poziționare atentă. Alegem împreună locul și bijuteria potrivite urechii tale, iar montarea se face cu instrumente sterile, într-un studio privat din Sector 4.",
+    heroImage: "pierce-6.webp",
+    heroAlt: "Piercinguri helix cu inele negre, realizate la Hasha Tattoo",
+    statementTitle: ["Cartilaj ales corect,", "montat corect."],
+    statement:
+      "Helixul, tragusul și celelalte zone de cartilaj se vindecă mai lent decât lobul, deci poziția și bijuteria contează încă de la început. Artistul se uită la forma urechii tale, îți recomandă ce se potrivește și îți explică la ce să te aștepți. La final primești instrucțiuni clare de îngrijire.",
+    gallery: [
+      { image: "pierce-9.webp", alt: "Piercing helix cu bijuterii mici, realizat la Hasha Tattoo", label: "HELIX / PIERCING" },
+      { image: "pierce-8.webp", alt: "Piercinguri multiple în ureche, realizate la Hasha Tattoo", label: "URECHE / CARTILAJ" },
+    ],
+    principlesTitle: ["Cum lucrăm", "un piercing", "în cartilaj."],
+    principles: SAFE_PRINCIPLES("formei urechii tale", "Alegem locul împreună"),
+    faq: [
+      { q: "Ce piercinguri în cartilaj se pot face?", a: "Helix, tragus, anti-helix și alte zone ale urechii, în funcție de anatomie. Artistul îți spune ce se poate face bine pe urechea ta." },
+      PAIN_FAQ("cartilaj"),
+      CARE_FAQ,
+      CARTILAGE_PRICE_FAQ,
+    ],
+    cta: ["Hai să discutăm", "despre piercingul tău."],
+    short: "PIERCING HELIX ȘI TRAGUS",
+  },
+  {
+    slug: "piercing-industrial-bucuresti",
+    kicker: "PIERCING INDUSTRIAL",
+    h1: ["Piercing industrial", "în București."],
+    title: "Piercing industrial București | Hasha Tattoo",
+    description:
+      "Piercing industrial în București, Sector 4. Poziționare atentă pe anatomia urechii, montare sterilă, preț 150 lei. Programează-te pe WhatsApp.",
+    lead: "Piercingul industrial leagă două puncte din cartilajul urechii cu o singură bijuterie. Discutăm anatomia, poziția și bijuteria înainte de montare, într-un studio privat din Sector 4.",
+    heroImage: "pierce-3.webp",
+    heroAlt: "Piercing industrial în ureche, realizat la Hasha Tattoo",
+    statementTitle: ["Poziționare atentă,", "montare sterilă."],
+    statement:
+      "Piercingul industrial cere o anatomie potrivită și o poziționare precisă a celor două găuri. De aceea începem cu o discuție și cu o privire atentă asupra urechii tale. Dacă forma urechii nu se potrivește, îți spunem sincer și propunem alternative.",
+    gallery: [
+      { image: "pierce-7.webp", alt: "Piercing industrial cu bijuterie lungă în ureche, realizat la Hasha Tattoo", label: "INDUSTRIAL / URECHE" },
+      { image: "pierce-3.webp", alt: "Piercing industrial în ureche, realizat la Hasha Tattoo", label: "INDUSTRIAL / PIERCING" },
+    ],
+    principlesTitle: ["Cum lucrăm", "un piercing", "industrial."],
+    principles: SAFE_PRINCIPLES("urechii tale", "Verificăm anatomia"),
+    faq: [
+      { q: "Se poate face industrial pe orice ureche?", a: "Depinde de anatomia urechii. Artistul se uită la forma cartilajului și îți spune dacă piercingul se poate face bine sau ce alternative există." },
+      PAIN_FAQ("industrial"),
+      CARE_FAQ,
+      INDUSTRIAL_PRICE_FAQ,
+    ],
+    cta: ["Hai să discutăm", "despre piercingul tău."],
+    short: "PIERCING INDUSTRIAL",
+  },
+  {
+    slug: "piercing-dermal-bucuresti",
+    kicker: "PIERCING DERMAL",
+    h1: ["Piercing dermal", "în București."],
+    title: "Piercing dermal București | Hasha Tattoo",
+    description:
+      "Piercing dermal în București, Sector 4. Evaluare anatomică, montare sterilă, bijuteria inclusă în preț (250 lei). Programează-te pe WhatsApp.",
+    lead: "Piercingul dermal se montează la suprafața pielii, pe zone precum spatele sau toracele. Începem cu o discuție despre zonă și anatomie, iar montarea se face cu instrumente sterile, în Sector 4.",
+    heroImage: "pierce-5.webp",
+    heroAlt: "Piercinguri dermale pe spate, realizate la Hasha Tattoo",
+    statementTitle: ["Evaluăm zona,", "apoi montăm."],
+    statement:
+      "Anatomia decide dacă și cum se poate face un piercing dermal. Discutăm despre zona dorită, alegem poziția și bijuteria, iar prețul include bijuteria. La final primești instrucțiuni clare de îngrijire.",
+    gallery: [
+      { image: "pierce-5.webp", alt: "Piercinguri dermale pe spate, realizate la Hasha Tattoo", label: "DERMAL / SPATE" },
+      { image: "pierce-11.webp", alt: "Piercing de suprafață în sprânceană cu bijuterie cu țepi, realizat la Hasha Tattoo", label: "SUPRAFAȚĂ / SPRÂNCEANĂ" },
+    ],
+    principlesTitle: ["Cum lucrăm", "un piercing", "dermal."],
+    principles: SAFE_PRINCIPLES("zonei alese", "Evaluăm zona"),
+    faq: [
+      { q: "Unde se poate face un piercing dermal?", a: "Pe zone plane ale pielii, precum spatele sau toracele. Artistul evaluează anatomia și îți spune dacă zona dorită se potrivește." },
+      PAIN_FAQ("dermal"),
+      CARE_FAQ,
+      DERMAL_PRICE_FAQ,
+    ],
+    cta: ["Hai să discutăm", "despre piercingul tău."],
+    short: "PIERCING DERMAL",
+  },
+  {
+    slug: "piercing-nas-bucuresti",
+    kicker: "PIERCING NAS ȘI SEPTUM",
+    h1: ["Piercing nas și septum", "în București."],
+    title: "Piercing nas și septum București | Hasha Tattoo",
+    description:
+      "Piercing în nas și septum în București, Sector 4. Montare cu instrumente sterile, bijuterie aleasă împreună, preț 150 lei. Programare pe WhatsApp.",
+    lead: "Alegem împreună locul și bijuteria potrivite feței tale. Montarea se face cu instrumente sterile, într-un studio privat din Sector 4, iar la final primești instrucțiuni clare de îngrijire.",
+    heroImage: "pierce-10.webp",
+    heroAlt: "Bijuterii pentru piercing alese la Hasha Tattoo",
+    statementTitle: ["Piercing în nas,", "făcut cu grijă."],
+    statement:
+      "Un piercing în nas arată bine când poziția și bijuteria se potrivesc feței tale. Discutăm despre stilul dorit, alegem bijuteria și stabilim locul exact înainte de montare. Dacă ai alergie la nichel, ne spui înainte, ca să ținem cont la alegerea bijuteriei.",
+    gallery: [
+      { image: "pierce-10.webp", alt: "Bijuterii aurii pentru piercing, montate la Hasha Tattoo", label: "BIJUTERII / PIERCING" },
+      { image: "pierce-9.webp", alt: "Piercing cu bijuterii mici, realizat la Hasha Tattoo", label: "PIERCING / BIJUTERII" },
+    ],
+    principlesTitle: ["Cum lucrăm", "un piercing", "în nas."],
+    principles: SAFE_PRINCIPLES("feței tale", "Alegem locul împreună"),
+    faq: [
+      { q: "Faceți piercing în nas și în septum?", a: "Da, ambele costă 150 lei. Alegem împreună poziția și bijuteria, în funcție de anatomie și de stilul tău." },
+      PAIN_FAQ("nas"),
+      { q: "Cum îngrijesc un piercing în nas?", a: "Primești instrucțiuni clare la finalul ședinței. Nu atinge zona cu mâinile murdare și nu schimba bijuteria singur în perioada de vindecare." },
+      NOSE_PRICE_FAQ,
+    ],
+    cta: ["Hai să discutăm", "despre piercingul tău."],
+    short: "PIERCING NAS ȘI SEPTUM",
   },
 ];
 

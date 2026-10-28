@@ -101,6 +101,7 @@ export default function Footer() {
           <Link href="/termeni-si-conditii">TERMENI ȘI CONDIȚII</Link>
           <Link href="/politica-de-confidentialitate">POLITICA DE CONFIDENȚIALITATE</Link>
           <Link href="/politica-cookies">POLITICA COOKIES</Link>
+          <Link href="/en" hrefLang="en" lang="en">ENGLISH</Link>
         </nav>
         {" "}
         <BackToTop />

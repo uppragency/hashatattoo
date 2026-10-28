@@ -10,7 +10,8 @@ const WA = "https://wa.me/40766422219?text=Bun%C4%83%21%20A%C8%99%20dori%20o%20p
 
 export default function ServicePage({ service: s }: { service: Service }) {
   const url = `${SITE_URL}/${s.slug}`;
-  const others = services.filter((x) => x.slug !== s.slug);
+  const family = s.slug.startsWith("piercing");
+  const others = services.filter((x) => x.slug !== s.slug && x.slug.startsWith("piercing") === family);
   return (
     <>
       <JsonLd

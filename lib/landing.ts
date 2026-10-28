@@ -316,7 +316,7 @@ export const landings: Landing[] = [
         alt: "Piercing industrial în ureche, realizat la Hasha Tattoo",
         label: "INDUSTRIAL / URECHE",
         tags: ["Cartilaj", "Bijuterie lungă", "Poziționare atentă"],
-        href: "/piercing-ureche-bucuresti",
+        href: "/piercing-industrial-bucuresti",
       },
       {
         title: "Piercing în buric",
@@ -342,6 +342,7 @@ export const landings: Landing[] = [
         alt: "Piercinguri de suprafață în zona toracelui, realizate la Hasha Tattoo",
         label: "SUPRAFAȚĂ / TORACE",
         tags: ["Evaluare anatomică", "Poziționare"],
+        href: "/piercing-dermal-bucuresti",
       },
       {
         title: "Altă idee?",
@@ -350,6 +351,7 @@ export const landings: Landing[] = [
         alt: "Piercing industrial în ureche, realizat la Hasha Tattoo",
         label: "CONSULTAȚIE",
         tags: ["Nas", "Septum", "Sprânceană", "Buză"],
+        href: "/piercing-nas-bucuresti",
       },
     ],
     benefitsTitle: ["De ce să alegi", "Hasha", "Tattoo."],
@@ -463,7 +465,7 @@ export const landings: Landing[] = [
       { q: "Cum mă programez?", a: "Cel mai simplu este pe WhatsApp, la +40 766 422 219. Ne spui ce zonă te interesează și, dacă ai, trimiți o imagine cu stilul dorit. Poți suna și luni până vineri, între 12:00 și 20:00." },
       { q: "Cât costă un piercing?", a: "Lobul urechii costă 80 lei. Cartilaj, industrial, buric, nas, septum, buză, sprânceană și smiley costă câte 150 lei. Piercingul intim costă 200 lei, iar dermalul 250 lei, cu bijuteria inclusă la ambele. Manopera (schimbare, remontare, verificare, curățare) costă 30 lei. Lista completă este pe pagina Prețuri." },
     ],
-    related: ["piercing-ureche-bucuresti", "piercing-buric-bucuresti", "tatuaje", "preturi"],
+    related: ["piercing-ureche-bucuresti", "piercing-cartilaj-bucuresti", "piercing-industrial-bucuresti", "piercing-nas-bucuresti", "piercing-dermal-bucuresti", "piercing-buric-bucuresti", "tatuaje", "preturi"],
     quote: {
       service: "piercing",
       title: ["Știi ce vrei?", "Sau încă te gândești?"],

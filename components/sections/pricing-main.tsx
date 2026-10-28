@@ -6,6 +6,16 @@ import { FaqList, FinalCta, waLink } from "@/components/PageParts";
 import { PIERCING_EXTRAS, PIERCING_PRICES, TATTOO_PRICE_FACTORS, lei } from "@/lib/prices";
 import { SITE_URL } from "@/lib/site";
 
+const PRICE_LINKS: Record<string, string> = {
+  "Lob ureche": "/piercing-ureche-bucuresti",
+  Cartilaj: "/piercing-cartilaj-bucuresti",
+  Industrial: "/piercing-industrial-bucuresti",
+  Buric: "/piercing-buric-bucuresti",
+  Nas: "/piercing-nas-bucuresti",
+  Septum: "/piercing-nas-bucuresti",
+  Dermal: "/piercing-dermal-bucuresti",
+};
+
 const FAQ = [
   {
     q: "Cum se calculează prețul unui tatuaj?",
@@ -19,6 +29,11 @@ const FAQ = [
     q: "Cât costă un piercing?",
     a: "Lobul urechii costă 80 lei. Cartilaj, industrial, buric, nas, septum, buză, sprânceană și smiley costă câte 150 lei. Piercingul intim costă 200 lei, iar dermalul 250 lei, cu bijuteria inclusă la ambele.",
   },
+  { q: "Cât costă un piercing în nas?", a: "Piercingul în nas costă 150 lei, la fel ca cel în septum. Alegem împreună poziția și bijuteria înainte de montare." },
+  { q: "Cât costă un piercing în buric?", a: "Piercingul în buric costă 150 lei. Alegem împreună poziția și bijuteria potrivite anatomiei tale." },
+  { q: "Cât costă un piercing helix sau tragus?", a: "Piercingurile în cartilaj, inclusiv helix și tragus, costă 150 lei. Piercingul în lobul urechii costă 80 lei." },
+  { q: "Cât costă un piercing industrial?", a: "Piercingul industrial costă 150 lei. Poziționarea se discută înainte de montare, în funcție de anatomia urechii." },
+  { q: "Cât costă un piercing dermal?", a: "Piercingul dermal costă 250 lei, cu bijuteria inclusă." },
   {
     q: "Ce înseamnă manopera de 30 lei?",
     a: "Este costul pentru schimbarea bijuteriei, remontare, verificare sau curățare. Schimbarea unui piercing intim costă 60 lei.",
@@ -130,9 +145,9 @@ export default function PricingMain() {
             <div className="reveal">
               <div className="price-list">
                 {PIERCING_PRICES.map((r) => (
-                  <div key={r.name}>
+                  <div key={r.name} id={`pret-${r.name.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/\s+/g, "-")}`}>
                     <span>
-                      {r.name}
+                      {PRICE_LINKS[r.name] ? <Link href={PRICE_LINKS[r.name]}>{r.name}</Link> : r.name}
                       {r.note ? <small>{r.note}</small> : null}
                     </span>
                     <strong>{lei(r.price)}</strong>
