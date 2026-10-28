@@ -7,7 +7,7 @@ import { acceptAll, closeConsentSettings, getState, loadConsent, rejectAll, save
 const OPTIONS: { key: keyof Consent | "necessary"; label: string; text: string }[] = [
   { key: "necessary", label: "Necesare", text: "Funcționarea site-ului și memorarea alegerii tale. Mereu active." },
   { key: "functional", label: "Funcționale", text: "Harta Google din pagina principală." },
-  { key: "analytics", label: "Analitice", text: "Statistici despre folosirea site-ului. Momentan neactive." },
+  { key: "analytics", label: "Analitice", text: "Statistici anonime despre folosirea site-ului (Google Analytics). Se activează doar cu acordul tău." },
   { key: "marketing", label: "Marketing", text: "Măsurarea reclamelor. Momentan neactive." },
 ];
 

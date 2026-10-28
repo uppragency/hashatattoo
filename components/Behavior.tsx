@@ -3,12 +3,6 @@
 import { usePathname } from "next/navigation";
 import { useEffect } from "react";
 
-declare global {
-  interface Window {
-    dataLayer?: Record<string, unknown>[];
-  }
-}
-
 /** Animatii reveal la scroll si tracking CTA (dataLayer), identic cu script.js din design. */
 export default function Behavior() {
   const pathname = usePathname();
@@ -32,8 +26,12 @@ export default function Behavior() {
     const onClick = (e: MouseEvent) => {
       const a = (e.target as Element | null)?.closest?.<HTMLElement>("[data-cta]");
       if (!a) return;
-      window.dataLayer = window.dataLayer || [];
-      window.dataLayer.push({ event: "cta_click", cta_type: a.dataset.cta, cta_page: location.pathname });
+      const params = { cta_type: a.dataset.cta, cta_page: location.pathname };
+      if (window.gtag) window.gtag("event", "cta_click", params);
+      else {
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({ event: "cta_click", ...params });
+      }
     };
     document.addEventListener("click", onClick);
     return () => document.removeEventListener("click", onClick);

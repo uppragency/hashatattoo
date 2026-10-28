@@ -28,6 +28,13 @@ const TABLE = (
                   <td>Necesar</td>
                 </tr>
                 <tr>
+                  <td>_ga, _ga_2HE5ZV7L84</td>
+                  <td>Google Analytics</td>
+                  <td>Statistici despre pagini vizitate și interacțiuni (ex. apăsări pe WhatsApp sau telefon)</td>
+                  <td>Până la 24 de luni</td>
+                  <td>Analitic (doar cu acord)</td>
+                </tr>
+                <tr>
                   <td>Cookie-uri Google Maps</td>
                   <td>Google</td>
                   <td>Setate de Google când harta este încărcată, pentru funcționarea și personalizarea hărții</td>
@@ -51,11 +58,11 @@ const sections: LegalSection[] = [
     items: [
       "Necesare: fac site-ul să funcționeze și rețin alegerea ta privind cookie-urile. Nu necesită acord.",
       "Funcționale: servicii terțe pe care le afișăm la cererea ta, în prezent harta Google din pagina principală. Se activează doar cu acordul tău.",
-      "Analitice: ne-ar ajuta să înțelegem cum este folosit site-ul. În prezent nu sunt active.",
+      "Analitice: Google Analytics, pentru a înțelege cum este folosit site-ul. Cookie-urile se setează doar dacă ești de acord. Fără acord, Google primește doar semnale anonime fără cookie-uri, care nu te identifică.",
       "Marketing: ar măsura eficiența reclamelor. În prezent nu sunt active.",
     ],
     paragraphs: [
-      "Dacă vom activa module analitice sau de marketing (de exemplu Google Analytics sau Google Ads), ele vor rula doar după acordul tău, iar această pagină va fi actualizată.",
+      "Dacă vom activa și module de marketing (de exemplu Google Ads), ele vor rula doar după acordul tău, iar această pagină va fi actualizată.",
     ],
   },
   { title: "Ce stocăm acum", paragraphs: [], extra: TABLE },

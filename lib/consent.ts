@@ -29,12 +29,21 @@ export const getState = () => state;
 
 declare global {
   interface Window {
-    dataLayer?: Record<string, unknown>[];
+    dataLayer?: unknown[];
+    gtag?: (...args: unknown[]) => void;
   }
 }
 
 function announce(consent: Consent) {
   window.dataLayer = window.dataLayer || [];
+  window.gtag?.("consent", "update", {
+    analytics_storage: consent.analytics ? "granted" : "denied",
+    ad_storage: consent.marketing ? "granted" : "denied",
+    ad_user_data: consent.marketing ? "granted" : "denied",
+    ad_personalization: consent.marketing ? "granted" : "denied",
+    functionality_storage: consent.functional ? "granted" : "denied",
+    personalization_storage: consent.functional ? "granted" : "denied",
+  });
   window.dataLayer.push({
     event: "cookie_consent_update",
     consent_functional: consent.functional,

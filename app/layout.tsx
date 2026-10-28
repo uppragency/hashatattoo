@@ -19,6 +19,10 @@ import PageTransition from "@/components/PageTransition";
 import CookieBanner from "@/components/CookieBanner";
 import { SITE_URL } from "@/lib/site";
 
+const GA_ID = "G-2HE5ZV7L84";
+/* Consent Mode v2: totul refuzat implicit; se actualizeaza din lib/consent.ts dupa alegerea utilizatorului. */
+const GTAG_INIT = `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}window.gtag=gtag;gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'denied',functionality_storage:'denied',personalization_storage:'denied',security_storage:'granted',wait_for_update:500});gtag('js',new Date());gtag('config','${GA_ID}');`;
+
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   icons: { icon: "/assets/logo.png", apple: "/assets/logo.png" },
@@ -41,6 +45,8 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
   return (
     <html lang="ro" data-scroll-behavior="smooth">
       <head>
+        <script dangerouslySetInnerHTML={{ __html: GTAG_INIT }} />
+        <script async src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`} />
         <noscript>
           <style>{".reveal{opacity:1!important;transform:none!important}"}</style>
         </noscript>
