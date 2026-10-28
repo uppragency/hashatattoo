@@ -397,3 +397,33 @@ if (s6) {
     card: "Piercing și tatuaje, din Militari, Drumul Taberei sau alt cartier.",
   });
 }
+
+/** Sectoarele 2, 3 si 5: aceeasi structura ca Sector 6, optimizata pe piercing si tatuaje. */
+const sectorSeo: { slug: string; n: number; places: string; ctxTitle: [string, string] }[] = [
+  { slug: "sector-2", n: 2, places: "Colentina și Pantelimon", ctxTitle: ["Piercing și tatuaje,", "din Sectorul 2."] },
+  { slug: "sector-3", n: 3, places: "Titan și Dristor", ctxTitle: ["Piercing și tatuaje,", "din Sectorul 3."] },
+  { slug: "sector-5", n: 5, places: "Rahova și Cotroceni", ctxTitle: ["Piercing și tatuaje,", "din Sectorul 5."] },
+];
+for (const x of sectorSeo) {
+  const a = areas.find((z) => z.slug === x.slug);
+  if (!a) continue;
+  const name = `Sectorul ${x.n}`;
+  Object.assign(a, {
+    h1: ["Piercing și tatuaje", `pentru Sector ${x.n}.`],
+    title: `Salon piercing și tatuaje Sector ${x.n} București | Hasha Tattoo`,
+    description: `Piercing și tatuaje pentru Sector ${x.n}: ${x.places}. Studio privat în Sector 4, prețuri afișate, ruta Google Maps și programare pe WhatsApp.`,
+    lead: `Cauți un salon de piercing sau de tatuaje din ${name}? Studioul nostru este în Sectorul 4, pe Bulevardul Mărășești nr. 80. Vezi ruta din zona ta în Google Maps și programează-te pe WhatsApp.`,
+    contextTitle: x.ctxTitle,
+    reasons: s6?.reasons ?? a.reasons,
+    faq: [
+      {
+        q: `Aveți salon de piercing pentru cei din ${name}?`,
+        a: `Studioul este în Sectorul 4, pe Bulevardul Mărășești nr. 80, și face piercing în ureche, nas, buric, septum, buză, sprânceană, dermal și alte zone. Din ${name} te programezi pe WhatsApp, iar ruta o vezi live în Google Maps.`,
+      },
+      ...(s6 ? s6.faq.slice(1, 3) : []),
+      ...commonFaq(name),
+      routeQ(name),
+    ],
+    card: `Piercing și tatuaje, din ${x.places.replace(" și ", " sau ")}.`,
+  });
+}
